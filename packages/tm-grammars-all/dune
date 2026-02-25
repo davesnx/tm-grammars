@@ -1,0 +1,4 @@
+(library
+ (name tm_grammars_all)
+ (public_name tm-grammars-all)
+ (libraries tm-grammar-c tm-grammar-cpp tm-grammar-cram tm-grammar-css tm-grammar-diff tm-grammar-dockerfile tm-grammar-dune tm-grammar-dune-project tm-grammar-dune-workspace tm-grammar-go tm-grammar-graphql tm-grammar-html tm-grammar-java tm-grammar-javascript tm-grammar-jsonc tm-grammar-json tm-grammar-makefile tm-grammar-markdown tm-grammar-menhir tm-grammar-mlx tm-grammar-ocaml-interface tm-grammar-ocaml tm-grammar-ocamllex tm-grammar-opam tm-grammar-python tm-grammar-reason tm-grammar-ruby tm-grammar-rust tm-grammar-shellscript tm-grammar-sql tm-grammar-toml tm-grammar-tsx tm-grammar-typescript tm-grammar-yaml))

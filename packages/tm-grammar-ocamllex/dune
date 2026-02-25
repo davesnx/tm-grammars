@@ -1,0 +1,3 @@
+(library
+ (name tm_grammar_ocamllex)
+ (public_name tm-grammar-ocamllex))

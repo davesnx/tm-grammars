@@ -1,0 +1,172 @@
+{
+  "ocaml": {
+    "repo": "ocamllabs/vscode-ocaml-platform",
+    "path": "syntaxes/ocaml.json",
+    "commit": "997c979f5e88bd47a07a9a81e8745a214226c8b1"
+  },
+  "ocaml-interface": {
+    "repo": "ocamllabs/vscode-ocaml-platform",
+    "path": "syntaxes/ocaml.interface.json",
+    "commit": "997c979f5e88bd47a07a9a81e8745a214226c8b1"
+  },
+  "reason": {
+    "repo": "ocamllabs/vscode-ocaml-platform",
+    "path": "syntaxes/reason.json",
+    "commit": "997c979f5e88bd47a07a9a81e8745a214226c8b1"
+  },
+  "dune": {
+    "repo": "ocamllabs/vscode-ocaml-platform",
+    "path": "syntaxes/dune.json",
+    "commit": "997c979f5e88bd47a07a9a81e8745a214226c8b1"
+  },
+  "dune-project": {
+    "repo": "ocamllabs/vscode-ocaml-platform",
+    "path": "syntaxes/dune-project.json",
+    "commit": "997c979f5e88bd47a07a9a81e8745a214226c8b1"
+  },
+  "dune-workspace": {
+    "repo": "ocamllabs/vscode-ocaml-platform",
+    "path": "syntaxes/dune-workspace.json",
+    "commit": "997c979f5e88bd47a07a9a81e8745a214226c8b1"
+  },
+  "mlx": {
+    "repo": "ocamllabs/vscode-ocaml-platform",
+    "path": "syntaxes/mlx.json",
+    "commit": "997c979f5e88bd47a07a9a81e8745a214226c8b1"
+  },
+  "opam": {
+    "repo": "ocamllabs/vscode-ocaml-platform",
+    "path": "syntaxes/opam.json",
+    "commit": "997c979f5e88bd47a07a9a81e8745a214226c8b1"
+  },
+  "ocamllex": {
+    "repo": "ocamllabs/vscode-ocaml-platform",
+    "path": "syntaxes/ocamllex.json",
+    "commit": "997c979f5e88bd47a07a9a81e8745a214226c8b1"
+  },
+  "menhir": {
+    "repo": "ocamllabs/vscode-ocaml-platform",
+    "path": "syntaxes/menhir.json",
+    "commit": "997c979f5e88bd47a07a9a81e8745a214226c8b1"
+  },
+  "cram": {
+    "repo": "ocamllabs/vscode-ocaml-platform",
+    "path": "syntaxes/cram.json",
+    "commit": "997c979f5e88bd47a07a9a81e8745a214226c8b1"
+  },
+  "javascript": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/javascript.json",
+    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9"
+  },
+  "typescript": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/typescript.json",
+    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9"
+  },
+  "tsx": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/tsx.json",
+    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9"
+  },
+  "python": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/python.json",
+    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9"
+  },
+  "rust": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/rust.json",
+    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9"
+  },
+  "go": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/go.json",
+    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9"
+  },
+  "c": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/c.json",
+    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9"
+  },
+  "cpp": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/cpp.json",
+    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9"
+  },
+  "java": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/java.json",
+    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9"
+  },
+  "html": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/html.json",
+    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9"
+  },
+  "css": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/css.json",
+    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9"
+  },
+  "json": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/json.json",
+    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9"
+  },
+  "jsonc": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/jsonc.json",
+    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9"
+  },
+  "yaml": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/yaml.json",
+    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9"
+  },
+  "toml": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/toml.json",
+    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9"
+  },
+  "markdown": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/markdown.json",
+    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9"
+  },
+  "sql": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/sql.json",
+    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9"
+  },
+  "shellscript": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/shellscript.json",
+    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9"
+  },
+  "ruby": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/ruby.json",
+    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9"
+  },
+  "dockerfile": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/docker.json",
+    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9"
+  },
+  "makefile": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/make.json",
+    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9"
+  },
+  "diff": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/diff.json",
+    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9"
+  },
+  "graphql": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/graphql.json",
+    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9"
+  }
+}
