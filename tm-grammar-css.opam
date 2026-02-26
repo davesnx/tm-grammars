@@ -2,12 +2,14 @@
 opam-version: "2.0"
 version: "0.1.0"
 synopsis: "TextMate grammar for css"
+maintainer: ["David Sancho <dsnxmoreno@gmail.com>"]
+authors: ["David Sancho <dsnxmoreno@gmail.com>"]
 license: "MIT"
 homepage: "https://github.com/davesnx/tm-grammars"
 bug-reports: "https://github.com/davesnx/tm-grammars/issues"
 depends: [
   "dune" {>= "3.17"}
-  "ocaml" {>= "5.2.0"}
+  "ocaml"
   "odoc" {with-doc}
 ]
 build: [

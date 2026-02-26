@@ -39,8 +39,7 @@ for lang_id in "${lang_ids[@]}"; do
  (name ${pkg_name})
  (synopsis "TextMate grammar for ${lang_id}")
  (depends
-  (ocaml
-   (>= 5.2.0))))
+  ocaml))
 EOF
 done
 
@@ -49,8 +48,7 @@ printf '%s\n' "(package" >> "$tmp_file"
 printf '%s\n' " (name tm-grammars-all)" >> "$tmp_file"
 printf '%s\n' " (synopsis \"All bundled TextMate grammars\")" >> "$tmp_file"
 printf '%s\n' " (depends" >> "$tmp_file"
-printf '%s\n' "  (ocaml" >> "$tmp_file"
-printf '%s\n' "   (>= 5.2.0))" >> "$tmp_file"
+printf '%s\n' "  ocaml" >> "$tmp_file"
 for lang_id in "${lang_ids[@]}"; do
   printf '%s\n' "  tm-grammar-${lang_id}" >> "$tmp_file"
 done
