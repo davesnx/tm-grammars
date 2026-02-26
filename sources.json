@@ -4,11 +4,6 @@
     "path": "syntaxes/ocaml.json",
     "commit": "997c979f5e88bd47a07a9a81e8745a214226c8b1"
   },
-  "ocaml-interface": {
-    "repo": "ocamllabs/vscode-ocaml-platform",
-    "path": "syntaxes/ocaml.interface.json",
-    "commit": "997c979f5e88bd47a07a9a81e8745a214226c8b1"
-  },
   "reason": {
     "repo": "ocamllabs/vscode-ocaml-platform",
     "path": "syntaxes/reason.json",
@@ -17,16 +12,6 @@
   "dune": {
     "repo": "ocamllabs/vscode-ocaml-platform",
     "path": "syntaxes/dune.json",
-    "commit": "997c979f5e88bd47a07a9a81e8745a214226c8b1"
-  },
-  "dune-project": {
-    "repo": "ocamllabs/vscode-ocaml-platform",
-    "path": "syntaxes/dune-project.json",
-    "commit": "997c979f5e88bd47a07a9a81e8745a214226c8b1"
-  },
-  "dune-workspace": {
-    "repo": "ocamllabs/vscode-ocaml-platform",
-    "path": "syntaxes/dune-workspace.json",
     "commit": "997c979f5e88bd47a07a9a81e8745a214226c8b1"
   },
   "mlx": {

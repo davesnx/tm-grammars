@@ -1,5 +1,4 @@
 let lang_id = "toml"
-
 let json = {json|{
   "displayName": "TOML",
   "fileTypes": [

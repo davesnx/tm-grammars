@@ -1,9 +1,8 @@
 let lang_id = "ocaml"
-
 let json = {json|{
   "name": "OCaml",
   "scopeName": "source.ocaml",
-  "fileTypes": ["ml", "eliom", ".ocamlinit"],
+  "fileTypes": ["ml", "eliom", ".ocamlinit", "mli", "eliomi"],
   "patterns": [
     { "include": "#directives" },
     { "include": "#comments" },

@@ -1,0 +1,9 @@
+(rule
+ (alias gen)
+ (deps sources.json scripts/gen_dune_project.sh)
+ (target dune-project)
+ (mode promote)
+ (action
+  (with-stdout-to
+   %{target}
+   (run bash scripts/gen_dune_project.sh sources.json))))

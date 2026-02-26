@@ -1,5 +1,4 @@
 let lang_id = "css"
-
 let json = {json|{
   "displayName": "CSS",
   "name": "css",

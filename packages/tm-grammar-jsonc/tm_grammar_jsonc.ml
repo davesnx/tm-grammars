@@ -1,5 +1,4 @@
 let lang_id = "jsonc"
-
 let json = {json|{
   "displayName": "JSON with Comments",
   "name": "jsonc",

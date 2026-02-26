@@ -1,3 +1,16 @@
 (library
  (name tm_grammar_ocamllex)
  (public_name tm-grammar-ocamllex))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/ocamllex.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_ocamllex.ml tm_grammar_ocamllex.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run
+   bash
+   ../../scripts/gen_pkg_module.sh
+   ocamllex
+   ../../vendor/ocamllex.json)))

@@ -1,3 +1,16 @@
 (library
  (name tm_grammar_typescript)
  (public_name tm-grammar-typescript))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/typescript.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_typescript.ml tm_grammar_typescript.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run
+   bash
+   ../../scripts/gen_pkg_module.sh
+   typescript
+   ../../vendor/typescript.json)))

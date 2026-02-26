@@ -1,3 +1,0 @@
-(library
- (name tm_grammar_dune_project)
- (public_name tm-grammar-dune-project))

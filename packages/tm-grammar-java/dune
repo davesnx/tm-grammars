@@ -1,3 +1,12 @@
 (library
  (name tm_grammar_java)
  (public_name tm-grammar-java))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/java.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_java.ml tm_grammar_java.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh java ../../vendor/java.json)))

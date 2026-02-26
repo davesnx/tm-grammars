@@ -1,5 +1,4 @@
 let lang_id = "cpp"
-
 let json = {json|{
   "displayName": "C++",
   "name": "cpp",

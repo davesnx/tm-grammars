@@ -1,3 +1,0 @@
-(library
- (name tm_grammar_ocaml_interface)
- (public_name tm-grammar-ocaml-interface))

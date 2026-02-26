@@ -1,3 +1,12 @@
 (library
  (name tm_grammar_cram)
  (public_name tm-grammar-cram))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/cram.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_cram.ml tm_grammar_cram.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh cram ../../vendor/cram.json)))

@@ -1,3 +1,12 @@
 (library
  (name tm_grammar_opam)
  (public_name tm-grammar-opam))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/opam.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_opam.ml tm_grammar_opam.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh opam ../../vendor/opam.json)))

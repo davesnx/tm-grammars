@@ -1,3 +1,12 @@
 (library
  (name tm_grammar_html)
  (public_name tm-grammar-html))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/html.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_html.ml tm_grammar_html.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh html ../../vendor/html.json)))

@@ -1,5 +1,4 @@
 let lang_id = "dockerfile"
-
 let json = {json|{
   "displayName": "Dockerfile",
   "name": "docker",

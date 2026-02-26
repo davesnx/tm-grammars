@@ -1,5 +1,4 @@
 let lang_id = "mlx"
-
 let json = {json|{
   "name": "OCaml.mlx",
   "scopeName": "source.ocaml.mlx",

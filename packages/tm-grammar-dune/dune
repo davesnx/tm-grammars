@@ -1,3 +1,12 @@
 (library
  (name tm_grammar_dune)
  (public_name tm-grammar-dune))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/dune.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_dune.ml tm_grammar_dune.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh dune ../../vendor/dune.json)))

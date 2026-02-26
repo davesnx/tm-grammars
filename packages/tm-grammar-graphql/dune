@@ -1,3 +1,16 @@
 (library
  (name tm_grammar_graphql)
  (public_name tm-grammar-graphql))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/graphql.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_graphql.ml tm_grammar_graphql.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run
+   bash
+   ../../scripts/gen_pkg_module.sh
+   graphql
+   ../../vendor/graphql.json)))

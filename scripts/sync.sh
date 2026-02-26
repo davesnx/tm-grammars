@@ -12,6 +12,7 @@ if ! command -v jq &> /dev/null; then
 fi
 
 mkdir -p "$VENDOR_DIR"
+rm -f "$VENDOR_DIR"/*.json
 
 lang_ids=$(jq -r 'keys[]' "$SOURCES")
 total=$(echo "$lang_ids" | wc -l | tr -d ' ')
@@ -29,6 +30,17 @@ for lang_id in $lang_ids; do
   printf "[%d/%d] %s ... " "$count" "$total" "$lang_id"
 
   if curl -sfL "$url" -o "$dest"; then
+    case "$lang_id" in
+      dune)
+        jq '.fileTypes |= ((. + ["dune-project", "dune-workspace"]) | unique)' "$dest" > "$dest.tmp"
+        mv "$dest.tmp" "$dest"
+        ;;
+      ocaml)
+        jq '.fileTypes |= ((. + ["mli", "eliomi"]) | unique)' "$dest" > "$dest.tmp"
+        mv "$dest.tmp" "$dest"
+        ;;
+    esac
+
     if jq empty "$dest" 2>/dev/null; then
       echo "ok"
     else

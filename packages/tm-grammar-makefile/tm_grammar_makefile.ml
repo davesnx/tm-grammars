@@ -1,5 +1,4 @@
 let lang_id = "makefile"
-
 let json = {json|{
   "displayName": "Makefile",
   "name": "make",

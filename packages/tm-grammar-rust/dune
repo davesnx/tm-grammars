@@ -1,3 +1,12 @@
 (library
  (name tm_grammar_rust)
  (public_name tm-grammar-rust))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/rust.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_rust.ml tm_grammar_rust.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh rust ../../vendor/rust.json)))

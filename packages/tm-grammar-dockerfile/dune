@@ -1,3 +1,16 @@
 (library
  (name tm_grammar_dockerfile)
  (public_name tm-grammar-dockerfile))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/dockerfile.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_dockerfile.ml tm_grammar_dockerfile.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run
+   bash
+   ../../scripts/gen_pkg_module.sh
+   dockerfile
+   ../../vendor/dockerfile.json)))

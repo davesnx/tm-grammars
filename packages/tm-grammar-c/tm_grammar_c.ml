@@ -1,5 +1,4 @@
 let lang_id = "c"
-
 let json = {json|{
   "displayName": "C",
   "name": "c",

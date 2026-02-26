@@ -11,7 +11,6 @@
 
 (license MIT)
 
-
 (package
  (name tm-grammar-c)
  (synopsis "TextMate grammar for c")
@@ -62,20 +61,6 @@
    (>= 5.2.0))))
 
 (package
- (name tm-grammar-dune-project)
- (synopsis "TextMate grammar for dune-project")
- (depends
-  (ocaml
-   (>= 5.2.0))))
-
-(package
- (name tm-grammar-dune-workspace)
- (synopsis "TextMate grammar for dune-workspace")
- (depends
-  (ocaml
-   (>= 5.2.0))))
-
-(package
  (name tm-grammar-go)
  (synopsis "TextMate grammar for go")
  (depends
@@ -111,15 +96,15 @@
    (>= 5.2.0))))
 
 (package
- (name tm-grammar-jsonc)
- (synopsis "TextMate grammar for jsonc")
+ (name tm-grammar-json)
+ (synopsis "TextMate grammar for json")
  (depends
   (ocaml
    (>= 5.2.0))))
 
 (package
- (name tm-grammar-json)
- (synopsis "TextMate grammar for json")
+ (name tm-grammar-jsonc)
+ (synopsis "TextMate grammar for jsonc")
  (depends
   (ocaml
    (>= 5.2.0))))
@@ -148,13 +133,6 @@
 (package
  (name tm-grammar-mlx)
  (synopsis "TextMate grammar for mlx")
- (depends
-  (ocaml
-   (>= 5.2.0))))
-
-(package
- (name tm-grammar-ocaml-interface)
- (synopsis "TextMate grammar for ocaml-interface")
  (depends
   (ocaml
    (>= 5.2.0))))
@@ -263,20 +241,17 @@
   tm-grammar-diff
   tm-grammar-dockerfile
   tm-grammar-dune
-  tm-grammar-dune-project
-  tm-grammar-dune-workspace
   tm-grammar-go
   tm-grammar-graphql
   tm-grammar-html
   tm-grammar-java
   tm-grammar-javascript
-  tm-grammar-jsonc
   tm-grammar-json
+  tm-grammar-jsonc
   tm-grammar-makefile
   tm-grammar-markdown
   tm-grammar-menhir
   tm-grammar-mlx
-  tm-grammar-ocaml-interface
   tm-grammar-ocaml
   tm-grammar-ocamllex
   tm-grammar-opam
@@ -290,4 +265,4 @@
   tm-grammar-tsx
   tm-grammar-typescript
   tm-grammar-yaml
-))
+ ))

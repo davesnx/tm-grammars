@@ -1,3 +1,12 @@
 (library
  (name tm_grammar_cpp)
  (public_name tm-grammar-cpp))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/cpp.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_cpp.ml tm_grammar_cpp.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh cpp ../../vendor/cpp.json)))

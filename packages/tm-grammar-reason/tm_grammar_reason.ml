@@ -1,5 +1,4 @@
 let lang_id = "reason"
-
 let json = {json|{
   "name": "Reason",
   "scopeName": "source.reason",

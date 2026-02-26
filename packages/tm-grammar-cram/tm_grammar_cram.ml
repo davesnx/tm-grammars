@@ -1,5 +1,4 @@
 let lang_id = "cram"
-
 let json = {json|{
   "scopeName": "source.cram",
   "fileTypes": ["t"],

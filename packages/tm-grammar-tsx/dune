@@ -1,3 +1,12 @@
 (library
  (name tm_grammar_tsx)
  (public_name tm-grammar-tsx))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/tsx.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_tsx.ml tm_grammar_tsx.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh tsx ../../vendor/tsx.json)))

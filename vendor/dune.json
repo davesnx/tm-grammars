@@ -1,7 +1,7 @@
 {
   "name": "dune",
   "scopeName": "source.dune",
-  "fileTypes": ["dune"],
+  "fileTypes": ["dune", "dune-project", "dune-workspace"],
   "patterns": [
     {
       "include": "#stanzas"

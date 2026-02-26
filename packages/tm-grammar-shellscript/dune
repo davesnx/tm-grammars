@@ -1,3 +1,16 @@
 (library
  (name tm_grammar_shellscript)
  (public_name tm-grammar-shellscript))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/shellscript.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_shellscript.ml tm_grammar_shellscript.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run
+   bash
+   ../../scripts/gen_pkg_module.sh
+   shellscript
+   ../../vendor/shellscript.json)))

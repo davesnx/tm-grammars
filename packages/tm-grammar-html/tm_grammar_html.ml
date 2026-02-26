@@ -1,5 +1,4 @@
 let lang_id = "html"
-
 let json = {json|{
   "displayName": "HTML",
   "injections": {

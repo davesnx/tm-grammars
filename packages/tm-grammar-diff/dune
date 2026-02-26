@@ -1,3 +1,12 @@
 (library
  (name tm_grammar_diff)
  (public_name tm-grammar-diff))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/diff.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_diff.ml tm_grammar_diff.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh diff ../../vendor/diff.json)))

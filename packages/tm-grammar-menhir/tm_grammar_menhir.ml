@@ -1,5 +1,4 @@
 let lang_id = "menhir"
-
 let json = {json|{
   "name": "Menhir",
   "scopeName": "source.ocaml.menhir",

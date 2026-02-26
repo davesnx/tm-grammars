@@ -1,3 +1,12 @@
 (library
  (name tm_grammar_toml)
  (public_name tm-grammar-toml))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/toml.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_toml.ml tm_grammar_toml.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh toml ../../vendor/toml.json)))

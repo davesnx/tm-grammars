@@ -1,3 +1,16 @@
 (library
  (name tm_grammar_makefile)
  (public_name tm-grammar-makefile))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/makefile.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_makefile.ml tm_grammar_makefile.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run
+   bash
+   ../../scripts/gen_pkg_module.sh
+   makefile
+   ../../vendor/makefile.json)))

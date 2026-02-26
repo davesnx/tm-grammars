@@ -1,9 +1,8 @@
 let lang_id = "dune"
-
 let json = {json|{
   "name": "dune",
   "scopeName": "source.dune",
-  "fileTypes": ["dune"],
+  "fileTypes": ["dune", "dune-project", "dune-workspace"],
   "patterns": [
     {
       "include": "#stanzas"

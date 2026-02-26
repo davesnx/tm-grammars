@@ -1,5 +1,4 @@
 let lang_id = "go"
-
 let json = {json|{
   "displayName": "Go",
   "name": "go",

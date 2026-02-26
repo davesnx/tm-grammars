@@ -1,3 +1,12 @@
 (library
  (name tm_grammar_jsonc)
  (public_name tm-grammar-jsonc))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/jsonc.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_jsonc.ml tm_grammar_jsonc.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh jsonc ../../vendor/jsonc.json)))

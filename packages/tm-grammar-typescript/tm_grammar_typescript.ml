@@ -1,5 +1,4 @@
 let lang_id = "typescript"
-
 let json = {json|{
   "displayName": "TypeScript",
   "name": "typescript",

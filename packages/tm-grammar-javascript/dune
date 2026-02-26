@@ -1,3 +1,16 @@
 (library
  (name tm_grammar_javascript)
  (public_name tm-grammar-javascript))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/javascript.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_javascript.ml tm_grammar_javascript.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run
+   bash
+   ../../scripts/gen_pkg_module.sh
+   javascript
+   ../../vendor/javascript.json)))
