@@ -1,6 +1,7 @@
 project_name = tm-grammars
 
-DUNE = dune
+OPAM = opam exec --
+DUNE = $(OPAM) dune
 
 .PHONY: help
 help: ## Print this help message
