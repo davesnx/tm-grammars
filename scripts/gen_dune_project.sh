@@ -8,7 +8,10 @@ fi
 
 sources_json="$1"
 
-mapfile -t lang_ids < <(jq -r 'keys[]' "$sources_json")
+lang_ids=()
+while IFS= read -r lang_id; do
+  lang_ids+=("$lang_id")
+done < <(jq -r 'keys[]' "$sources_json")
 
 tmp_file="$(mktemp)"
 trap 'rm -f "$tmp_file"' EXIT
