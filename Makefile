@@ -32,6 +32,10 @@ dev: ## Build in watch mode
 test: ## Run tests
 	$(DUNE) build @runtest
 
+.PHONY: docs
+docs: ## Build docs and refresh README.md
+	$(DUNE) build @doc @doc-markdown --auto-promote
+
 .PHONY: clean
 clean: ## Clean build artifacts
 	$(DUNE) clean

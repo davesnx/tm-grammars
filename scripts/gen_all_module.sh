@@ -17,6 +17,13 @@ ml_file="tm_grammars_all.ml"
 mli_file="tm_grammars_all.mli"
 
 {
+  for lang_id in "${lang_ids[@]}"; do
+    value_name="$(echo "$lang_id" | tr '-' '_')"
+    module_name="tm_grammar_$(echo "$lang_id" | tr '-' '_')"
+    capitalized="$(echo "${module_name:0:1}" | tr '[:lower:]' '[:upper:]')${module_name:1}"
+    printf 'let %s = %s.json\n' "$value_name" "$capitalized"
+  done
+  printf '\n'
   printf '%s\n' "let all = ["
   for lang_id in "${lang_ids[@]}"; do
     module_name="tm_grammar_$(echo "$lang_id" | tr '-' '_')"
@@ -28,11 +35,16 @@ mli_file="tm_grammars_all.mli"
   printf '%s\n' "let find lang_id = List.assoc_opt lang_id all"
 } > "$ml_file"
 
-cat > "$mli_file" <<'EOF'
-val all : (string * string) list
-val available : string list
-val find : string -> string option
-EOF
+{
+  for lang_id in "${lang_ids[@]}"; do
+    value_name="$(echo "$lang_id" | tr '-' '_')"
+    printf 'val %s : string\n' "$value_name"
+  done
+  printf '\n'
+  printf '%s\n' 'val all : (string * string) list'
+  printf '%s\n' 'val available : string list'
+  printf '%s\n' 'val find : string -> string option'
+} > "$mli_file"
 
 if command -v ocamlformat >/dev/null 2>&1; then
   ocamlformat --enable-outside-detected-project --name "$ml_file" --impl -i "$ml_file"

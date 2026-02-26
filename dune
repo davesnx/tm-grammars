@@ -7,3 +7,16 @@
   (with-stdout-to
    %{target}
    (run bash scripts/gen_dune_project.sh sources.json))))
+
+(rule
+ (alias doc-markdown)
+ (deps
+  README.mld
+  scripts/gen_readme_md.sh
+  (glob_files packages/tm-grammar-*/dune))
+ (target README.md)
+ (mode promote)
+ (action
+  (with-stdout-to
+   %{target}
+   (run bash scripts/gen_readme_md.sh README.mld))))
