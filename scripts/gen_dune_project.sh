@@ -49,6 +49,8 @@ printf '\n' >> "$tmp_file"
 printf '%s\n' "(package" >> "$tmp_file"
 printf '%s\n' " (name tm-grammars)" >> "$tmp_file"
 printf '%s\n' " (synopsis \"All bundled TextMate grammars\")" >> "$tmp_file"
+printf '%s\n' " (authors \"David Sancho <dsnxmoreno@gmail.com>\")" >> "$tmp_file"
+printf '%s\n' " (maintainers \"David Sancho <dsnxmoreno@gmail.com>\")" >> "$tmp_file"
 printf '%s\n' " (depends" >> "$tmp_file"
 printf '%s\n' "  ocaml" >> "$tmp_file"
 for lang_id in "${lang_ids[@]}"; do

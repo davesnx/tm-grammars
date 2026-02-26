@@ -262,6 +262,8 @@
 (package
  (name tm-grammars)
  (synopsis "All bundled TextMate grammars")
+ (authors "David Sancho <dsnxmoreno@gmail.com>")
+ (maintainers "David Sancho <dsnxmoreno@gmail.com>")
  (depends
   ocaml
   tm-grammar-c
