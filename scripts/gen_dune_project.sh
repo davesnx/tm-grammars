@@ -38,6 +38,8 @@ for lang_id in "${lang_ids[@]}"; do
 (package
  (name ${pkg_name})
  (synopsis "TextMate grammar for ${lang_id}")
+ (authors "David Sancho <dsnxmoreno@gmail.com>")
+ (maintainers "David Sancho <dsnxmoreno@gmail.com>")
  (depends
   ocaml))
 EOF
@@ -45,7 +47,7 @@ done
 
 printf '\n' >> "$tmp_file"
 printf '%s\n' "(package" >> "$tmp_file"
-printf '%s\n' " (name tm-grammars-all)" >> "$tmp_file"
+printf '%s\n' " (name tm-grammars)" >> "$tmp_file"
 printf '%s\n' " (synopsis \"All bundled TextMate grammars\")" >> "$tmp_file"
 printf '%s\n' " (depends" >> "$tmp_file"
 printf '%s\n' "  ocaml" >> "$tmp_file"

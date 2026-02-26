@@ -9,7 +9,7 @@ OCaml packages that expose TextMate grammars as JSON strings.
 {1 Install all grammars}
 
 {@bash[
-opam install tm-grammars-all
+opam install tm-grammars
 ]}
 
 Use the bundled package with direct accessors:

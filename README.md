@@ -8,13 +8,13 @@ OCaml packages that expose TextMate grammars as JSON strings.
 
 ## Install all grammars
 
-{@bash[
-opam install tm-grammars-all
+```bash
+opam install tm-grammars
 ```
 
 Use the bundled package with direct accessors:
 
-{@ocaml[
+```ocaml
 let grammar_ocaml = Tm_grammars_all.ocaml
 let grammar_tsx = Tm_grammars_all.tsx
 ```
@@ -23,14 +23,14 @@ let grammar_tsx = Tm_grammars_all.tsx
 
 Examples with `ocaml` and `tsx` (you can also replace these with any supported language id).
 
-{@bash[
+```bash
 opam install tm-grammar-ocaml
 opam install tm-grammar-tsx
 ```
 
 Use one grammar package:
 
-{@ocaml[
+```ocaml
 let grammar_ocaml = Tm_grammar_ocaml.ocaml
 let grammar_tsx = Tm_grammar_tsx.tsx
 ```

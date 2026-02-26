@@ -1,6 +1,6 @@
 (library
  (name tm_grammars_all)
- (public_name tm-grammars-all)
+ (public_name tm-grammars)
  (libraries
   tm-grammar-c
   tm-grammar-cpp
