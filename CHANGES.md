@@ -1,4 +1,4 @@
-## 0.1.0
+## 1.0.0
 
 - Published OCaml packages that expose TextMate grammars as JSON strings.
 - Added individual `tm-grammar-<language>` packages for the supported language IDs.
