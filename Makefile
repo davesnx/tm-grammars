@@ -32,14 +32,6 @@ dev: ## Build in watch mode
 test: ## Run tests
 	$(DUNE) build @runtest
 
-.PHONY: format
-format: ## Format code with ocamlformat
-	$(DUNE) build @fmt --auto-promote
-
-.PHONY: format-check
-format-check: ## Check formatting
-	$(DUNE) build @fmt
-
 .PHONY: clean
 clean: ## Clean build artifacts
 	$(DUNE) clean
@@ -55,7 +47,7 @@ create-switch: ## Create opam switch
 .PHONY: install
 install: ## Install dependencies
 	opam update
-	opam install . --deps-only --with-test --with-doc -y
+	opam install . --deps-only --with-test --with-doc --with-dev-setup -y
 
 .PHONY: pin
 pin: ## Pin grammar compatibility fixes
