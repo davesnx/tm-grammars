@@ -36,7 +36,7 @@ jobs:
         os:
           - macos-latest
           - ubuntu-latest
-          # - windows-latest (https://github.com/ocaml/opam-repository/pull/29469)
+          - windows-latest
         ocaml-compiler:
           - 5.4.0
 
