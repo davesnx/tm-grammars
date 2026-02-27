@@ -35,7 +35,7 @@ let grammar_tsx = Tm_grammar_tsx.tsx
 
 `c`, `cpp`, `cram`, `css`, `diff`, `dockerfile`, `dune`, `go`, `graphql`, `html`, `java`, `javascript`, `json`, `jsonc`, `makefile`, `markdown`, `menhir`, `mlx`, `ocaml`, `ocamllex`, `opam`, `python`, `reason`, `ruby`, `rust`, `shellscript`, `sql`, `toml`, `tsx`, `typescript`, `yaml`.
 
-{2 How to add a new grammar}
+### How to add a new grammar
 
 1. Add a new entry in [sources.json](sources.json) with the language id and upstream source (`repo`, `path`, `commit`).
 2. Run `make sync` to download the grammar into `vendor/<language-id>.json`.
