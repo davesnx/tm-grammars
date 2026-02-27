@@ -10,6 +10,7 @@ sources_json="$1"
 
 lang_ids=()
 while IFS= read -r lang_id; do
+  lang_id="${lang_id%$'\r'}"
   lang_ids+=("$lang_id")
 done < <(jq -r 'keys[]' "$sources_json")
 

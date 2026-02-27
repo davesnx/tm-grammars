@@ -1,0 +1,7 @@
+*.ml text eol=lf
+*.mli text eol=lf
+*.sh text eol=lf
+dune text eol=lf
+dune-project text eol=lf
+*.opam text eol=lf
+*.json text eol=lf
