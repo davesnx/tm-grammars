@@ -1,5 +1,5 @@
 (library
- (name tm_grammars_all)
+ (name tm_grammars)
  (public_name tm-grammars)
  (libraries
   tm-grammar-c
@@ -37,7 +37,7 @@
 (rule
  (alias gen)
  (deps ../../sources.json ../../scripts/gen_all_module.sh)
- (targets tm_grammars_all.ml tm_grammars_all.mli)
+ (targets tm_grammars.ml tm_grammars.mli)
  (mode
   (promote (until-clean)))
  (action

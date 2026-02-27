@@ -11,8 +11,8 @@ opam install tm-grammars
 Use the bundled package with direct accessors:
 
 ```ocaml
-let grammar_ocaml = Tm_grammars_all.ocaml
-let grammar_tsx = Tm_grammars_all.tsx
+let grammar_ocaml = Tm_grammars.ocaml
+let grammar_tsx = Tm_grammars.tsx
 ```
 
 ## Install one grammar

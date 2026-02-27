@@ -13,8 +13,8 @@ while IFS= read -r lang_id; do
   lang_ids+=("$lang_id")
 done < <(jq -r 'keys[]' "$sources_json")
 
-ml_file="tm_grammars_all.ml"
-mli_file="tm_grammars_all.mli"
+ml_file="tm_grammars.ml"
+mli_file="tm_grammars.mli"
 
 {
   for lang_id in "${lang_ids[@]}"; do
