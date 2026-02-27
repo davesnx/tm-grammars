@@ -2,10 +2,6 @@
 
 OCaml packages that expose TextMate grammars as JSON strings.
 
-{1 Supported language ids}
-
-@@SUPPORTED_LANGUAGE_IDS@@.
-
 {1 Install all grammars}
 
 {@bash[
@@ -35,9 +31,13 @@ let grammar_ocaml = Tm_grammar_ocaml.ocaml
 let grammar_tsx = Tm_grammar_tsx.tsx
 ]}
 
-{1 How to add a new grammar}
+{1 Supported language ids}
 
-1. Add a new entry in `sources.json` with the language id and upstream source (`repo`, `path`, `commit`).
+@@SUPPORTED_LANGUAGE_IDS@@.
+
+{2 How to add a new grammar}
+
+1. Add a new entry in [sources.json](sources.json) with the language id and upstream source (`repo`, `path`, `commit`).
 2. Run `make sync` to download the grammar into `vendor/<language-id>.json`.
 3. Run `make generate` to regenerate packages and metadata.
 4. Run `make build` (and optionally `make test`) to verify everything still builds.
