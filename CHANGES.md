@@ -1,6 +1,6 @@
 ## 1.0.0
 
-- Published OCaml packages that expose TextMate grammars as JSON strings.
-- Added individual `tm-grammar-<language>` packages for the supported language IDs.
-- Added `tm-grammars`, a bundled package with direct accessors for all included grammars.
-- Added generated package setup driven by `sources.json`.
+- Published OCaml package that exposes TextMate grammars as JSON strings.
+- Each language is a findlib sublibrary (e.g. `tm-grammars.ocaml`, `tm-grammars.tsx`).
+- Downstream users depend on `tm-grammars` and add only the sublibraries they need to `(libraries ...)`.
+- Generated package setup driven by `sources.json`.

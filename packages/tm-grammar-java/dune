@@ -1,6 +1,6 @@
 (library
  (name tm_grammar_java)
- (public_name tm-grammar-java))
+ (public_name tm-grammars.java))
 
 (rule
  (alias gen)

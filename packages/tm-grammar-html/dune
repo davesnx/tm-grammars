@@ -1,6 +1,6 @@
 (library
  (name tm_grammar_html)
- (public_name tm-grammar-html))
+ (public_name tm-grammars.html))
 
 (rule
  (alias gen)

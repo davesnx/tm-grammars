@@ -18,7 +18,7 @@ sync: ## Download grammars from upstream sources
 .PHONY: generate
 generate: ## Generate all derived files via dune
 	$(DUNE) build @gen --auto-promote
-	$(DUNE) build *.opam --auto-promote
+	$(DUNE) build tm-grammars.opam --auto-promote
 
 .PHONY: build
 build: ## Build all packages

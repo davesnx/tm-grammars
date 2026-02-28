@@ -1,34 +1,42 @@
 # tm-grammars
 
-OCaml packages that expose TextMate grammars as JSON strings.
+OCaml package that exposes TextMate grammars as JSON strings. Each language is available as a library ([tm-grammars.ocaml], [tm-grammars.tsx], etc.) so downstream users only link what they need.
 
-## Install all grammars
+## Install
 
 ```bash
-opam install tm-grammars
+opam install tm-grammars -y
 ```
 
-Use the bundled package with direct accessors:
+## Usage
+
+```dune
+(libraries tm-grammars)
+```
 
 ```ocaml
 let grammar_ocaml = Tm_grammars.ocaml
 let grammar_tsx = Tm_grammars.tsx
 ```
 
-## Install one grammar
-
-Examples with `ocaml` and `tsx` (you can also replace these with any supported language id).
-
-```bash
-opam install tm-grammar-ocaml
-opam install tm-grammar-tsx
-```
-
-Use one grammar package:
+You can also list grammars dynamically:
 
 ```ocaml
-let grammar_ocaml = Tm_grammar_ocaml.ocaml
-let grammar_tsx = Tm_grammar_tsx.tsx
+let all = Tm_grammars.all          (* (string * string) list *)
+let ids = Tm_grammars.available    (* string list *)
+```
+
+## Use a single grammar
+
+Depend on a sublibrary to pull in only the grammar you need.
+
+```dune
+(libraries tm-grammars.ocaml tm-grammars.tsx)
+```
+
+```ocaml
+let grammar_ocaml = Tm_grammar_ocaml.json
+let grammar_tsx = Tm_grammar_tsx.json
 ```
 
 ## Supported language ids

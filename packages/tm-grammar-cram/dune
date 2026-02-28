@@ -1,6 +1,6 @@
 (library
  (name tm_grammar_cram)
- (public_name tm-grammar-cram))
+ (public_name tm-grammars.cram))
 
 (rule
  (alias gen)

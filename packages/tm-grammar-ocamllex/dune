@@ -1,6 +1,6 @@
 (library
  (name tm_grammar_ocamllex)
- (public_name tm-grammar-ocamllex))
+ (public_name tm-grammars.ocamllex))
 
 (rule
  (alias gen)

@@ -1,6 +1,6 @@
 (library
  (name tm_grammar_jsonc)
- (public_name tm-grammar-jsonc))
+ (public_name tm-grammars.jsonc))
 
 (rule
  (alias gen)

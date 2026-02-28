@@ -1,6 +1,6 @@
 (library
  (name tm_grammar_markdown)
- (public_name tm-grammar-markdown))
+ (public_name tm-grammars.markdown))
 
 (rule
  (alias gen)

@@ -65,21 +65,9 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/') && matrix.os == 'ubuntu-latest'
         run: opam install dune-release -y
 
-      - name: Collect opam package names
-        id: package-names
-        if: startsWith(github.ref, 'refs/tags/') && matrix.os == 'ubuntu-latest'
-        run: |
-          {
-            echo 'packages<<EOF'
-            for f in ./*.opam; do
-              basename "$f" .opam
-            done
-            echo 'EOF'
-          } >> "$GITHUB_OUTPUT"
-
       - name: Release
         if: startsWith(github.ref, 'refs/tags/') && matrix.os == 'ubuntu-latest'
         uses: davesnx/dune-release-action@v0.2.14
         with:
-          packages: ${{ steps.package-names.outputs.packages }}
+          packages: tm-grammars
           github-token: ${{ secrets.GH_TOKEN }}

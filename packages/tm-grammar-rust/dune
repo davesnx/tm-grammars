@@ -1,6 +1,6 @@
 (library
  (name tm_grammar_rust)
- (public_name tm-grammar-rust))
+ (public_name tm-grammars.rust))
 
 (rule
  (alias gen)

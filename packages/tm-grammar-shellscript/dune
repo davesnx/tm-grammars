@@ -1,6 +1,6 @@
 (library
  (name tm_grammar_shellscript)
- (public_name tm-grammar-shellscript))
+ (public_name tm-grammars.shellscript))
 
 (rule
  (alias gen)

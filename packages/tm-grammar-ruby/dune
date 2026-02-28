@@ -1,6 +1,6 @@
 (library
  (name tm_grammar_ruby)
- (public_name tm-grammar-ruby))
+ (public_name tm-grammars.ruby))
 
 (rule
  (alias gen)

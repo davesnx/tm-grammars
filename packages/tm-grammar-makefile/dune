@@ -1,6 +1,6 @@
 (library
  (name tm_grammar_makefile)
- (public_name tm-grammar-makefile))
+ (public_name tm-grammars.makefile))
 
 (rule
  (alias gen)

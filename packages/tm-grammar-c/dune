@@ -1,6 +1,6 @@
 (library
  (name tm_grammar_c)
- (public_name tm-grammar-c))
+ (public_name tm-grammars.c))
 
 (rule
  (alias gen)

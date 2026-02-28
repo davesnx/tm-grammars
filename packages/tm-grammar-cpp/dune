@@ -1,6 +1,6 @@
 (library
  (name tm_grammar_cpp)
- (public_name tm-grammar-cpp))
+ (public_name tm-grammars.cpp))
 
 (rule
  (alias gen)

@@ -1,6 +1,6 @@
 (library
  (name tm_grammar_tsx)
- (public_name tm-grammar-tsx))
+ (public_name tm-grammars.tsx))
 
 (rule
  (alias gen)

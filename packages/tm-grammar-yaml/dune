@@ -1,6 +1,6 @@
 (library
  (name tm_grammar_yaml)
- (public_name tm-grammar-yaml))
+ (public_name tm-grammars.yaml))
 
 (rule
  (alias gen)

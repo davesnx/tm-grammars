@@ -1,6 +1,6 @@
 (library
  (name tm_grammar_typescript)
- (public_name tm-grammar-typescript))
+ (public_name tm-grammars.typescript))
 
 (rule
  (alias gen)

@@ -1,6 +1,6 @@
 (library
  (name tm_grammar_sql)
- (public_name tm-grammar-sql))
+ (public_name tm-grammars.sql))
 
 (rule
  (alias gen)

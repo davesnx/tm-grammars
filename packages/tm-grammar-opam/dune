@@ -1,6 +1,6 @@
 (library
  (name tm_grammar_opam)
- (public_name tm-grammar-opam))
+ (public_name tm-grammars.opam-file))
 
 (rule
  (alias gen)
