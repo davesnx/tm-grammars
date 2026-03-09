@@ -28,4 +28,3 @@ build: [
   ]
 ]
 dev-repo: "git+https://github.com/davesnx/tm-grammars.git"
-x-ci-accept-failures: ["opensuse-15.6"]
