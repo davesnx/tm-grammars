@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_talonscript)
+ (public_name tm-grammars.talonscript))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/talonscript.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_talonscript.ml tm_grammar_talonscript.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh talonscript ../../vendor/talonscript.json)))

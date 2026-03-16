@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_csv)
+ (public_name tm-grammars.csv))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/csv.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_csv.ml tm_grammar_csv.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh csv ../../vendor/csv.json)))

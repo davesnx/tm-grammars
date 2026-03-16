@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_codeql)
+ (public_name tm-grammars.codeql))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/codeql.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_codeql.ml tm_grammar_codeql.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh codeql ../../vendor/codeql.json)))

@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_nextflow_groovy)
+ (public_name tm-grammars.nextflow-groovy))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/nextflow-groovy.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_nextflow_groovy.ml tm_grammar_nextflow_groovy.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh nextflow-groovy ../../vendor/nextflow-groovy.json)))

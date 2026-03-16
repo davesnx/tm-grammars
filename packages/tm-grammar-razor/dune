@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_razor)
+ (public_name tm-grammars.razor))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/razor.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_razor.ml tm_grammar_razor.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh razor ../../vendor/razor.json)))

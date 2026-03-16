@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_qml)
+ (public_name tm-grammars.qml))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/qml.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_qml.ml tm_grammar_qml.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh qml ../../vendor/qml.json)))

@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_vue_sfc_style_variable_injection)
+ (public_name tm-grammars.vue-sfc-style-variable-injection))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/vue-sfc-style-variable-injection.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_vue_sfc_style_variable_injection.ml tm_grammar_vue_sfc_style_variable_injection.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh vue-sfc-style-variable-injection ../../vendor/vue-sfc-style-variable-injection.json)))

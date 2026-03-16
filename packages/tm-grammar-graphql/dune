@@ -9,8 +9,4 @@
  (mode
   (promote (until-clean)))
  (action
-  (run
-   bash
-   ../../scripts/gen_pkg_module.sh
-   graphql
-   ../../vendor/graphql.json)))
+  (run bash ../../scripts/gen_pkg_module.sh graphql ../../vendor/graphql.json)))

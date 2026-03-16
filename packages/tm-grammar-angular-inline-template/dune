@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_angular_inline_template)
+ (public_name tm-grammars.angular-inline-template))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/angular-inline-template.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_angular_inline_template.ml tm_grammar_angular_inline_template.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh angular-inline-template ../../vendor/angular-inline-template.json)))

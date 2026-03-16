@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_lua)
+ (public_name tm-grammars.lua))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/lua.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_lua.ml tm_grammar_lua.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh lua ../../vendor/lua.json)))

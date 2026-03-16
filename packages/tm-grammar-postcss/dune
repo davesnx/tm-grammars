@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_postcss)
+ (public_name tm-grammars.postcss))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/postcss.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_postcss.ml tm_grammar_postcss.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh postcss ../../vendor/postcss.json)))

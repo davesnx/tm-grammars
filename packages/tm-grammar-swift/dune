@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_swift)
+ (public_name tm-grammars.swift))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/swift.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_swift.ml tm_grammar_swift.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh swift ../../vendor/swift.json)))

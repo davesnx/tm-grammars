@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_asm)
+ (public_name tm-grammars.asm))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/asm.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_asm.ml tm_grammar_asm.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh asm ../../vendor/asm.json)))

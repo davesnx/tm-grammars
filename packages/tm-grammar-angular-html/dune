@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_angular_html)
+ (public_name tm-grammars.angular-html))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/angular-html.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_angular_html.ml tm_grammar_angular_html.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh angular-html ../../vendor/angular-html.json)))

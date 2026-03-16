@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_coq)
+ (public_name tm-grammars.coq))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/coq.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_coq.ml tm_grammar_coq.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh coq ../../vendor/coq.json)))

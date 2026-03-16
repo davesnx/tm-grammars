@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_kusto)
+ (public_name tm-grammars.kusto))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/kusto.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_kusto.ml tm_grammar_kusto.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh kusto ../../vendor/kusto.json)))

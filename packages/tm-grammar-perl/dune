@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_perl)
+ (public_name tm-grammars.perl))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/perl.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_perl.ml tm_grammar_perl.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh perl ../../vendor/perl.json)))

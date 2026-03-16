@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_twig)
+ (public_name tm-grammars.twig))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/twig.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_twig.ml tm_grammar_twig.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh twig ../../vendor/twig.json)))

@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_awk)
+ (public_name tm-grammars.awk))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/awk.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_awk.ml tm_grammar_awk.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh awk ../../vendor/awk.json)))

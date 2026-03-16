@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_wikitext)
+ (public_name tm-grammars.wikitext))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/wikitext.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_wikitext.ml tm_grammar_wikitext.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh wikitext ../../vendor/wikitext.json)))

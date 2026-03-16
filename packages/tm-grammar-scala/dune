@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_scala)
+ (public_name tm-grammars.scala))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/scala.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_scala.ml tm_grammar_scala.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh scala ../../vendor/scala.json)))

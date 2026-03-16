@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_actionscript_3)
+ (public_name tm-grammars.actionscript-3))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/actionscript-3.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_actionscript_3.ml tm_grammar_actionscript_3.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh actionscript-3 ../../vendor/actionscript-3.json)))

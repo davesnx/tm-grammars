@@ -17,7 +17,9 @@ sync: ## Download grammars from upstream sources
 
 .PHONY: generate
 generate: ## Generate all derived files via dune
+	@bash scripts/gen_package_dunes.sh sources.json
 	$(DUNE) build @gen --auto-promote
+	@bash scripts/gen_third_party_licenses.sh sources.json THIRD-PARTY-LICENSES
 	$(DUNE) build tm-grammars.opam --auto-promote
 
 .PHONY: build

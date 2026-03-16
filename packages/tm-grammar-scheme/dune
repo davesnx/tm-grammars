@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_scheme)
+ (public_name tm-grammars.scheme))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/scheme.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_scheme.ml tm_grammar_scheme.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh scheme ../../vendor/scheme.json)))

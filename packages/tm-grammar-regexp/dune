@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_regexp)
+ (public_name tm-grammars.regexp))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/regexp.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_regexp.ml tm_grammar_regexp.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh regexp ../../vendor/regexp.json)))

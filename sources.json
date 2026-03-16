@@ -1,17 +1,461 @@
 {
-  "ocaml": {
+  "abap": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/abap.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "originalSource": "pvl/abap.tmbundle"
+  },
+  "actionscript-3": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/actionscript-3.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://raw.githubusercontent.com/BowlerHatLLC/vscode-as3mxml/main/LICENSE",
+    "originalSource": "BowlerHatLLC/vscode-as3mxml"
+  },
+  "ada": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/ada.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "GPL-3.0",
+    "licenseUrl": "https://raw.githubusercontent.com/AdaCore/ada_language_server/master/LICENSE",
+    "originalSource": "AdaCore/ada_language_server"
+  },
+  "angular-expression": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/angular-expression.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT"
+  },
+  "angular-html": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/angular-html.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/onivim/vscode-exthost/master/LICENSE.txt",
+    "originalSource": "onivim/vscode-exthost"
+  },
+  "angular-inline-style": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/angular-inline-style.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "angular-inline-template": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/angular-inline-template.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "angular-let-declaration": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/angular-let-declaration.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT"
+  },
+  "angular-template": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/angular-template.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT"
+  },
+  "angular-template-blocks": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/angular-template-blocks.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT"
+  },
+  "angular-ts": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/angular-ts.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "apache": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/apache.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "licenseUrl": "https://raw.githubusercontent.com/colinta/ApacheConf.tmLanguage/main/LICENSE",
+    "originalSource": "colinta/ApacheConf.tmLanguage"
+  },
+  "apex": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/apex.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "licenseUrl": "https://raw.githubusercontent.com/forcedotcom/apex-tmLanguage/main/LICENSE",
+    "originalSource": "forcedotcom/apex-tmLanguage"
+  },
+  "apl": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/apl.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "originalSource": "kimmolinna/vscode-apl-language"
+  },
+  "applescript": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/applescript.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "originalSource": "textmate/applescript.tmbundle"
+  },
+  "ara": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/ara.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://raw.githubusercontent.com/ara-lang/highlighting/main/LICENSE-APACHE",
+    "originalSource": "ara-lang/highlighting"
+  },
+  "asciidoc": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/asciidoc.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "licenseUrl": "https://raw.githubusercontent.com/asciidoctor/asciidoctor-vscode/master/LICENSE",
+    "originalSource": "asciidoctor/asciidoctor-vscode"
+  },
+  "asm": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/asm.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/13xforever/x86_64-assembly-vscode/master/LICENSE.txt",
+    "originalSource": "13xforever/x86_64-assembly-vscode"
+  },
+  "astro": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/astro.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/withastro/language-tools/main/LICENSE",
+    "originalSource": "withastro/language-tools"
+  },
+  "awk": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/awk.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/luggage66/vscode-awk/master/LICENSE.txt",
+    "originalSource": "luggage66/vscode-awk"
+  },
+  "ballerina": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/ballerina.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://raw.githubusercontent.com/ballerina-platform/ballerina-grammar/master/LICENSE",
+    "originalSource": "ballerina-platform/ballerina-grammar"
+  },
+  "bat": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/bat.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "beancount": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/beancount.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/Lencerf/vscode-beancount/master/LICENSE",
+    "originalSource": "Lencerf/vscode-beancount"
+  },
+  "berry": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/berry.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/berry-lang/berry/master/LICENSE",
+    "originalSource": "berry-lang/berry"
+  },
+  "bibtex": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/bibtex.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "bicep": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/bicep.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/Azure/bicep/main/LICENSE",
+    "originalSource": "Azure/bicep"
+  },
+  "bird2": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/bird2.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MPL-2.0",
+    "licenseUrl": "https://raw.githubusercontent.com/bird-chinese-community/BIRD-tm-language-grammar/main/LICENSE",
+    "originalSource": "bird-chinese-community/BIRD-tm-language-grammar"
+  },
+  "blade": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/blade.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/laravel/vs-code-extension/main/LICENSE.md",
+    "originalSource": "laravel/vs-code-extension"
+  },
+  "bsl": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/bsl.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/1c-syntax/vsc-language-1c-bsl/refs/heads/master/LICENSE.md",
+    "originalSource": "1c-syntax/vsc-language-1c-bsl"
+  },
+  "c": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/c.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "c3": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/c3.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/c3lang/vscode-c3/main/LICENSE",
+    "originalSource": "c3lang/vscode-c3"
+  },
+  "cadence": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/cadence.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://raw.githubusercontent.com/onflow/vscode-cadence/master/LICENSE",
+    "originalSource": "onflow/vscode-cadence"
+  },
+  "cairo": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/cairo.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://raw.githubusercontent.com/starkware-libs/cairo-lang/master/LICENSE.txt",
+    "originalSource": "starkware-libs/cairo-lang"
+  },
+  "clarity": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/clarity.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/stx-labs/clarity.tmbundle/main/LICENSE",
+    "originalSource": "hirosystems/clarity.tmbundle"
+  },
+  "clojure": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/clojure.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "cmake": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/cmake.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/twxs/vs.language.cmake/master/LICENSE",
+    "originalSource": "twxs/vs.language.cmake"
+  },
+  "cobol": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/cobol.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/spgennard/vscode_cobol/main/LICENSE",
+    "originalSource": "spgennard/vscode_cobol"
+  },
+  "codeowners": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/codeowners.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/jasonnutter/vscode-codeowners/master/LICENSE.txt",
+    "originalSource": "jasonnutter/vscode-codeowners"
+  },
+  "codeql": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/codeql.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/github/vscode-codeql/main/LICENSE.md",
+    "originalSource": "github/vscode-codeql"
+  },
+  "coffee": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/coffee.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "common-lisp": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/common-lisp.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/qingpeng9802/vscode-common-lisp/master/LICENSE",
+    "originalSource": "qingpeng9802/vscode-common-lisp"
+  },
+  "coq": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/coq.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/rocq-prover/vsrocq/main/LICENSE",
+    "originalSource": "coq-community/vscoq"
+  },
+  "cpp": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/cpp.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "cpp-macro": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/cpp-macro.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "cram": {
     "repo": "ocamllabs/vscode-ocaml-platform",
-    "path": "syntaxes/ocaml.json",
+    "path": "syntaxes/cram.json",
     "commit": "997c979f5e88bd47a07a9a81e8745a214226c8b1",
     "license": "ISC",
     "licenseUrl": "https://raw.githubusercontent.com/ocamllabs/vscode-ocaml-platform/master/LICENSE"
   },
-  "reason": {
-    "repo": "ocamllabs/vscode-ocaml-platform",
-    "path": "syntaxes/reason.json",
-    "commit": "997c979f5e88bd47a07a9a81e8745a214226c8b1",
-    "license": "ISC",
-    "licenseUrl": "https://raw.githubusercontent.com/ocamllabs/vscode-ocaml-platform/master/LICENSE"
+  "crystal": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/crystal.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/crystal-lang-tools/vscode-crystal-lang/master/LICENSE",
+    "originalSource": "crystal-lang-tools/vscode-crystal-lang"
+  },
+  "csharp": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/csharp.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "css": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/css.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "csv": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/csv.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/mechatroner/vscode_rainbow_csv/master/LICENSE",
+    "originalSource": "mechatroner/vscode_rainbow_csv"
+  },
+  "cue": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/cue.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "licenseUrl": "https://raw.githubusercontent.com/cue-lang/vscode-cue/master/LICENSE",
+    "originalSource": "cue-lang/vscode-cue"
+  },
+  "cypher": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/cypher.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/adam-cowley/neo4j-vscode/main/LICENSE",
+    "originalSource": "adam-cowley/neo4j-vscode"
+  },
+  "d": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/d.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/Pure-D/code-d/master/LICENSE.md",
+    "originalSource": "Pure-D/code-d"
+  },
+  "dart": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/dart.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "dax": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/dax.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "originalSource": "huyza/dax-language"
+  },
+  "desktop": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/desktop.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/nico-castell/desktop-file-support/main/LICENSE",
+    "originalSource": "nico-castell/desktop-file-support"
+  },
+  "diff": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/diff.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "dockerfile": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/docker.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "dotenv": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/dotenv.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/dotenv-org/dotenv-vscode/master/LICENSE",
+    "originalSource": "dotenv-org/dotenv-vscode"
+  },
+  "dream-maker": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/dream-maker.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "originalSource": "gbasood/vscode-atomic-dreams"
   },
   "dune": {
     "repo": "ocamllabs/vscode-ocaml-platform",
@@ -20,6 +464,676 @@
     "license": "ISC",
     "licenseUrl": "https://raw.githubusercontent.com/ocamllabs/vscode-ocaml-platform/master/LICENSE"
   },
+  "edge": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/edge.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/edge-js/edge-vscode/main/LICENSE.md",
+    "originalSource": "edge-js/edge-vscode"
+  },
+  "elixir": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/elixir.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "licenseUrl": "https://raw.githubusercontent.com/elixir-editors/elixir-tmbundle/master/LICENSE",
+    "originalSource": "elixir-editors/elixir-tmbundle"
+  },
+  "elm": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/elm.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/elm-tooling/elm-language-client-vscode/main/LICENSE",
+    "originalSource": "elm-tooling/elm-language-client-vscode"
+  },
+  "emacs-lisp": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/emacs-lisp.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "ISC",
+    "licenseUrl": "https://raw.githubusercontent.com/Alhadis/language-emacs-lisp/master/LICENSE.md",
+    "originalSource": "Alhadis/language-emacs-lisp"
+  },
+  "erb": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/erb.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "originalSource": "textmate/ruby.tmbundle"
+  },
+  "erlang": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/erlang.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://raw.githubusercontent.com/erlang-ls/grammar/main/LICENSE",
+    "originalSource": "erlang-ls/grammar"
+  },
+  "es-tag-css": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/es-tag-css.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION"
+  },
+  "es-tag-glsl": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/es-tag-glsl.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION"
+  },
+  "es-tag-html": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/es-tag-html.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION"
+  },
+  "es-tag-sql": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/es-tag-sql.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION"
+  },
+  "es-tag-xml": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/es-tag-xml.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION"
+  },
+  "fennel": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/fennel.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/kongeor/vsc-fennel/master/LICENSE",
+    "originalSource": "kongeor/vsc-fennel"
+  },
+  "fish": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/fish.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/bmalehorn/vscode-fish/main/LICENSE",
+    "originalSource": "bmalehorn/vscode-fish"
+  },
+  "fluent": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/fluent.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/macabeus/vscode-fluent/master/LICENSE",
+    "originalSource": "macabeus/vscode-fluent"
+  },
+  "fortran-fixed-form": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/fortran-fixed-form.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/fortran-lang/vscode-fortran-support/main/LICENSE",
+    "originalSource": "fortran-lang/vscode-fortran-support"
+  },
+  "fortran-free-form": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/fortran-free-form.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/fortran-lang/vscode-fortran-support/main/LICENSE",
+    "originalSource": "fortran-lang/vscode-fortran-support"
+  },
+  "fsharp": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/fsharp.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "gdresource": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/gdresource.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/godotengine/godot-vscode-plugin/master/LICENSE",
+    "originalSource": "godotengine/godot-vscode-plugin"
+  },
+  "gdscript": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/gdscript.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/godotengine/godot-vscode-plugin/master/LICENSE",
+    "originalSource": "godotengine/godot-vscode-plugin"
+  },
+  "gdshader": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/gdshader.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/godotengine/godot-vscode-plugin/master/LICENSE",
+    "originalSource": "godotengine/godot-vscode-plugin"
+  },
+  "genie": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/genie.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/vala-lang/vala-vscode/master/LICENSE",
+    "originalSource": "vala-lang/vala-vscode"
+  },
+  "gherkin": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/gherkin.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/alexkrechik/VSCucumberAutoComplete/master/LICENSE",
+    "originalSource": "alexkrechik/VSCucumberAutoComplete"
+  },
+  "git-commit": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/git-commit.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "git-rebase": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/git-rebase.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "gleam": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/gleam.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://raw.githubusercontent.com/gleam-lang/vscode-gleam/main/LICENSE.txt",
+    "originalSource": "gleam-lang/vscode-gleam"
+  },
+  "glimmer-js": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/glimmer-js.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/lifeart/vsc-ember-syntax/master/LICENSE",
+    "originalSource": "lifeart/vsc-ember-syntax"
+  },
+  "glimmer-ts": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/glimmer-ts.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/lifeart/vsc-ember-syntax/master/LICENSE",
+    "originalSource": "lifeart/vsc-ember-syntax"
+  },
+  "glsl": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/glsl.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "originalSource": "polym0rph/GLSL.tmbundle"
+  },
+  "gn": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/gn.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://raw.githubusercontent.com/google/gn-language-server/main/LICENSE",
+    "originalSource": "google/gn-language-server"
+  },
+  "gnuplot": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/gnuplot.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "GPL-3.0",
+    "licenseUrl": "https://raw.githubusercontent.com/MarioSchwalbe/vscode-gnuplot/master/LICENSE",
+    "originalSource": "MarioSchwalbe/vscode-gnuplot"
+  },
+  "go": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/go.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "graphql": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/graphql.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/graphql/vscode-graphql/master/LICENSE",
+    "originalSource": "prisma-labs/vscode-graphql"
+  },
+  "groovy": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/groovy.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "hack": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/hack.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/slackhq/vscode-hack/master/LICENSE.md",
+    "originalSource": "slackhq/vscode-hack"
+  },
+  "haml": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/haml.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/karuna/haml-vscode/master/LICENSE.md",
+    "originalSource": "karuna/haml-vscode"
+  },
+  "handlebars": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/handlebars.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "haskell": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/haskell.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "BSD-3-Clause",
+    "licenseUrl": "https://raw.githubusercontent.com/octref/language-haskell/master/LICENSE",
+    "originalSource": "octref/language-haskell"
+  },
+  "haxe": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/haxe.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/vshaxe/haxe-TmLanguage/master/LICENSE.md",
+    "originalSource": "vshaxe/haxe-TmLanguage"
+  },
+  "hcl": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/hcl.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MPL-2.0",
+    "licenseUrl": "https://raw.githubusercontent.com/hashicorp/syntax/main/LICENSE",
+    "originalSource": "hashicorp/syntax"
+  },
+  "hjson": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/hjson.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/hjson/textmate-hjson/master/LICENSE",
+    "originalSource": "hjson/textmate-hjson"
+  },
+  "hlsl": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/hlsl.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "html": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/html.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "html-derivative": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/html-derivative.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "http": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/http.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/Huachao/vscode-restclient/master/LICENSE",
+    "originalSource": "Huachao/vscode-restclient"
+  },
+  "hurl": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/hurl.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "originalSource": "nikeee/language-hurl"
+  },
+  "hxml": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/hxml.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/vshaxe/haxe-TmLanguage/master/LICENSE.md",
+    "originalSource": "vshaxe/haxe-TmLanguage"
+  },
+  "hy": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/hy.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/hylang/vscode-hy/master/LICENSE.md",
+    "originalSource": "hylang/vscode-hy"
+  },
+  "imba": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/imba.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/imba/imba/master/LICENSE",
+    "originalSource": "imba/imba"
+  },
+  "ini": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/ini.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "java": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/java.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "javascript": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/javascript.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "jinja": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/jinja.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/samuelcolvin/jinjahtml-vscode/main/LICENSE",
+    "originalSource": "samuelcolvin/jinjahtml-vscode"
+  },
+  "jinja-html": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/jinja-html.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/samuelcolvin/jinjahtml-vscode/main/LICENSE",
+    "originalSource": "samuelcolvin/jinjahtml-vscode"
+  },
+  "jison": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/jison.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/cdibbs/language-jison/master/LICENSE.md",
+    "originalSource": "cdibbs/language-jison"
+  },
+  "json": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/json.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "json5": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/json5.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/mrmlnc/vscode-json5/master/LICENSE",
+    "originalSource": "mrmlnc/vscode-json5"
+  },
+  "jsonc": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/jsonc.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "jsonl": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/jsonl.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "jsonnet": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/jsonnet.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://raw.githubusercontent.com/heptio/vscode-jsonnet/master/LICENSE",
+    "originalSource": "heptio/vscode-jsonnet"
+  },
+  "jssm": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/jssm.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/StoneCypher/sublime-jssm/master/LICENSE",
+    "originalSource": "StoneCypher/sublime-jssm"
+  },
+  "jsx": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/jsx.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "julia": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/julia.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "just": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/just.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/nefrob/vscode-just/main/LICENSE",
+    "originalSource": "nefrob/vscode-just"
+  },
+  "kdl": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/kdl.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://raw.githubusercontent.com/kdl-org/vscode-kdl/main/LICENSE",
+    "originalSource": "kdl-org/vscode-kdl"
+  },
+  "kotlin": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/kotlin.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/fwcd/vscode-kotlin/main/LICENSE",
+    "originalSource": "fwcd/vscode-kotlin"
+  },
+  "kusto": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/kusto.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "originalSource": "rosshamish/kuskus"
+  },
+  "latex": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/latex.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "lean": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/lean.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://raw.githubusercontent.com/leanprover/vscode-lean4/master/LICENSE",
+    "originalSource": "leanprover/vscode-lean4"
+  },
+  "less": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/less.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "liquid": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/liquid.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/Shopify/liquid-tm-grammar/main/LICENSE.md",
+    "originalSource": "Shopify/liquid-tm-grammar"
+  },
+  "llvm": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/llvm.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "licenseUrl": "https://raw.githubusercontent.com/llvm/llvm-project/main/LICENSE.TXT",
+    "originalSource": "llvm/llvm-project"
+  },
+  "log": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/log.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/emilast/vscode-logfile-highlighter/master/LICENSE",
+    "originalSource": "emilast/vscode-logfile-highlighter"
+  },
+  "logo": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/logo.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "originalSource": "textmate/logo.tmbundle"
+  },
+  "lua": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/lua.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "luau": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/luau.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "licenseUrl": "https://raw.githubusercontent.com/JohnnyMorganz/Luau.tmLanguage/main/LICENSE.md",
+    "originalSource": "JohnnyMorganz/Luau.tmLanguage"
+  },
+  "makefile": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/make.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "markdown": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/markdown.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "markdown-nix": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/markdown-nix.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/nix-community/vscode-nix-ide/main/LICENSE",
+    "originalSource": "nix-community/vscode-nix-ide"
+  },
+  "markdown-vue": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/markdown-vue.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/vuejs/language-tools/master/LICENSE",
+    "originalSource": "vuejs/language-tools"
+  },
+  "marko": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/marko.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/marko-js/language-server/main/LICENSE",
+    "originalSource": "marko-js/language-server"
+  },
+  "matlab": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/matlab.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "originalSource": "mathworks/MATLAB-Language-grammar"
+  },
+  "mdc": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/mdc.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/nuxt-content/vscode-mdc/main/LICENSE",
+    "originalSource": "nuxt-content/vscode-mdc"
+  },
+  "mdx": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/mdx.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/wooorm/markdown-tm-language/main/license",
+    "originalSource": "wooorm/markdown-tm-language"
+  },
+  "menhir": {
+    "repo": "ocamllabs/vscode-ocaml-platform",
+    "path": "syntaxes/menhir.json",
+    "commit": "997c979f5e88bd47a07a9a81e8745a214226c8b1",
+    "license": "ISC",
+    "licenseUrl": "https://raw.githubusercontent.com/ocamllabs/vscode-ocaml-platform/master/LICENSE"
+  },
+  "mermaid": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/mermaid.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/bpruitt-goddard/vscode-mermaid-syntax-highlight/master/LICENSE",
+    "originalSource": "bpruitt-goddard/vscode-mermaid-syntax-highlight"
+  },
+  "mipsasm": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/mipsasm.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "originalSource": "textmate/mips.tmbundle"
+  },
   "mlx": {
     "repo": "ocamllabs/vscode-ocaml-platform",
     "path": "syntaxes/mlx.json",
@@ -27,9 +1141,105 @@
     "license": "ISC",
     "licenseUrl": "https://raw.githubusercontent.com/ocamllabs/vscode-ocaml-platform/master/LICENSE"
   },
-  "opam": {
+  "mojo": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/mojo.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/modular/mojo-syntax/main/LICENSE",
+    "originalSource": "modularml/mojo-syntax"
+  },
+  "moonbit": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/moonbit.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://raw.githubusercontent.com/moonbitlang/moonbit-tmLanguage/main/LICENSE",
+    "originalSource": "moonbitlang/moonbit-tmLanguage"
+  },
+  "move": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/move.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/damirka/move-syntax/main/LICENSE",
+    "originalSource": "damirka/move-syntax"
+  },
+  "narrat": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/narrat.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/liana-p/narrat-syntax-highlighting-vscode/main/LICENSE",
+    "originalSource": "liana-p/narrat-syntax-highlighting-vscode"
+  },
+  "nextflow": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/nextflow.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/nextflow-io/vscode-language-nextflow/main/LICENSE.md",
+    "originalSource": "nextflow-io/vscode-language-nextflow"
+  },
+  "nextflow-groovy": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/nextflow-groovy.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/nextflow-io/vscode-language-nextflow/main/LICENSE.md",
+    "originalSource": "nextflow-io/vscode-language-nextflow"
+  },
+  "nginx": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/nginx.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "GPL-3.0",
+    "licenseUrl": "https://raw.githubusercontent.com/hangxingliu/vscode-nginx-conf-hint/main/LICENSE",
+    "originalSource": "hangxingliu/vscode-nginx-conf-hint"
+  },
+  "nim": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/nim.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "licenseUrl": "https://raw.githubusercontent.com/pragmagic/vscode-nim/master/LICENSE",
+    "originalSource": "pragmagic/vscode-nim"
+  },
+  "nix": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/nix.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/nix-community/vscode-nix-ide/main/LICENSE",
+    "originalSource": "nix-community/vscode-nix-ide"
+  },
+  "nushell": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/nushell.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/nushell/vscode-nushell-lang/main/LICENSE",
+    "originalSource": "nushell/vscode-nushell-lang"
+  },
+  "objective-c": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/objective-c.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "objective-cpp": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/objective-cpp.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "ocaml": {
     "repo": "ocamllabs/vscode-ocaml-platform",
-    "path": "syntaxes/opam.json",
+    "path": "syntaxes/ocaml.json",
     "commit": "997c979f5e88bd47a07a9a81e8745a214226c8b1",
     "license": "ISC",
     "licenseUrl": "https://raw.githubusercontent.com/ocamllabs/vscode-ocaml-platform/master/LICENSE"
@@ -41,158 +1251,278 @@
     "license": "ISC",
     "licenseUrl": "https://raw.githubusercontent.com/ocamllabs/vscode-ocaml-platform/master/LICENSE"
   },
-  "menhir": {
+  "odin": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/odin.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/DanielGavin/ols/master/LICENSE",
+    "originalSource": "DanielGavin/ols"
+  },
+  "opam": {
     "repo": "ocamllabs/vscode-ocaml-platform",
-    "path": "syntaxes/menhir.json",
+    "path": "syntaxes/opam.json",
     "commit": "997c979f5e88bd47a07a9a81e8745a214226c8b1",
     "license": "ISC",
     "licenseUrl": "https://raw.githubusercontent.com/ocamllabs/vscode-ocaml-platform/master/LICENSE"
   },
-  "cram": {
-    "repo": "ocamllabs/vscode-ocaml-platform",
-    "path": "syntaxes/cram.json",
-    "commit": "997c979f5e88bd47a07a9a81e8745a214226c8b1",
-    "license": "ISC",
-    "licenseUrl": "https://raw.githubusercontent.com/ocamllabs/vscode-ocaml-platform/master/LICENSE"
-  },
-  "javascript": {
+  "openscad": {
     "repo": "shikijs/textmate-grammars-themes",
-    "path": "packages/tm-grammars/grammars/javascript.json",
-    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9",
+    "path": "packages/tm-grammars/grammars/openscad.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/tbuser/openscad.tmbundle/master/LICENSE",
+    "originalSource": "tbuser/openscad.tmbundle"
+  },
+  "pascal": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/pascal.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/alefragnani/vscode-language-pascal/master/LICENSE.md",
+    "originalSource": "alefragnani/vscode-language-pascal"
+  },
+  "perl": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/perl.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
     "license": "MIT",
     "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
     "originalSource": "microsoft/vscode"
   },
-  "typescript": {
+  "php": {
     "repo": "shikijs/textmate-grammars-themes",
-    "path": "packages/tm-grammars/grammars/typescript.json",
-    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9",
+    "path": "packages/tm-grammars/grammars/php.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
     "license": "MIT",
     "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
     "originalSource": "microsoft/vscode"
   },
-  "tsx": {
+  "pkl": {
     "repo": "shikijs/textmate-grammars-themes",
-    "path": "packages/tm-grammars/grammars/tsx.json",
-    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9",
+    "path": "packages/tm-grammars/grammars/pkl.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://raw.githubusercontent.com/apple/pkl.tmbundle/main/LICENSE.txt",
+    "originalSource": "apple/pkl.tmbundle"
+  },
+  "plsql": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/plsql.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/zabel-xyz/plsql-language/master/LICENSE",
+    "originalSource": "zabel-xyz/plsql-language"
+  },
+  "po": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/po.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "originalSource": "textmate/gettext.tmbundle"
+  },
+  "polar": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/polar.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://raw.githubusercontent.com/osohq/polar-grammar/main/LICENSE",
+    "originalSource": "osohq/polar-grammar"
+  },
+  "postcss": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/postcss.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/vuejs/vetur/master/LICENSE",
+    "originalSource": "vuejs/vetur"
+  },
+  "powerquery": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/powerquery.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/powerquery-language/master/LICENSE",
+    "originalSource": "microsoft/powerquery-language"
+  },
+  "powershell": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/powershell.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
     "license": "MIT",
     "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
     "originalSource": "microsoft/vscode"
+  },
+  "prisma": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/prisma.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://raw.githubusercontent.com/prisma/language-tools/main/LICENSE",
+    "originalSource": "prisma/language-tools"
+  },
+  "prolog": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/prolog.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/arthwang/vsc-prolog/master/LICENSE.txt",
+    "originalSource": "arthwang/vsc-prolog"
+  },
+  "proto": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/proto.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/zxh0/vscode-proto3/master/LICENSE.txt",
+    "originalSource": "zxh0/vscode-proto3"
+  },
+  "pug": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/pug.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "puppet": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/puppet.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://raw.githubusercontent.com/octref/puppet-vscode/main/LICENSE",
+    "originalSource": "octref/puppet-vscode"
+  },
+  "purescript": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/purescript.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "licenseUrl": "https://raw.githubusercontent.com/nwolverson/vscode-language-purescript/master/LICENSE.md",
+    "originalSource": "nwolverson/vscode-language-purescript"
   },
   "python": {
     "repo": "shikijs/textmate-grammars-themes",
     "path": "packages/tm-grammars/grammars/python.json",
-    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
     "license": "MIT",
     "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
     "originalSource": "microsoft/vscode"
   },
-  "rust": {
+  "qml": {
     "repo": "shikijs/textmate-grammars-themes",
-    "path": "packages/tm-grammars/grammars/rust.json",
-    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9",
+    "path": "packages/tm-grammars/grammars/qml.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/seanwu1105/vscode-qt-for-python/master/LICENSE",
+    "originalSource": "seanwu1105/vscode-qt-for-python"
+  },
+  "qmldir": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/qmldir.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/seanwu1105/vscode-qt-for-python/master/LICENSE",
+    "originalSource": "seanwu1105/vscode-qt-for-python"
+  },
+  "qss": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/qss.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/seanwu1105/vscode-qt-for-python/master/LICENSE",
+    "originalSource": "seanwu1105/vscode-qt-for-python"
+  },
+  "r": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/r.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/posit-dev/positron/refs/heads/main/extensions/positron-r/syntaxes/LICENSE.md",
+    "originalSource": "posit-dev/positron"
+  },
+  "racket": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/racket.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "GPL-3.0",
+    "licenseUrl": "https://raw.githubusercontent.com/Eugleo/magic-racket/master/LICENSE",
+    "originalSource": "Eugleo/magic-racket"
+  },
+  "raku": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/raku.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
     "license": "MIT",
     "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
     "originalSource": "microsoft/vscode"
   },
-  "go": {
+  "razor": {
     "repo": "shikijs/textmate-grammars-themes",
-    "path": "packages/tm-grammars/grammars/go.json",
-    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9",
+    "path": "packages/tm-grammars/grammars/razor.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
     "license": "MIT",
-    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
-    "originalSource": "microsoft/vscode"
+    "licenseUrl": "https://raw.githubusercontent.com/dotnet/razor/main/LICENSE.txt",
+    "originalSource": "dotnet/razor"
   },
-  "c": {
+  "reason": {
+    "repo": "ocamllabs/vscode-ocaml-platform",
+    "path": "syntaxes/reason.json",
+    "commit": "997c979f5e88bd47a07a9a81e8745a214226c8b1",
+    "license": "ISC",
+    "licenseUrl": "https://raw.githubusercontent.com/ocamllabs/vscode-ocaml-platform/master/LICENSE"
+  },
+  "reg": {
     "repo": "shikijs/textmate-grammars-themes",
-    "path": "packages/tm-grammars/grammars/c.json",
-    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9",
+    "path": "packages/tm-grammars/grammars/reg.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
     "license": "MIT",
-    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
-    "originalSource": "microsoft/vscode"
+    "licenseUrl": "https://raw.githubusercontent.com/mihai-vlc/reg-vscode/master/LICENSE",
+    "originalSource": "mihai-vlc/reg-vscode"
   },
-  "cpp": {
+  "regexp": {
     "repo": "shikijs/textmate-grammars-themes",
-    "path": "packages/tm-grammars/grammars/cpp.json",
-    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9",
+    "path": "packages/tm-grammars/grammars/regexp.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
     "license": "MIT",
-    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
-    "originalSource": "microsoft/vscode"
+    "licenseUrl": "https://raw.githubusercontent.com/MagicStack/MagicPython/master/LICENSE",
+    "originalSource": "MagicStack/MagicPython"
   },
-  "java": {
+  "rel": {
     "repo": "shikijs/textmate-grammars-themes",
-    "path": "packages/tm-grammars/grammars/java.json",
-    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9",
-    "license": "MIT",
-    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
-    "originalSource": "microsoft/vscode"
-  },
-  "html": {
-    "repo": "shikijs/textmate-grammars-themes",
-    "path": "packages/tm-grammars/grammars/html.json",
-    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9",
-    "license": "MIT",
-    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
-    "originalSource": "microsoft/vscode"
-  },
-  "css": {
-    "repo": "shikijs/textmate-grammars-themes",
-    "path": "packages/tm-grammars/grammars/css.json",
-    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9",
-    "license": "MIT",
-    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
-    "originalSource": "microsoft/vscode"
-  },
-  "json": {
-    "repo": "shikijs/textmate-grammars-themes",
-    "path": "packages/tm-grammars/grammars/json.json",
-    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9",
-    "license": "MIT",
-    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
-    "originalSource": "microsoft/vscode"
-  },
-  "jsonc": {
-    "repo": "shikijs/textmate-grammars-themes",
-    "path": "packages/tm-grammars/grammars/jsonc.json",
-    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9",
-    "license": "MIT",
-    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
-    "originalSource": "microsoft/vscode"
-  },
-  "yaml": {
-    "repo": "shikijs/textmate-grammars-themes",
-    "path": "packages/tm-grammars/grammars/yaml.json",
-    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9",
+    "path": "packages/tm-grammars/grammars/rel.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
     "license": "NOASSERTION",
-    "originalSource": "textmate/yaml.tmbundle"
+    "originalSource": "relationalai-oss/rel_vscode"
   },
-  "toml": {
+  "riscv": {
     "repo": "shikijs/textmate-grammars-themes",
-    "path": "packages/tm-grammars/grammars/toml.json",
-    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9",
-    "license": "NOASSERTION",
-    "originalSource": "textmate/toml.tmbundle"
-  },
-  "markdown": {
-    "repo": "shikijs/textmate-grammars-themes",
-    "path": "packages/tm-grammars/grammars/markdown.json",
-    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9",
+    "path": "packages/tm-grammars/grammars/riscv.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
     "license": "MIT",
-    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
-    "originalSource": "microsoft/vscode"
+    "licenseUrl": "https://raw.githubusercontent.com/zhuanhao-wu/vscode-riscv-support/master/LICENSE",
+    "originalSource": "zhuanhao-wu/vscode-riscv-support"
   },
-  "sql": {
+  "ron": {
     "repo": "shikijs/textmate-grammars-themes",
-    "path": "packages/tm-grammars/grammars/sql.json",
-    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9",
+    "path": "packages/tm-grammars/grammars/ron.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
     "license": "MIT",
-    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
-    "originalSource": "microsoft/vscode"
+    "licenseUrl": "https://raw.githubusercontent.com/a5huynh/vscode-ron/master/LICENSE.md",
+    "originalSource": "a5huynh/vscode-ron"
   },
-  "shellscript": {
+  "rosmsg": {
     "repo": "shikijs/textmate-grammars-themes",
-    "path": "packages/tm-grammars/grammars/shellscript.json",
-    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9",
+    "path": "packages/tm-grammars/grammars/rosmsg.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/jtbandes/ros-tmlanguage/main/LICENSE.md",
+    "originalSource": "jtbandes/ros-tmlanguage"
+  },
+  "rst": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/rst.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
     "license": "MIT",
     "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
     "originalSource": "microsoft/vscode"
@@ -200,41 +1530,505 @@
   "ruby": {
     "repo": "shikijs/textmate-grammars-themes",
     "path": "packages/tm-grammars/grammars/ruby.json",
-    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
     "license": "MIT",
     "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
     "originalSource": "microsoft/vscode"
   },
-  "dockerfile": {
+  "rust": {
     "repo": "shikijs/textmate-grammars-themes",
-    "path": "packages/tm-grammars/grammars/docker.json",
-    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9",
+    "path": "packages/tm-grammars/grammars/rust.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
     "license": "MIT",
     "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
     "originalSource": "microsoft/vscode"
   },
-  "makefile": {
+  "sas": {
     "repo": "shikijs/textmate-grammars-themes",
-    "path": "packages/tm-grammars/grammars/make.json",
-    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9",
+    "path": "packages/tm-grammars/grammars/sas.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/rpardee/sas/master/LICENSE",
+    "originalSource": "rpardee/sas"
+  },
+  "sass": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/sass.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "licenseUrl": "https://raw.githubusercontent.com/TheRealSyler/vscode-sass-indented/master/LICENSE",
+    "originalSource": "TheRealSyler/vscode-sass-indented"
+  },
+  "scala": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/scala.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/scala/vscode-scala-syntax/main/LICENSE.md",
+    "originalSource": "scala/vscode-scala-syntax"
+  },
+  "scheme": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/scheme.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/tinyjiahao/vscode-scheme/master/LICENSE.md",
+    "originalSource": "sjhuangx/vscode-scheme"
+  },
+  "scss": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/scss.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
     "license": "MIT",
     "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
     "originalSource": "microsoft/vscode"
   },
-  "diff": {
+  "sdbl": {
     "repo": "shikijs/textmate-grammars-themes",
-    "path": "packages/tm-grammars/grammars/diff.json",
-    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9",
+    "path": "packages/tm-grammars/grammars/sdbl.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/1c-syntax/vsc-language-1c-bsl/refs/heads/master/LICENSE.md",
+    "originalSource": "1c-syntax/vsc-language-1c-bsl"
+  },
+  "shaderlab": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/shaderlab.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
     "license": "MIT",
     "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
     "originalSource": "microsoft/vscode"
   },
-  "graphql": {
+  "shellscript": {
     "repo": "shikijs/textmate-grammars-themes",
-    "path": "packages/tm-grammars/grammars/graphql.json",
-    "commit": "912c7ab42bf4dd4a0f827cf0f3c46e053ba757e9",
+    "path": "packages/tm-grammars/grammars/shellscript.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
     "license": "MIT",
-    "licenseUrl": "https://raw.githubusercontent.com/graphql/vscode-graphql/master/LICENSE",
-    "originalSource": "prisma-labs/vscode-graphql"
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "shellsession": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/shellsession.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/hronro/sublime-linguist-syntax/master/LICENSE",
+    "originalSource": "hronro/sublime-linguist-syntax"
+  },
+  "smalltalk": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/smalltalk.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/leocamello/vscode-smalltalk/master/LICENSE",
+    "originalSource": "leocamello/vscode-smalltalk"
+  },
+  "solidity": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/solidity.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/juanfranblanco/vscode-solidity/master/License.txt",
+    "originalSource": "juanfranblanco/vscode-solidity"
+  },
+  "soy": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/soy.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/mthadley/language-closure-templates/master/LICENSE",
+    "originalSource": "mthadley/language-closure-templates"
+  },
+  "sparql": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/sparql.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "originalSource": "stardog-union/stardog-vsc"
+  },
+  "splunk": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/splunk.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/arcsector/vscode-splunk-search-syntax/master/LICENSE.txt",
+    "originalSource": "arcsector/vscode-splunk-search-syntax"
+  },
+  "sql": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/sql.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "ssh-config": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/ssh-config.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "originalSource": "textmate/ssh-config.tmbundle"
+  },
+  "stata": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/stata.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/kylebarron/language-stata/master/LICENSE",
+    "originalSource": "kylebarron/language-stata"
+  },
+  "stylus": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/stylus.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/d4rkr00t/language-stylus/master/LICENSE",
+    "originalSource": "d4rkr00t/language-stylus"
+  },
+  "surrealql": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/surrealql.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://raw.githubusercontent.com/surrealdb/surrealql-grammar/main/LICENSE",
+    "originalSource": "surrealdb/surrealql-grammar"
+  },
+  "svelte": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/svelte.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/sveltejs/language-tools/master/LICENSE",
+    "originalSource": "sveltejs/language-tools"
+  },
+  "swift": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/swift.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/jtbandes/swift-tmlanguage/main/LICENSE.md",
+    "originalSource": "jtbandes/swift-tmlanguage"
+  },
+  "system-verilog": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/system-verilog.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/mshr-h/vscode-verilog-hdl-support/main/LICENSE",
+    "originalSource": "mshr-h/vscode-verilog-hdl-support"
+  },
+  "systemd": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/systemd.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/hangxingliu/vscode-systemd/main/LICENSE",
+    "originalSource": "hangxingliu/vscode-systemd"
+  },
+  "talonscript": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/talonscript.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/mirober/vscode-TalonScript/master/LICENSE",
+    "originalSource": "mrob95/vscode-TalonScript"
+  },
+  "tasl": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/tasl.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/underlay/vscode-tasl/main/LICENSE",
+    "originalSource": "underlay/vscode-tasl"
+  },
+  "tcl": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/tcl.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "originalSource": "sleutho/tcl"
+  },
+  "templ": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/templ.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/templ-go/templ-vscode/main/LICENSE",
+    "originalSource": "templ-go/templ-vscode"
+  },
+  "terraform": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/terraform.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MPL-2.0",
+    "licenseUrl": "https://raw.githubusercontent.com/hashicorp/syntax/main/LICENSE",
+    "originalSource": "hashicorp/syntax"
+  },
+  "tex": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/tex.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "toml": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/toml.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "originalSource": "textmate/toml.tmbundle"
+  },
+  "ts-tags": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/ts-tags.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION"
+  },
+  "tsv": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/tsv.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/mechatroner/vscode_rainbow_csv/master/LICENSE",
+    "originalSource": "mechatroner/vscode_rainbow_csv"
+  },
+  "tsx": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/tsx.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "turtle": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/turtle.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "originalSource": "stardog-union/stardog-vsc"
+  },
+  "twig": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/twig.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/mblode/vscode-twig-language-2/master/LICENSE.md",
+    "originalSource": "mblode/vscode-twig-language-2"
+  },
+  "typescript": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/typescript.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "typespec": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/typespec.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/typespec/main/LICENSE",
+    "originalSource": "microsoft/typespec"
+  },
+  "typst": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/typst.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/nvarner/typst-lsp/master/LICENSE-MIT.txt",
+    "originalSource": "nvarner/typst-lsp"
+  },
+  "v": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/v.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/vlang/vscode-vlang/master/LICENSE",
+    "originalSource": "vlang/vscode-vlang"
+  },
+  "vala": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/vala.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/vala-lang/vala-vscode/master/LICENSE",
+    "originalSource": "vala-lang/vala-vscode"
+  },
+  "vb": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/vb.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "verilog": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/verilog.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/mshr-h/vscode-verilog-hdl-support/main/LICENSE",
+    "originalSource": "mshr-h/vscode-verilog-hdl-support"
+  },
+  "vhdl": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/vhdl.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/jonasjj/awesome-vhdl/master/LICENSE.txt",
+    "originalSource": "jonasjj/awesome-vhdl"
+  },
+  "viml": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/viml.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/dunstontc/viml/master/LICENSE",
+    "originalSource": "dunstontc/viml"
+  },
+  "vue": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/vue.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/vuejs/language-tools/master/LICENSE",
+    "originalSource": "vuejs/language-tools"
+  },
+  "vue-directives": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/vue-directives.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/vuejs/language-tools/master/LICENSE",
+    "originalSource": "vuejs/language-tools"
+  },
+  "vue-html": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/vue-html.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/vuejs/vetur/master/LICENSE",
+    "originalSource": "vuejs/vetur"
+  },
+  "vue-interpolations": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/vue-interpolations.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/vuejs/language-tools/master/LICENSE",
+    "originalSource": "vuejs/language-tools"
+  },
+  "vue-sfc-style-variable-injection": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/vue-sfc-style-variable-injection.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/vuejs/language-tools/master/LICENSE",
+    "originalSource": "vuejs/language-tools"
+  },
+  "vue-vine": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/vue-vine.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/vue-vine/assets/main/LICENSE",
+    "originalSource": "vue-vine/assets"
+  },
+  "vyper": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/vyper.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/tintinweb/vscode-vyper/master/LICENSE",
+    "originalSource": "tintinweb/vscode-vyper"
+  },
+  "wasm": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/wasm.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/wasmerio/vscode-wasm/master/LICENSE",
+    "originalSource": "wasmerio/vscode-wasm"
+  },
+  "wenyan": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/wenyan.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/wenyan-lang/highlight/master/LICENSE",
+    "originalSource": "wenyan-lang/highlight"
+  },
+  "wgsl": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/wgsl.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/PolyMeilex/vscode-wgsl/master/LICENSE",
+    "originalSource": "PolyMeilex/vscode-wgsl"
+  },
+  "wikitext": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/wikitext.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/Frederisk/Wikitext-VSCode-Extension/master/LICENSE.txt",
+    "originalSource": "Frederisk/Wikitext-VSCode-Extension"
+  },
+  "wit": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/wit.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/wasmerio/vscode-wasm/master/LICENSE",
+    "originalSource": "wasmerio/vscode-wasm"
+  },
+  "wolfram": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/wolfram.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "licenseUrl": "https://raw.githubusercontent.com/WolframResearch/vscode-wolfram/master/LICENSE",
+    "originalSource": "WolframResearch/vscode-wolfram"
+  },
+  "xml": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/xml.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "xsl": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/xsl.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "yaml": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/yaml.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "NOASSERTION",
+    "originalSource": "textmate/yaml.tmbundle"
+  },
+  "zenscript": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/zenscript.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/CraftTweaker/ZenScript-tmLanguage/master/LICENSE",
+    "originalSource": "CraftTweaker/ZenScript-tmLanguage"
+  },
+  "zig": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-grammars/grammars/zig.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/ziglang/vscode-zig/master/LICENSE",
+    "originalSource": "ziglang/vscode-zig"
   }
 }

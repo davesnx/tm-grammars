@@ -1,130 +1,284 @@
 Third-Party Licenses
 ====================
 
-This project vendors TextMate grammar files from external sources. Each
-grammar retains its original license. The canonical source and license for
-each grammar is tracked in sources.json.
+This project vendors TextMate grammar files from external sources.
+The source and license metadata below is generated from `sources.json`.
+`license` uses SPDX identifiers when known. `NOASSERTION` means no explicit
+license assertion was available from upstream metadata.
 
-------------------------------------------------------------------------
+For the full license terms of each grammar, follow the listed license URL.
 
-Grammar: ocaml, reason, dune, mlx, opam, ocamllex, menhir, cram
-Source:  https://github.com/ocamllabs/vscode-ocaml-platform
-Commit:  997c979f5e88bd47a07a9a81e8745a214226c8b1
-License: ISC
+Intermediary Distribution
+------------------------
 
-  Copyright (c) 2019 OCaml Labs
+Repository:  https://github.com/shikijs/textmate-grammars-themes
+Package:     packages/tm-grammars
+License:     MIT
+License URL: https://raw.githubusercontent.com/shikijs/textmate-grammars-themes/main/LICENSE
 
-  Permission to use, copy, modify, and/or distribute this software for any
-  purpose with or without fee is hereby granted, provided that the above
-  copyright notice and this permission notice appear in all copies.
+Per-Grammar Metadata
+--------------------
 
-  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
-  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
-  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
-  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
-  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
-  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
-  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+Format:
+grammar-id | original-source | license | license-url
 
-------------------------------------------------------------------------
-
-Grammar: javascript, typescript, tsx, python, rust, go, c, cpp, java,
-         html, css, json, jsonc, markdown, sql, shellscript, ruby,
-         dockerfile, makefile, diff
-Source:  https://github.com/microsoft/vscode
-         (vendored via https://github.com/shikijs/textmate-grammars-themes)
-License: MIT
-
-  MIT License
-
-  Copyright (c) 2015 - present Microsoft Corporation
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to deal
-  in the Software without restriction, including without limitation the rights
-  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-  copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in all
-  copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-  SOFTWARE.
-
-------------------------------------------------------------------------
-
-Grammar: graphql
-Source:  https://github.com/prisma-labs/vscode-graphql
-         (vendored via https://github.com/shikijs/textmate-grammars-themes)
-License: MIT
-
-  MIT License
-
-  Copyright (c) GraphQL Contributors
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to deal
-  in the Software without restriction, including without limitation the rights
-  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-  copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in all
-  copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-  SOFTWARE.
-
-------------------------------------------------------------------------
-
-Grammar: yaml
-Source:  https://github.com/textmate/yaml.tmbundle
-         (vendored via https://github.com/shikijs/textmate-grammars-themes)
-License: No explicit license found in the source repository.
-
-------------------------------------------------------------------------
-
-Grammar: toml
-Source:  https://github.com/textmate/toml.tmbundle
-         (vendored via https://github.com/shikijs/textmate-grammars-themes)
-License: No explicit license found in the source repository.
-
-------------------------------------------------------------------------
-
-Intermediary: shikijs/textmate-grammars-themes
-Source:  https://github.com/shikijs/textmate-grammars-themes
-License: MIT
-
-  MIT License
-
-  Copyright (c) 2021 Pine Wu
-  Copyright (c) 2023 Anthony Fu <https://github.com/antfu>
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to deal
-  in the Software without restriction, including without limitation the rights
-  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-  copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in all
-  copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-  SOFTWARE.
+abap | pvl/abap.tmbundle | NOASSERTION | n/a
+actionscript-3 | BowlerHatLLC/vscode-as3mxml | Apache-2.0 | https://raw.githubusercontent.com/BowlerHatLLC/vscode-as3mxml/main/LICENSE
+ada | AdaCore/ada_language_server | GPL-3.0 | https://raw.githubusercontent.com/AdaCore/ada_language_server/master/LICENSE
+angular-expression | shikijs/textmate-grammars-themes | MIT | n/a
+angular-html | onivim/vscode-exthost | MIT | https://raw.githubusercontent.com/onivim/vscode-exthost/master/LICENSE.txt
+angular-inline-style | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+angular-inline-template | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+angular-let-declaration | shikijs/textmate-grammars-themes | MIT | n/a
+angular-template | shikijs/textmate-grammars-themes | MIT | n/a
+angular-template-blocks | shikijs/textmate-grammars-themes | MIT | n/a
+angular-ts | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+apache | colinta/ApacheConf.tmLanguage | NOASSERTION | https://raw.githubusercontent.com/colinta/ApacheConf.tmLanguage/main/LICENSE
+apex | forcedotcom/apex-tmLanguage | NOASSERTION | https://raw.githubusercontent.com/forcedotcom/apex-tmLanguage/main/LICENSE
+apl | kimmolinna/vscode-apl-language | NOASSERTION | n/a
+applescript | textmate/applescript.tmbundle | NOASSERTION | n/a
+ara | ara-lang/highlighting | Apache-2.0 | https://raw.githubusercontent.com/ara-lang/highlighting/main/LICENSE-APACHE
+asciidoc | asciidoctor/asciidoctor-vscode | NOASSERTION | https://raw.githubusercontent.com/asciidoctor/asciidoctor-vscode/master/LICENSE
+asm | 13xforever/x86_64-assembly-vscode | MIT | https://raw.githubusercontent.com/13xforever/x86_64-assembly-vscode/master/LICENSE.txt
+astro | withastro/language-tools | MIT | https://raw.githubusercontent.com/withastro/language-tools/main/LICENSE
+awk | luggage66/vscode-awk | MIT | https://raw.githubusercontent.com/luggage66/vscode-awk/master/LICENSE.txt
+ballerina | ballerina-platform/ballerina-grammar | Apache-2.0 | https://raw.githubusercontent.com/ballerina-platform/ballerina-grammar/master/LICENSE
+bat | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+beancount | Lencerf/vscode-beancount | MIT | https://raw.githubusercontent.com/Lencerf/vscode-beancount/master/LICENSE
+berry | berry-lang/berry | MIT | https://raw.githubusercontent.com/berry-lang/berry/master/LICENSE
+bibtex | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+bicep | Azure/bicep | MIT | https://raw.githubusercontent.com/Azure/bicep/main/LICENSE
+bird2 | bird-chinese-community/BIRD-tm-language-grammar | MPL-2.0 | https://raw.githubusercontent.com/bird-chinese-community/BIRD-tm-language-grammar/main/LICENSE
+blade | laravel/vs-code-extension | MIT | https://raw.githubusercontent.com/laravel/vs-code-extension/main/LICENSE.md
+bsl | 1c-syntax/vsc-language-1c-bsl | MIT | https://raw.githubusercontent.com/1c-syntax/vsc-language-1c-bsl/refs/heads/master/LICENSE.md
+c | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+c3 | c3lang/vscode-c3 | MIT | https://raw.githubusercontent.com/c3lang/vscode-c3/main/LICENSE
+cadence | onflow/vscode-cadence | Apache-2.0 | https://raw.githubusercontent.com/onflow/vscode-cadence/master/LICENSE
+cairo | starkware-libs/cairo-lang | Apache-2.0 | https://raw.githubusercontent.com/starkware-libs/cairo-lang/master/LICENSE.txt
+clarity | hirosystems/clarity.tmbundle | MIT | https://raw.githubusercontent.com/stx-labs/clarity.tmbundle/main/LICENSE
+clojure | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+cmake | twxs/vs.language.cmake | MIT | https://raw.githubusercontent.com/twxs/vs.language.cmake/master/LICENSE
+cobol | spgennard/vscode_cobol | MIT | https://raw.githubusercontent.com/spgennard/vscode_cobol/main/LICENSE
+codeowners | jasonnutter/vscode-codeowners | MIT | https://raw.githubusercontent.com/jasonnutter/vscode-codeowners/master/LICENSE.txt
+codeql | github/vscode-codeql | MIT | https://raw.githubusercontent.com/github/vscode-codeql/main/LICENSE.md
+coffee | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+common-lisp | qingpeng9802/vscode-common-lisp | MIT | https://raw.githubusercontent.com/qingpeng9802/vscode-common-lisp/master/LICENSE
+coq | coq-community/vscoq | MIT | https://raw.githubusercontent.com/rocq-prover/vsrocq/main/LICENSE
+cpp | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+cpp-macro | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+cram | ocamllabs/vscode-ocaml-platform | ISC | https://raw.githubusercontent.com/ocamllabs/vscode-ocaml-platform/master/LICENSE
+crystal | crystal-lang-tools/vscode-crystal-lang | MIT | https://raw.githubusercontent.com/crystal-lang-tools/vscode-crystal-lang/master/LICENSE
+csharp | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+css | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+csv | mechatroner/vscode_rainbow_csv | MIT | https://raw.githubusercontent.com/mechatroner/vscode_rainbow_csv/master/LICENSE
+cue | cue-lang/vscode-cue | NOASSERTION | https://raw.githubusercontent.com/cue-lang/vscode-cue/master/LICENSE
+cypher | adam-cowley/neo4j-vscode | MIT | https://raw.githubusercontent.com/adam-cowley/neo4j-vscode/main/LICENSE
+d | Pure-D/code-d | MIT | https://raw.githubusercontent.com/Pure-D/code-d/master/LICENSE.md
+dart | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+dax | huyza/dax-language | NOASSERTION | n/a
+desktop | nico-castell/desktop-file-support | MIT | https://raw.githubusercontent.com/nico-castell/desktop-file-support/main/LICENSE
+diff | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+dockerfile | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+dotenv | dotenv-org/dotenv-vscode | MIT | https://raw.githubusercontent.com/dotenv-org/dotenv-vscode/master/LICENSE
+dream-maker | gbasood/vscode-atomic-dreams | NOASSERTION | n/a
+dune | ocamllabs/vscode-ocaml-platform | ISC | https://raw.githubusercontent.com/ocamllabs/vscode-ocaml-platform/master/LICENSE
+edge | edge-js/edge-vscode | MIT | https://raw.githubusercontent.com/edge-js/edge-vscode/main/LICENSE.md
+elixir | elixir-editors/elixir-tmbundle | NOASSERTION | https://raw.githubusercontent.com/elixir-editors/elixir-tmbundle/master/LICENSE
+elm | elm-tooling/elm-language-client-vscode | MIT | https://raw.githubusercontent.com/elm-tooling/elm-language-client-vscode/main/LICENSE
+emacs-lisp | Alhadis/language-emacs-lisp | ISC | https://raw.githubusercontent.com/Alhadis/language-emacs-lisp/master/LICENSE.md
+erb | textmate/ruby.tmbundle | NOASSERTION | n/a
+erlang | erlang-ls/grammar | Apache-2.0 | https://raw.githubusercontent.com/erlang-ls/grammar/main/LICENSE
+es-tag-css | shikijs/textmate-grammars-themes | NOASSERTION | n/a
+es-tag-glsl | shikijs/textmate-grammars-themes | NOASSERTION | n/a
+es-tag-html | shikijs/textmate-grammars-themes | NOASSERTION | n/a
+es-tag-sql | shikijs/textmate-grammars-themes | NOASSERTION | n/a
+es-tag-xml | shikijs/textmate-grammars-themes | NOASSERTION | n/a
+fennel | kongeor/vsc-fennel | MIT | https://raw.githubusercontent.com/kongeor/vsc-fennel/master/LICENSE
+fish | bmalehorn/vscode-fish | MIT | https://raw.githubusercontent.com/bmalehorn/vscode-fish/main/LICENSE
+fluent | macabeus/vscode-fluent | MIT | https://raw.githubusercontent.com/macabeus/vscode-fluent/master/LICENSE
+fortran-fixed-form | fortran-lang/vscode-fortran-support | MIT | https://raw.githubusercontent.com/fortran-lang/vscode-fortran-support/main/LICENSE
+fortran-free-form | fortran-lang/vscode-fortran-support | MIT | https://raw.githubusercontent.com/fortran-lang/vscode-fortran-support/main/LICENSE
+fsharp | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+gdresource | godotengine/godot-vscode-plugin | MIT | https://raw.githubusercontent.com/godotengine/godot-vscode-plugin/master/LICENSE
+gdscript | godotengine/godot-vscode-plugin | MIT | https://raw.githubusercontent.com/godotengine/godot-vscode-plugin/master/LICENSE
+gdshader | godotengine/godot-vscode-plugin | MIT | https://raw.githubusercontent.com/godotengine/godot-vscode-plugin/master/LICENSE
+genie | vala-lang/vala-vscode | MIT | https://raw.githubusercontent.com/vala-lang/vala-vscode/master/LICENSE
+gherkin | alexkrechik/VSCucumberAutoComplete | MIT | https://raw.githubusercontent.com/alexkrechik/VSCucumberAutoComplete/master/LICENSE
+git-commit | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+git-rebase | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+gleam | gleam-lang/vscode-gleam | Apache-2.0 | https://raw.githubusercontent.com/gleam-lang/vscode-gleam/main/LICENSE.txt
+glimmer-js | lifeart/vsc-ember-syntax | MIT | https://raw.githubusercontent.com/lifeart/vsc-ember-syntax/master/LICENSE
+glimmer-ts | lifeart/vsc-ember-syntax | MIT | https://raw.githubusercontent.com/lifeart/vsc-ember-syntax/master/LICENSE
+glsl | polym0rph/GLSL.tmbundle | NOASSERTION | n/a
+gn | google/gn-language-server | Apache-2.0 | https://raw.githubusercontent.com/google/gn-language-server/main/LICENSE
+gnuplot | MarioSchwalbe/vscode-gnuplot | GPL-3.0 | https://raw.githubusercontent.com/MarioSchwalbe/vscode-gnuplot/master/LICENSE
+go | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+graphql | prisma-labs/vscode-graphql | MIT | https://raw.githubusercontent.com/graphql/vscode-graphql/master/LICENSE
+groovy | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+hack | slackhq/vscode-hack | MIT | https://raw.githubusercontent.com/slackhq/vscode-hack/master/LICENSE.md
+haml | karuna/haml-vscode | MIT | https://raw.githubusercontent.com/karuna/haml-vscode/master/LICENSE.md
+handlebars | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+haskell | octref/language-haskell | BSD-3-Clause | https://raw.githubusercontent.com/octref/language-haskell/master/LICENSE
+haxe | vshaxe/haxe-TmLanguage | MIT | https://raw.githubusercontent.com/vshaxe/haxe-TmLanguage/master/LICENSE.md
+hcl | hashicorp/syntax | MPL-2.0 | https://raw.githubusercontent.com/hashicorp/syntax/main/LICENSE
+hjson | hjson/textmate-hjson | MIT | https://raw.githubusercontent.com/hjson/textmate-hjson/master/LICENSE
+hlsl | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+html | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+html-derivative | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+http | Huachao/vscode-restclient | MIT | https://raw.githubusercontent.com/Huachao/vscode-restclient/master/LICENSE
+hurl | nikeee/language-hurl | NOASSERTION | n/a
+hxml | vshaxe/haxe-TmLanguage | MIT | https://raw.githubusercontent.com/vshaxe/haxe-TmLanguage/master/LICENSE.md
+hy | hylang/vscode-hy | MIT | https://raw.githubusercontent.com/hylang/vscode-hy/master/LICENSE.md
+imba | imba/imba | MIT | https://raw.githubusercontent.com/imba/imba/master/LICENSE
+ini | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+java | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+javascript | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+jinja | samuelcolvin/jinjahtml-vscode | MIT | https://raw.githubusercontent.com/samuelcolvin/jinjahtml-vscode/main/LICENSE
+jinja-html | samuelcolvin/jinjahtml-vscode | MIT | https://raw.githubusercontent.com/samuelcolvin/jinjahtml-vscode/main/LICENSE
+jison | cdibbs/language-jison | MIT | https://raw.githubusercontent.com/cdibbs/language-jison/master/LICENSE.md
+json | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+json5 | mrmlnc/vscode-json5 | MIT | https://raw.githubusercontent.com/mrmlnc/vscode-json5/master/LICENSE
+jsonc | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+jsonl | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+jsonnet | heptio/vscode-jsonnet | Apache-2.0 | https://raw.githubusercontent.com/heptio/vscode-jsonnet/master/LICENSE
+jssm | StoneCypher/sublime-jssm | MIT | https://raw.githubusercontent.com/StoneCypher/sublime-jssm/master/LICENSE
+jsx | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+julia | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+just | nefrob/vscode-just | MIT | https://raw.githubusercontent.com/nefrob/vscode-just/main/LICENSE
+kdl | kdl-org/vscode-kdl | Apache-2.0 | https://raw.githubusercontent.com/kdl-org/vscode-kdl/main/LICENSE
+kotlin | fwcd/vscode-kotlin | MIT | https://raw.githubusercontent.com/fwcd/vscode-kotlin/main/LICENSE
+kusto | rosshamish/kuskus | NOASSERTION | n/a
+latex | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+lean | leanprover/vscode-lean4 | Apache-2.0 | https://raw.githubusercontent.com/leanprover/vscode-lean4/master/LICENSE
+less | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+liquid | Shopify/liquid-tm-grammar | MIT | https://raw.githubusercontent.com/Shopify/liquid-tm-grammar/main/LICENSE.md
+llvm | llvm/llvm-project | NOASSERTION | https://raw.githubusercontent.com/llvm/llvm-project/main/LICENSE.TXT
+log | emilast/vscode-logfile-highlighter | MIT | https://raw.githubusercontent.com/emilast/vscode-logfile-highlighter/master/LICENSE
+logo | textmate/logo.tmbundle | NOASSERTION | n/a
+lua | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+luau | JohnnyMorganz/Luau.tmLanguage | NOASSERTION | https://raw.githubusercontent.com/JohnnyMorganz/Luau.tmLanguage/main/LICENSE.md
+makefile | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+markdown | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+markdown-nix | nix-community/vscode-nix-ide | MIT | https://raw.githubusercontent.com/nix-community/vscode-nix-ide/main/LICENSE
+markdown-vue | vuejs/language-tools | MIT | https://raw.githubusercontent.com/vuejs/language-tools/master/LICENSE
+marko | marko-js/language-server | MIT | https://raw.githubusercontent.com/marko-js/language-server/main/LICENSE
+matlab | mathworks/MATLAB-Language-grammar | NOASSERTION | n/a
+mdc | nuxt-content/vscode-mdc | MIT | https://raw.githubusercontent.com/nuxt-content/vscode-mdc/main/LICENSE
+mdx | wooorm/markdown-tm-language | MIT | https://raw.githubusercontent.com/wooorm/markdown-tm-language/main/license
+menhir | ocamllabs/vscode-ocaml-platform | ISC | https://raw.githubusercontent.com/ocamllabs/vscode-ocaml-platform/master/LICENSE
+mermaid | bpruitt-goddard/vscode-mermaid-syntax-highlight | MIT | https://raw.githubusercontent.com/bpruitt-goddard/vscode-mermaid-syntax-highlight/master/LICENSE
+mipsasm | textmate/mips.tmbundle | NOASSERTION | n/a
+mlx | ocamllabs/vscode-ocaml-platform | ISC | https://raw.githubusercontent.com/ocamllabs/vscode-ocaml-platform/master/LICENSE
+mojo | modularml/mojo-syntax | MIT | https://raw.githubusercontent.com/modular/mojo-syntax/main/LICENSE
+moonbit | moonbitlang/moonbit-tmLanguage | Apache-2.0 | https://raw.githubusercontent.com/moonbitlang/moonbit-tmLanguage/main/LICENSE
+move | damirka/move-syntax | MIT | https://raw.githubusercontent.com/damirka/move-syntax/main/LICENSE
+narrat | liana-p/narrat-syntax-highlighting-vscode | MIT | https://raw.githubusercontent.com/liana-p/narrat-syntax-highlighting-vscode/main/LICENSE
+nextflow | nextflow-io/vscode-language-nextflow | MIT | https://raw.githubusercontent.com/nextflow-io/vscode-language-nextflow/main/LICENSE.md
+nextflow-groovy | nextflow-io/vscode-language-nextflow | MIT | https://raw.githubusercontent.com/nextflow-io/vscode-language-nextflow/main/LICENSE.md
+nginx | hangxingliu/vscode-nginx-conf-hint | GPL-3.0 | https://raw.githubusercontent.com/hangxingliu/vscode-nginx-conf-hint/main/LICENSE
+nim | pragmagic/vscode-nim | NOASSERTION | https://raw.githubusercontent.com/pragmagic/vscode-nim/master/LICENSE
+nix | nix-community/vscode-nix-ide | MIT | https://raw.githubusercontent.com/nix-community/vscode-nix-ide/main/LICENSE
+nushell | nushell/vscode-nushell-lang | MIT | https://raw.githubusercontent.com/nushell/vscode-nushell-lang/main/LICENSE
+objective-c | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+objective-cpp | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+ocaml | ocamllabs/vscode-ocaml-platform | ISC | https://raw.githubusercontent.com/ocamllabs/vscode-ocaml-platform/master/LICENSE
+ocamllex | ocamllabs/vscode-ocaml-platform | ISC | https://raw.githubusercontent.com/ocamllabs/vscode-ocaml-platform/master/LICENSE
+odin | DanielGavin/ols | MIT | https://raw.githubusercontent.com/DanielGavin/ols/master/LICENSE
+opam | ocamllabs/vscode-ocaml-platform | ISC | https://raw.githubusercontent.com/ocamllabs/vscode-ocaml-platform/master/LICENSE
+openscad | tbuser/openscad.tmbundle | MIT | https://raw.githubusercontent.com/tbuser/openscad.tmbundle/master/LICENSE
+pascal | alefragnani/vscode-language-pascal | MIT | https://raw.githubusercontent.com/alefragnani/vscode-language-pascal/master/LICENSE.md
+perl | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+php | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+pkl | apple/pkl.tmbundle | Apache-2.0 | https://raw.githubusercontent.com/apple/pkl.tmbundle/main/LICENSE.txt
+plsql | zabel-xyz/plsql-language | MIT | https://raw.githubusercontent.com/zabel-xyz/plsql-language/master/LICENSE
+po | textmate/gettext.tmbundle | NOASSERTION | n/a
+polar | osohq/polar-grammar | Apache-2.0 | https://raw.githubusercontent.com/osohq/polar-grammar/main/LICENSE
+postcss | vuejs/vetur | MIT | https://raw.githubusercontent.com/vuejs/vetur/master/LICENSE
+powerquery | microsoft/powerquery-language | MIT | https://raw.githubusercontent.com/microsoft/powerquery-language/master/LICENSE
+powershell | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+prisma | prisma/language-tools | Apache-2.0 | https://raw.githubusercontent.com/prisma/language-tools/main/LICENSE
+prolog | arthwang/vsc-prolog | MIT | https://raw.githubusercontent.com/arthwang/vsc-prolog/master/LICENSE.txt
+proto | zxh0/vscode-proto3 | MIT | https://raw.githubusercontent.com/zxh0/vscode-proto3/master/LICENSE.txt
+pug | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+puppet | octref/puppet-vscode | Apache-2.0 | https://raw.githubusercontent.com/octref/puppet-vscode/main/LICENSE
+purescript | nwolverson/vscode-language-purescript | NOASSERTION | https://raw.githubusercontent.com/nwolverson/vscode-language-purescript/master/LICENSE.md
+python | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+qml | seanwu1105/vscode-qt-for-python | MIT | https://raw.githubusercontent.com/seanwu1105/vscode-qt-for-python/master/LICENSE
+qmldir | seanwu1105/vscode-qt-for-python | MIT | https://raw.githubusercontent.com/seanwu1105/vscode-qt-for-python/master/LICENSE
+qss | seanwu1105/vscode-qt-for-python | MIT | https://raw.githubusercontent.com/seanwu1105/vscode-qt-for-python/master/LICENSE
+r | posit-dev/positron | MIT | https://raw.githubusercontent.com/posit-dev/positron/refs/heads/main/extensions/positron-r/syntaxes/LICENSE.md
+racket | Eugleo/magic-racket | GPL-3.0 | https://raw.githubusercontent.com/Eugleo/magic-racket/master/LICENSE
+raku | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+razor | dotnet/razor | MIT | https://raw.githubusercontent.com/dotnet/razor/main/LICENSE.txt
+reason | ocamllabs/vscode-ocaml-platform | ISC | https://raw.githubusercontent.com/ocamllabs/vscode-ocaml-platform/master/LICENSE
+reg | mihai-vlc/reg-vscode | MIT | https://raw.githubusercontent.com/mihai-vlc/reg-vscode/master/LICENSE
+regexp | MagicStack/MagicPython | MIT | https://raw.githubusercontent.com/MagicStack/MagicPython/master/LICENSE
+rel | relationalai-oss/rel_vscode | NOASSERTION | n/a
+riscv | zhuanhao-wu/vscode-riscv-support | MIT | https://raw.githubusercontent.com/zhuanhao-wu/vscode-riscv-support/master/LICENSE
+ron | a5huynh/vscode-ron | MIT | https://raw.githubusercontent.com/a5huynh/vscode-ron/master/LICENSE.md
+rosmsg | jtbandes/ros-tmlanguage | MIT | https://raw.githubusercontent.com/jtbandes/ros-tmlanguage/main/LICENSE.md
+rst | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+ruby | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+rust | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+sas | rpardee/sas | MIT | https://raw.githubusercontent.com/rpardee/sas/master/LICENSE
+sass | TheRealSyler/vscode-sass-indented | NOASSERTION | https://raw.githubusercontent.com/TheRealSyler/vscode-sass-indented/master/LICENSE
+scala | scala/vscode-scala-syntax | MIT | https://raw.githubusercontent.com/scala/vscode-scala-syntax/main/LICENSE.md
+scheme | sjhuangx/vscode-scheme | MIT | https://raw.githubusercontent.com/tinyjiahao/vscode-scheme/master/LICENSE.md
+scss | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+sdbl | 1c-syntax/vsc-language-1c-bsl | MIT | https://raw.githubusercontent.com/1c-syntax/vsc-language-1c-bsl/refs/heads/master/LICENSE.md
+shaderlab | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+shellscript | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+shellsession | hronro/sublime-linguist-syntax | MIT | https://raw.githubusercontent.com/hronro/sublime-linguist-syntax/master/LICENSE
+smalltalk | leocamello/vscode-smalltalk | MIT | https://raw.githubusercontent.com/leocamello/vscode-smalltalk/master/LICENSE
+solidity | juanfranblanco/vscode-solidity | MIT | https://raw.githubusercontent.com/juanfranblanco/vscode-solidity/master/License.txt
+soy | mthadley/language-closure-templates | MIT | https://raw.githubusercontent.com/mthadley/language-closure-templates/master/LICENSE
+sparql | stardog-union/stardog-vsc | NOASSERTION | n/a
+splunk | arcsector/vscode-splunk-search-syntax | MIT | https://raw.githubusercontent.com/arcsector/vscode-splunk-search-syntax/master/LICENSE.txt
+sql | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+ssh-config | textmate/ssh-config.tmbundle | NOASSERTION | n/a
+stata | kylebarron/language-stata | MIT | https://raw.githubusercontent.com/kylebarron/language-stata/master/LICENSE
+stylus | d4rkr00t/language-stylus | MIT | https://raw.githubusercontent.com/d4rkr00t/language-stylus/master/LICENSE
+surrealql | surrealdb/surrealql-grammar | Apache-2.0 | https://raw.githubusercontent.com/surrealdb/surrealql-grammar/main/LICENSE
+svelte | sveltejs/language-tools | MIT | https://raw.githubusercontent.com/sveltejs/language-tools/master/LICENSE
+swift | jtbandes/swift-tmlanguage | MIT | https://raw.githubusercontent.com/jtbandes/swift-tmlanguage/main/LICENSE.md
+system-verilog | mshr-h/vscode-verilog-hdl-support | MIT | https://raw.githubusercontent.com/mshr-h/vscode-verilog-hdl-support/main/LICENSE
+systemd | hangxingliu/vscode-systemd | MIT | https://raw.githubusercontent.com/hangxingliu/vscode-systemd/main/LICENSE
+talonscript | mrob95/vscode-TalonScript | MIT | https://raw.githubusercontent.com/mirober/vscode-TalonScript/master/LICENSE
+tasl | underlay/vscode-tasl | MIT | https://raw.githubusercontent.com/underlay/vscode-tasl/main/LICENSE
+tcl | sleutho/tcl | NOASSERTION | n/a
+templ | templ-go/templ-vscode | MIT | https://raw.githubusercontent.com/templ-go/templ-vscode/main/LICENSE
+terraform | hashicorp/syntax | MPL-2.0 | https://raw.githubusercontent.com/hashicorp/syntax/main/LICENSE
+tex | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+toml | textmate/toml.tmbundle | NOASSERTION | n/a
+ts-tags | shikijs/textmate-grammars-themes | NOASSERTION | n/a
+tsv | mechatroner/vscode_rainbow_csv | MIT | https://raw.githubusercontent.com/mechatroner/vscode_rainbow_csv/master/LICENSE
+tsx | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+turtle | stardog-union/stardog-vsc | NOASSERTION | n/a
+twig | mblode/vscode-twig-language-2 | MIT | https://raw.githubusercontent.com/mblode/vscode-twig-language-2/master/LICENSE.md
+typescript | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+typespec | microsoft/typespec | MIT | https://raw.githubusercontent.com/microsoft/typespec/main/LICENSE
+typst | nvarner/typst-lsp | MIT | https://raw.githubusercontent.com/nvarner/typst-lsp/master/LICENSE-MIT.txt
+v | vlang/vscode-vlang | MIT | https://raw.githubusercontent.com/vlang/vscode-vlang/master/LICENSE
+vala | vala-lang/vala-vscode | MIT | https://raw.githubusercontent.com/vala-lang/vala-vscode/master/LICENSE
+vb | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+verilog | mshr-h/vscode-verilog-hdl-support | MIT | https://raw.githubusercontent.com/mshr-h/vscode-verilog-hdl-support/main/LICENSE
+vhdl | jonasjj/awesome-vhdl | MIT | https://raw.githubusercontent.com/jonasjj/awesome-vhdl/master/LICENSE.txt
+viml | dunstontc/viml | MIT | https://raw.githubusercontent.com/dunstontc/viml/master/LICENSE
+vue | vuejs/language-tools | MIT | https://raw.githubusercontent.com/vuejs/language-tools/master/LICENSE
+vue-directives | vuejs/language-tools | MIT | https://raw.githubusercontent.com/vuejs/language-tools/master/LICENSE
+vue-html | vuejs/vetur | MIT | https://raw.githubusercontent.com/vuejs/vetur/master/LICENSE
+vue-interpolations | vuejs/language-tools | MIT | https://raw.githubusercontent.com/vuejs/language-tools/master/LICENSE
+vue-sfc-style-variable-injection | vuejs/language-tools | MIT | https://raw.githubusercontent.com/vuejs/language-tools/master/LICENSE
+vue-vine | vue-vine/assets | MIT | https://raw.githubusercontent.com/vue-vine/assets/main/LICENSE
+vyper | tintinweb/vscode-vyper | MIT | https://raw.githubusercontent.com/tintinweb/vscode-vyper/master/LICENSE
+wasm | wasmerio/vscode-wasm | MIT | https://raw.githubusercontent.com/wasmerio/vscode-wasm/master/LICENSE
+wenyan | wenyan-lang/highlight | MIT | https://raw.githubusercontent.com/wenyan-lang/highlight/master/LICENSE
+wgsl | PolyMeilex/vscode-wgsl | MIT | https://raw.githubusercontent.com/PolyMeilex/vscode-wgsl/master/LICENSE
+wikitext | Frederisk/Wikitext-VSCode-Extension | MIT | https://raw.githubusercontent.com/Frederisk/Wikitext-VSCode-Extension/master/LICENSE.txt
+wit | wasmerio/vscode-wasm | MIT | https://raw.githubusercontent.com/wasmerio/vscode-wasm/master/LICENSE
+wolfram | WolframResearch/vscode-wolfram | NOASSERTION | https://raw.githubusercontent.com/WolframResearch/vscode-wolfram/master/LICENSE
+xml | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+xsl | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+yaml | textmate/yaml.tmbundle | NOASSERTION | n/a
+zenscript | CraftTweaker/ZenScript-tmLanguage | MIT | https://raw.githubusercontent.com/CraftTweaker/ZenScript-tmLanguage/master/LICENSE
+zig | ziglang/vscode-zig | MIT | https://raw.githubusercontent.com/ziglang/vscode-zig/master/LICENSE

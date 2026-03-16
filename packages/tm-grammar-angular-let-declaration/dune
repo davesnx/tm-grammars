@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_angular_let_declaration)
+ (public_name tm-grammars.angular-let-declaration))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/angular-let-declaration.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_angular_let_declaration.ml tm_grammar_angular_let_declaration.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh angular-let-declaration ../../vendor/angular-let-declaration.json)))

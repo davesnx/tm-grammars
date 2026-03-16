@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_codeowners)
+ (public_name tm-grammars.codeowners))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/codeowners.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_codeowners.ml tm_grammar_codeowners.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh codeowners ../../vendor/codeowners.json)))

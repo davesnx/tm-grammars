@@ -9,8 +9,4 @@
  (mode
   (promote (until-clean)))
  (action
-  (run
-   bash
-   ../../scripts/gen_pkg_module.sh
-   typescript
-   ../../vendor/typescript.json)))
+  (run bash ../../scripts/gen_pkg_module.sh typescript ../../vendor/typescript.json)))

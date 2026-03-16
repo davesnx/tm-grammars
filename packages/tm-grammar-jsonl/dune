@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_jsonl)
+ (public_name tm-grammars.jsonl))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/jsonl.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_jsonl.ml tm_grammar_jsonl.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh jsonl ../../vendor/jsonl.json)))

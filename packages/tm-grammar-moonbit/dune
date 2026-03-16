@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_moonbit)
+ (public_name tm-grammars.moonbit))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/moonbit.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_moonbit.ml tm_grammar_moonbit.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh moonbit ../../vendor/moonbit.json)))

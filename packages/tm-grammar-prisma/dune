@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_prisma)
+ (public_name tm-grammars.prisma))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/prisma.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_prisma.ml tm_grammar_prisma.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh prisma ../../vendor/prisma.json)))

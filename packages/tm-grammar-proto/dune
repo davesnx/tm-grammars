@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_proto)
+ (public_name tm-grammars.proto))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/proto.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_proto.ml tm_grammar_proto.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh proto ../../vendor/proto.json)))

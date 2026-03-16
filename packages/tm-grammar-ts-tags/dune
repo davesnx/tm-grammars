@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_ts_tags)
+ (public_name tm-grammars.ts-tags))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/ts-tags.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_ts_tags.ml tm_grammar_ts_tags.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh ts-tags ../../vendor/ts-tags.json)))

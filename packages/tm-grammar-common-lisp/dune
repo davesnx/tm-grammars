@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_common_lisp)
+ (public_name tm-grammars.common-lisp))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/common-lisp.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_common_lisp.ml tm_grammar_common_lisp.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh common-lisp ../../vendor/common-lisp.json)))

@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_vue_vine)
+ (public_name tm-grammars.vue-vine))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/vue-vine.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_vue_vine.ml tm_grammar_vue_vine.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh vue-vine ../../vendor/vue-vine.json)))

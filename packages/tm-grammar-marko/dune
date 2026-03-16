@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_marko)
+ (public_name tm-grammars.marko))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/marko.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_marko.ml tm_grammar_marko.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh marko ../../vendor/marko.json)))

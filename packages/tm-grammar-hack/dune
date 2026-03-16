@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_hack)
+ (public_name tm-grammars.hack))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/hack.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_hack.ml tm_grammar_hack.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh hack ../../vendor/hack.json)))

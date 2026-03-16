@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_vue_interpolations)
+ (public_name tm-grammars.vue-interpolations))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/vue-interpolations.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_vue_interpolations.ml tm_grammar_vue_interpolations.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh vue-interpolations ../../vendor/vue-interpolations.json)))

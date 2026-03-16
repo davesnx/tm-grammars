@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_ara)
+ (public_name tm-grammars.ara))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/ara.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_ara.ml tm_grammar_ara.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh ara ../../vendor/ara.json)))

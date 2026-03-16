@@ -2,21 +2,53 @@ let lang_id = "ocaml"
 let json = {json|{
   "name": "OCaml",
   "scopeName": "source.ocaml",
-  "fileTypes": ["ml", "eliom", ".ocamlinit", "mli", "eliomi"],
+  "fileTypes": [
+    ".ocamlinit",
+    "eliom",
+    "eliomi",
+    "ml",
+    "mli"
+  ],
   "patterns": [
-    { "include": "#directives" },
-    { "include": "#comments" },
-    { "include": "#strings" },
-    { "include": "#characters" },
-    { "include": "#attributes" },
-    { "include": "#extensions" },
-    { "include": "#modules" },
-    { "include": "#bindings" },
-    { "include": "#operators" },
-    { "include": "#keywords" },
-    { "include": "#literals" },
-    { "include": "#types" },
-    { "include": "#identifiers" }
+    {
+      "include": "#directives"
+    },
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#characters"
+    },
+    {
+      "include": "#attributes"
+    },
+    {
+      "include": "#extensions"
+    },
+    {
+      "include": "#modules"
+    },
+    {
+      "include": "#bindings"
+    },
+    {
+      "include": "#operators"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#literals"
+    },
+    {
+      "include": "#types"
+    },
+    {
+      "include": "#identifiers"
+    }
   ],
   "repository": {
     "directives": {
@@ -26,8 +58,12 @@ let json = {json|{
           "begin": "^[[:space:]]*(#)[[:space:]]*([[:digit:]]+)",
           "end": "$",
           "beginCaptures": {
-            "1": { "name": "keyword.other.ocaml" },
-            "2": { "name": "constant.numeric.decimal.integer.ocaml" }
+            "1": {
+              "name": "keyword.other.ocaml"
+            },
+            "2": {
+              "name": "constant.numeric.decimal.integer.ocaml"
+            }
           },
           "contentName": "comment.line.directive.ocaml"
         },
@@ -39,22 +75,38 @@ let json = {json|{
               "begin": "^[[:space:]]*(#)[[:space:]]*(help|quit|cd|directory|remove_directory|load_rec|load|use|mod_use)",
               "end": "$",
               "beginCaptures": {
-                "1": { "name": "keyword.other.ocaml" },
-                "2": { "name": "keyword.other.ocaml" }
+                "1": {
+                  "name": "keyword.other.ocaml"
+                },
+                "2": {
+                  "name": "keyword.other.ocaml"
+                }
               },
-              "patterns": [{ "include": "#strings" }]
+              "patterns": [
+                {
+                  "include": "#strings"
+                }
+              ]
             },
             {
               "comment": "environment queries",
               "begin": "^[[:space:]]*(#)[[:space:]]*(show_class_type|show_class|show_exception|show_module_type|show_module|show_type|show_val|show)",
               "end": "$",
               "beginCaptures": {
-                "1": { "name": "keyword.other.ocaml" },
-                "2": { "name": "keyword.other.ocaml" }
+                "1": {
+                  "name": "keyword.other.ocaml"
+                },
+                "2": {
+                  "name": "keyword.other.ocaml"
+                }
               },
               "patterns": [
-                { "include": "#types" },
-                { "include": "#identifiers" }
+                {
+                  "include": "#types"
+                },
+                {
+                  "include": "#identifiers"
+                }
               ]
             },
             {
@@ -62,12 +114,20 @@ let json = {json|{
               "begin": "^[[:space:]]*(#)[[:space:]]*(install_printer|print_depth|print_length|remove_printer|trace|untrace_all|untrace)",
               "end": "$",
               "beginCaptures": {
-                "1": { "name": "keyword.other.ocaml" },
-                "2": { "name": "keyword.other.ocaml" }
+                "1": {
+                  "name": "keyword.other.ocaml"
+                },
+                "2": {
+                  "name": "keyword.other.ocaml"
+                }
               },
               "patterns": [
-                { "include": "#literals" },
-                { "include": "#identifiers" }
+                {
+                  "include": "#literals"
+                },
+                {
+                  "include": "#identifiers"
+                }
               ]
             },
             {
@@ -75,12 +135,20 @@ let json = {json|{
               "begin": "^[[:space:]]*(#)[[:space:]]*(labels|ppx|principal|rectypes|warn_error|warnings)",
               "end": "$",
               "beginCaptures": {
-                "1": { "name": "keyword.other.ocaml" },
-                "2": { "name": "keyword.other.ocaml" }
+                "1": {
+                  "name": "keyword.other.ocaml"
+                },
+                "2": {
+                  "name": "keyword.other.ocaml"
+                }
               },
               "patterns": [
-                { "include": "#strings" },
-                { "include": "#literals" }
+                {
+                  "include": "#strings"
+                },
+                {
+                  "include": "#literals"
+                }
               ]
             }
           ]
@@ -90,35 +158,68 @@ let json = {json|{
           "begin": "^[[:space:]]*(#)[[:space:]]*(require|list|camlp4o|camlp4r|predicates|thread)",
           "end": "$",
           "beginCaptures": {
-            "1": { "name": "keyword.other.ocaml" },
-            "2": { "name": "keyword.other.ocaml" }
+            "1": {
+              "name": "keyword.other.ocaml"
+            },
+            "2": {
+              "name": "keyword.other.ocaml"
+            }
           },
-          "patterns": [{ "include": "#strings" }]
+          "patterns": [
+            {
+              "include": "#strings"
+            }
+          ]
         },
         {
           "comment": "cppo directives",
           "begin": "^[[:space:]]*(#)[[:space:]]*(define|undef|ifdef|ifndef|if|else|elif|endif|include|warning|error|ext|endext)",
           "end": "$",
           "beginCaptures": {
-            "1": { "name": "keyword.other.ocaml" },
-            "2": { "name": "keyword.other.ocaml" }
+            "1": {
+              "name": "keyword.other.ocaml"
+            },
+            "2": {
+              "name": "keyword.other.ocaml"
+            }
           },
           "patterns": [
-            { "name": "keyword.other.ocaml", "match": "\\b(defined)\\b" },
-            { "name": "keyword.other.ocaml", "match": "\\\\" },
-            { "include": "#comments" },
-            { "include": "#strings" },
-            { "include": "#characters" },
-            { "include": "#keywords" },
-            { "include": "#operators" },
-            { "include": "#literals" },
-            { "include": "#types" },
-            { "include": "#identifiers" }
+            {
+              "name": "keyword.other.ocaml",
+              "match": "\\b(defined)\\b"
+            },
+            {
+              "name": "keyword.other.ocaml",
+              "match": "\\\\"
+            },
+            {
+              "include": "#comments"
+            },
+            {
+              "include": "#strings"
+            },
+            {
+              "include": "#characters"
+            },
+            {
+              "include": "#keywords"
+            },
+            {
+              "include": "#operators"
+            },
+            {
+              "include": "#literals"
+            },
+            {
+              "include": "#types"
+            },
+            {
+              "include": "#identifiers"
+            }
           ]
         }
       ]
     },
-
     "comments": {
       "patterns": [
         {
@@ -132,18 +233,36 @@ let json = {json|{
           "begin": "\\(\\*\\*(?!\\*)",
           "end": "\\*\\)",
           "patterns": [
-            { "include": "source.ocaml.ocamldoc#markup" },
-            { "include": "#strings-in-comments" },
-            { "include": "#comments" }
+            {
+              "include": "source.ocaml.ocamldoc#markup"
+            },
+            {
+              "include": "#strings-in-comments"
+            },
+            {
+              "include": "#comments"
+            }
           ]
         },
         {
           "comment": "Cinaps comment",
           "begin": "\\(\\*\\$",
           "end": "\\*\\)",
-          "beginCaptures": [{ "name": "comment.cinaps.ocaml" }],
-          "endCaptures": [{ "name": "comment.cinaps.ocaml" }],
-          "patterns": [{ "include": "$self" }]
+          "beginCaptures": [
+            {
+              "name": "comment.cinaps.ocaml"
+            }
+          ],
+          "endCaptures": [
+            {
+              "name": "comment.cinaps.ocaml"
+            }
+          ],
+          "patterns": [
+            {
+              "include": "$self"
+            }
+          ]
         },
         {
           "comment": "block comment",
@@ -151,13 +270,16 @@ let json = {json|{
           "begin": "\\(\\*",
           "end": "\\*\\)",
           "patterns": [
-            { "include": "#strings-in-comments" },
-            { "include": "#comments" }
+            {
+              "include": "#strings-in-comments"
+            },
+            {
+              "include": "#comments"
+            }
           ]
         }
       ]
     },
-
     "strings-in-comments": {
       "patterns": [
         {
@@ -168,7 +290,14 @@ let json = {json|{
           "comment": "string literal",
           "begin": "\"",
           "end": "\"",
-          "patterns": [{ "match": "\\\\\\\\" }, { "match": "\\\\\"" }]
+          "patterns": [
+            {
+              "match": "\\\\\\\\"
+            },
+            {
+              "match": "\\\\\""
+            }
+          ]
         },
         {
           "comment": "quoted string literal",
@@ -177,7 +306,6 @@ let json = {json|{
         }
       ]
     },
-
     "strings": {
       "patterns": [
         {
@@ -186,7 +314,9 @@ let json = {json|{
           "begin": "\\{(%%?[[:alpha:]_][[:word:]']*(\\.[[:alpha:]_][[:word:]']*)*[[:space:]]*)?([[:lower:]_]*)\\|",
           "end": "\\|\\3\\}",
           "beginCaptures": {
-            "1": { "name": "keyword.other.extension.ocaml" }
+            "1": {
+              "name": "keyword.other.extension.ocaml"
+            }
           }
         },
         {
@@ -244,45 +374,66 @@ let json = {json|{
         }
       ]
     },
-
     "characters": {
       "patterns": [
         {
           "comment": "character literal from escaped backslash",
           "name": "string.quoted.single.ocaml",
           "match": "'(\\\\\\\\)'",
-          "captures": { "1": { "name": "constant.character.escape.ocaml" } }
+          "captures": {
+            "1": {
+              "name": "constant.character.escape.ocaml"
+            }
+          }
         },
         {
           "comment": "character literal from escaped quote or whitespace",
           "name": "string.quoted.single.ocaml",
           "match": "'(\\\\[\"'ntbr ])'",
-          "captures": { "1": { "name": "constant.character.escape.ocaml" } }
+          "captures": {
+            "1": {
+              "name": "constant.character.escape.ocaml"
+            }
+          }
         },
         {
           "comment": "character literal from decimal ASCII code",
           "name": "string.quoted.single.ocaml",
           "match": "'(\\\\[[:digit:]]{3})'",
-          "captures": { "1": { "name": "constant.character.escape.ocaml" } }
+          "captures": {
+            "1": {
+              "name": "constant.character.escape.ocaml"
+            }
+          }
         },
         {
           "comment": "character literal from hexadecimal ASCII code",
           "name": "string.quoted.single.ocaml",
           "match": "'(\\\\x[[:xdigit:]]{2})'",
-          "captures": { "1": { "name": "constant.character.escape.ocaml" } }
+          "captures": {
+            "1": {
+              "name": "constant.character.escape.ocaml"
+            }
+          }
         },
         {
           "comment": "character literal from octal ASCII code",
           "name": "string.quoted.single.ocaml",
           "match": "'(\\\\o[0-3][0-7]{2})'",
-          "captures": { "1": { "name": "constant.character.escape.ocaml" } }
+          "captures": {
+            "1": {
+              "name": "constant.character.escape.ocaml"
+            }
+          }
         },
         {
           "comment": "character literal from unknown escape sequence",
           "name": "string.quoted.single.ocaml",
           "match": "'(\\\\.)'",
           "captures": {
-            "1": { "name": "invalid.illegal.unknown-escape.ocaml" }
+            "1": {
+              "name": "invalid.illegal.unknown-escape.ocaml"
+            }
           }
         },
         {
@@ -292,12 +443,13 @@ let json = {json|{
         }
       ]
     },
-
     "attributes": {
       "begin": "\\[(@|@@|@@@)[[:space:]]*([[:alpha:]_]+(\\.[[:word:]']+)*)",
       "end": "\\]",
       "beginCaptures": {
-        "1": { "name": "keyword.operator.attribute.ocaml" },
+        "1": {
+          "name": "keyword.operator.attribute.ocaml"
+        },
         "2": {
           "name": "keyword.other.attribute.ocaml",
           "patterns": [
@@ -308,14 +460,19 @@ let json = {json|{
           ]
         }
       },
-      "patterns": [{ "include": "$self" }]
+      "patterns": [
+        {
+          "include": "$self"
+        }
+      ]
     },
-
     "extensions": {
       "begin": "\\[(%|%%)[[:space:]]*([[:alpha:]_]+(\\.[[:word:]']+)*)",
       "end": "\\]",
       "beginCaptures": {
-        "1": { "name": "keyword.operator.extension.ocaml" },
+        "1": {
+          "name": "keyword.operator.extension.ocaml"
+        },
         "2": {
           "name": "keyword.other.extension.ocaml",
           "patterns": [
@@ -326,70 +483,124 @@ let json = {json|{
           ]
         }
       },
-      "patterns": [{ "include": "$self" }]
+      "patterns": [
+        {
+          "include": "$self"
+        }
+      ]
     },
-
     "modules": {
       "patterns": [
         {
           "begin": "\\b(sig)\\b",
           "end": "\\b(end)\\b",
-          "beginCaptures": [{ "name": "keyword.other.ocaml" }],
-          "endCaptures": [{ "name": "keyword.other.ocaml" }],
-          "patterns": [{ "include": "source.ocaml.interface" }]
+          "beginCaptures": [
+            {
+              "name": "keyword.other.ocaml"
+            }
+          ],
+          "endCaptures": [
+            {
+              "name": "keyword.other.ocaml"
+            }
+          ],
+          "patterns": [
+            {
+              "include": "source.ocaml.interface"
+            }
+          ]
         },
         {
           "begin": "\\b(struct)\\b",
           "end": "\\b(end)\\b",
-          "beginCaptures": [{ "name": "keyword.other.ocaml" }],
-          "endCaptures": [{ "name": "keyword.other.ocaml" }],
-          "patterns": [{ "include": "$self" }]
+          "beginCaptures": [
+            {
+              "name": "keyword.other.ocaml"
+            }
+          ],
+          "endCaptures": [
+            {
+              "name": "keyword.other.ocaml"
+            }
+          ],
+          "patterns": [
+            {
+              "include": "$self"
+            }
+          ]
         }
       ]
     },
-
     "bindings": {
       "patterns": [
         {
           "comment": "for loop",
           "match": "\\b(for)[[:space:]]+([[:lower:]_][[:word:]']*)",
           "captures": {
-            "1": { "name": "keyword.ocaml" },
-            "2": { "name": "entity.name.function.binding.ocaml" }
+            "1": {
+              "name": "keyword.ocaml"
+            },
+            "2": {
+              "name": "entity.name.function.binding.ocaml"
+            }
           }
         },
         {
           "comment": "local open/exception/module",
           "match": "\\b(let)[[:space:]]+(open|exception|module)\\b(?!')",
           "captures": {
-            "1": { "name": "keyword.ocaml" },
-            "2": { "name": "keyword.ocaml" }
+            "1": {
+              "name": "keyword.ocaml"
+            },
+            "2": {
+              "name": "keyword.ocaml"
+            }
           }
         },
         {
           "comment": "let expression",
           "match": "\\b(let)[[:space:]]+(?!lazy\\b(?!'))(rec[[:space:]]+)?(?!rec\\b(?!'))([[:lower:]_][[:word:]']*)(?![[:word:]'])[[:space:]]*(?!,|::|[[:space:]])",
           "captures": {
-            "1": { "name": "keyword.ocaml" },
-            "2": { "name": "keyword.ocaml" },
-            "3": { "name": "entity.name.function.binding.ocaml" }
+            "1": {
+              "name": "keyword.ocaml"
+            },
+            "2": {
+              "name": "keyword.ocaml"
+            },
+            "3": {
+              "name": "entity.name.function.binding.ocaml"
+            }
           }
         },
         {
           "comment": "using binding operators",
           "match": "\\b(let|and)([$&*+\\-/=>@^|<][!?$&*+\\-/=>@^|%:]*)[[:space:]]*(?!lazy\\b(?!'))([[:lower:]_][[:word:]']*)(?![[:word:]'])[[:space:]]*(?!,|::|[[:space:]])",
           "captures": {
-            "1": { "name": "keyword.ocaml" },
-            "2": { "name": "keyword.ocaml" },
-            "3": { "name": "entity.name.function.binding.ocaml" }
+            "1": {
+              "name": "keyword.ocaml"
+            },
+            "2": {
+              "name": "keyword.ocaml"
+            },
+            "3": {
+              "name": "entity.name.function.binding.ocaml"
+            }
           }
         },
         {
           "comment": "first class module packing",
           "match": "\\([[:space:]]*(val)[[:space:]]+([[:lower:]_][[:word:]']*)",
           "captures": {
-            "1": { "name": "keyword.ocaml" },
-            "2": { "patterns": [{ "include": "$self" }] }
+            "1": {
+              "name": "keyword.ocaml"
+            },
+            "2": {
+              "patterns": [
+                {
+                  "include": "$self"
+                }
+              ]
+            }
           }
         },
         {
@@ -399,34 +610,55 @@ let json = {json|{
             "1": {
               "name": "keyword.other.ocaml punctuation.other.colon punctuation.colon"
             },
-            "2": { "name": "keyword.ocaml" },
-            "3": { "name": "entity.name.function.binding.ocaml" }
+            "2": {
+              "name": "keyword.ocaml"
+            },
+            "3": {
+              "name": "entity.name.function.binding.ocaml"
+            }
           }
         },
         {
           "comment": "optional labeled argument with type",
           "begin": "(\\?)\\([[:space:]]*([[:lower:]_][[:word:]']*)",
           "beginCaptures": {
-            "1": { "name": "variable.parameter.optional.ocaml" },
-            "2": { "name": "variable.parameter.optional.ocaml" }
+            "1": {
+              "name": "variable.parameter.optional.ocaml"
+            },
+            "2": {
+              "name": "variable.parameter.optional.ocaml"
+            }
           },
           "end": "\\)",
-          "patterns": [{ "include": "$self" }]
+          "patterns": [
+            {
+              "include": "$self"
+            }
+          ]
         },
         {
           "comment": "labeled argument with type",
           "begin": "(~)\\([[:space:]]*([[:lower:]_][[:word:]']*)",
           "beginCaptures": {
-            "1": { "name": "variable.parameter.labeled.ocaml" },
-            "2": { "name": "variable.parameter.labeled.ocaml" }
+            "1": {
+              "name": "variable.parameter.labeled.ocaml"
+            },
+            "2": {
+              "name": "variable.parameter.labeled.ocaml"
+            }
           },
           "end": "\\)",
-          "patterns": [{ "include": "$self" }]
+          "patterns": [
+            {
+              "include": "$self"
+            }
+          ]
         },
-        { "include": "source.ocaml.interface#bindings" }
+        {
+          "include": "source.ocaml.interface#bindings"
+        }
       ]
     },
-
     "operators": {
       "patterns": [
         {
@@ -496,7 +728,6 @@ let json = {json|{
         }
       ]
     },
-
     "keywords": {
       "patterns": [
         {
@@ -506,7 +737,6 @@ let json = {json|{
         }
       ]
     },
-
     "literals": {
       "patterns": [
         {
@@ -514,7 +744,6 @@ let json = {json|{
           "name": "constant.language.boolean.ocaml",
           "match": "\\b(true|false)\\b"
         },
-
         {
           "comment": "floating point decimal literal with exponent",
           "name": "constant.numeric.decimal.float.ocaml",
@@ -535,7 +764,6 @@ let json = {json|{
           "name": "constant.numeric.hexadecimal.float.ocaml",
           "match": "\\b((0x|0X)[[:xdigit:]][[:xdigit:]_]*)(\\.[[:xdigit:]_]*[g-zG-Z]?\\b|\\.)"
         },
-
         {
           "comment": "decimal integer literal",
           "name": "constant.numeric.decimal.integer.ocaml",
@@ -551,13 +779,11 @@ let json = {json|{
           "name": "constant.numeric.octal.integer.ocaml",
           "match": "\\b((0o|0O)[0-7][0-7_]*[lLng-zG-Z]?)\\b"
         },
-
         {
           "comment": "binary integer literal",
           "name": "constant.numeric.binary.integer.ocaml",
           "match": "\\b((0b|0B)[0-1][0-1_]*[lLng-zG-Z]?)\\b"
         },
-
         {
           "comment": "unit literal",
           "name": "constant.language.unit.ocaml",
@@ -567,9 +793,12 @@ let json = {json|{
           "comment": "parentheses",
           "begin": "\\(",
           "end": "\\)",
-          "patterns": [{ "include": "$self" }]
+          "patterns": [
+            {
+              "include": "$self"
+            }
+          ]
         },
-
         {
           "comment": "empty array",
           "name": "constant.language.array.ocaml",
@@ -579,9 +808,12 @@ let json = {json|{
           "comment": "array",
           "begin": "\\[\\|",
           "end": "\\|\\]",
-          "patterns": [{ "include": "$self" }]
+          "patterns": [
+            {
+              "include": "$self"
+            }
+          ]
         },
-
         {
           "comment": "empty list",
           "name": "constant.language.list.ocaml",
@@ -591,17 +823,24 @@ let json = {json|{
           "comment": "list",
           "begin": "\\[",
           "end": "]",
-          "patterns": [{ "include": "$self" }]
+          "patterns": [
+            {
+              "include": "$self"
+            }
+          ]
         },
         {
           "comment": "braces",
           "begin": "\\{",
           "end": "\\}",
-          "patterns": [{ "include": "$self" }]
+          "patterns": [
+            {
+              "include": "$self"
+            }
+          ]
         }
       ]
     },
-
     "types": {
       "patterns": [
         {
@@ -621,7 +860,6 @@ let json = {json|{
         }
       ]
     },
-
     "identifiers": {
       "patterns": [
         {

@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_bat)
+ (public_name tm-grammars.bat))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/bat.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_bat.ml tm_grammar_bat.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh bat ../../vendor/bat.json)))

@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_cmake)
+ (public_name tm-grammars.cmake))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/cmake.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_cmake.ml tm_grammar_cmake.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh cmake ../../vendor/cmake.json)))

@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_bibtex)
+ (public_name tm-grammars.bibtex))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/bibtex.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_bibtex.ml tm_grammar_bibtex.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh bibtex ../../vendor/bibtex.json)))

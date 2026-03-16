@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_ada)
+ (public_name tm-grammars.ada))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/ada.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_ada.ml tm_grammar_ada.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh ada ../../vendor/ada.json)))

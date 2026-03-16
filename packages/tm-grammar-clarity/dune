@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_clarity)
+ (public_name tm-grammars.clarity))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/clarity.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_clarity.ml tm_grammar_clarity.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh clarity ../../vendor/clarity.json)))

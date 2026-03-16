@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_hcl)
+ (public_name tm-grammars.hcl))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/hcl.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_hcl.ml tm_grammar_hcl.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh hcl ../../vendor/hcl.json)))

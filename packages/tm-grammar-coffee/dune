@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_coffee)
+ (public_name tm-grammars.coffee))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/coffee.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_coffee.ml tm_grammar_coffee.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh coffee ../../vendor/coffee.json)))

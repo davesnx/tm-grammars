@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_glimmer_ts)
+ (public_name tm-grammars.glimmer-ts))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/glimmer-ts.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_glimmer_ts.ml tm_grammar_glimmer_ts.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh glimmer-ts ../../vendor/glimmer-ts.json)))

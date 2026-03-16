@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_stata)
+ (public_name tm-grammars.stata))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/stata.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_stata.ml tm_grammar_stata.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh stata ../../vendor/stata.json)))

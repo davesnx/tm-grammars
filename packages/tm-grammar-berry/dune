@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_berry)
+ (public_name tm-grammars.berry))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/berry.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_berry.ml tm_grammar_berry.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh berry ../../vendor/berry.json)))

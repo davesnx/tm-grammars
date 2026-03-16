@@ -2,37 +2,267 @@
  (name tm_grammars)
  (public_name tm-grammars)
  (libraries
+  tm-grammars.abap
+  tm-grammars.actionscript-3
+  tm-grammars.ada
+  tm-grammars.angular-expression
+  tm-grammars.angular-html
+  tm-grammars.angular-inline-style
+  tm-grammars.angular-inline-template
+  tm-grammars.angular-let-declaration
+  tm-grammars.angular-template
+  tm-grammars.angular-template-blocks
+  tm-grammars.angular-ts
+  tm-grammars.apache
+  tm-grammars.apex
+  tm-grammars.apl
+  tm-grammars.applescript
+  tm-grammars.ara
+  tm-grammars.asciidoc
+  tm-grammars.asm
+  tm-grammars.astro
+  tm-grammars.awk
+  tm-grammars.ballerina
+  tm-grammars.bat
+  tm-grammars.beancount
+  tm-grammars.berry
+  tm-grammars.bibtex
+  tm-grammars.bicep
+  tm-grammars.bird2
+  tm-grammars.blade
+  tm-grammars.bsl
   tm-grammars.c
+  tm-grammars.c3
+  tm-grammars.cadence
+  tm-grammars.cairo
+  tm-grammars.clarity
+  tm-grammars.clojure
+  tm-grammars.cmake
+  tm-grammars.cobol
+  tm-grammars.codeowners
+  tm-grammars.codeql
+  tm-grammars.coffee
+  tm-grammars.common-lisp
+  tm-grammars.coq
   tm-grammars.cpp
+  tm-grammars.cpp-macro
   tm-grammars.cram
+  tm-grammars.crystal
+  tm-grammars.csharp
   tm-grammars.css
+  tm-grammars.csv
+  tm-grammars.cue
+  tm-grammars.cypher
+  tm-grammars.d
+  tm-grammars.dart
+  tm-grammars.dax
+  tm-grammars.desktop
   tm-grammars.diff
   tm-grammars.dockerfile
+  tm-grammars.dotenv
+  tm-grammars.dream-maker
   tm-grammars.dune
+  tm-grammars.edge
+  tm-grammars.elixir
+  tm-grammars.elm
+  tm-grammars.emacs-lisp
+  tm-grammars.erb
+  tm-grammars.erlang
+  tm-grammars.es-tag-css
+  tm-grammars.es-tag-glsl
+  tm-grammars.es-tag-html
+  tm-grammars.es-tag-sql
+  tm-grammars.es-tag-xml
+  tm-grammars.fennel
+  tm-grammars.fish
+  tm-grammars.fluent
+  tm-grammars.fortran-fixed-form
+  tm-grammars.fortran-free-form
+  tm-grammars.fsharp
+  tm-grammars.gdresource
+  tm-grammars.gdscript
+  tm-grammars.gdshader
+  tm-grammars.genie
+  tm-grammars.gherkin
+  tm-grammars.git-commit
+  tm-grammars.git-rebase
+  tm-grammars.gleam
+  tm-grammars.glimmer-js
+  tm-grammars.glimmer-ts
+  tm-grammars.glsl
+  tm-grammars.gn
+  tm-grammars.gnuplot
   tm-grammars.go
   tm-grammars.graphql
+  tm-grammars.groovy
+  tm-grammars.hack
+  tm-grammars.haml
+  tm-grammars.handlebars
+  tm-grammars.haskell
+  tm-grammars.haxe
+  tm-grammars.hcl
+  tm-grammars.hjson
+  tm-grammars.hlsl
   tm-grammars.html
+  tm-grammars.html-derivative
+  tm-grammars.http
+  tm-grammars.hurl
+  tm-grammars.hxml
+  tm-grammars.hy
+  tm-grammars.imba
+  tm-grammars.ini
   tm-grammars.java
   tm-grammars.javascript
+  tm-grammars.jinja
+  tm-grammars.jinja-html
+  tm-grammars.jison
   tm-grammars.json
+  tm-grammars.json5
   tm-grammars.jsonc
+  tm-grammars.jsonl
+  tm-grammars.jsonnet
+  tm-grammars.jssm
+  tm-grammars.jsx
+  tm-grammars.julia
+  tm-grammars.just
+  tm-grammars.kdl
+  tm-grammars.kotlin
+  tm-grammars.kusto
+  tm-grammars.latex
+  tm-grammars.lean
+  tm-grammars.less
+  tm-grammars.liquid
+  tm-grammars.llvm
+  tm-grammars.log
+  tm-grammars.logo
+  tm-grammars.lua
+  tm-grammars.luau
   tm-grammars.makefile
   tm-grammars.markdown
+  tm-grammars.markdown-nix
+  tm-grammars.markdown-vue
+  tm-grammars.marko
+  tm-grammars.matlab
+  tm-grammars.mdc
+  tm-grammars.mdx
   tm-grammars.menhir
+  tm-grammars.mermaid
+  tm-grammars.mipsasm
   tm-grammars.mlx
+  tm-grammars.mojo
+  tm-grammars.moonbit
+  tm-grammars.move
+  tm-grammars.narrat
+  tm-grammars.nextflow
+  tm-grammars.nextflow-groovy
+  tm-grammars.nginx
+  tm-grammars.nim
+  tm-grammars.nix
+  tm-grammars.nushell
+  tm-grammars.objective-c
+  tm-grammars.objective-cpp
   tm-grammars.ocaml
   tm-grammars.ocamllex
+  tm-grammars.odin
   tm-grammars.opam-file
+  tm-grammars.openscad
+  tm-grammars.pascal
+  tm-grammars.perl
+  tm-grammars.php
+  tm-grammars.pkl
+  tm-grammars.plsql
+  tm-grammars.po
+  tm-grammars.polar
+  tm-grammars.postcss
+  tm-grammars.powerquery
+  tm-grammars.powershell
+  tm-grammars.prisma
+  tm-grammars.prolog
+  tm-grammars.proto
+  tm-grammars.pug
+  tm-grammars.puppet
+  tm-grammars.purescript
   tm-grammars.python
+  tm-grammars.qml
+  tm-grammars.qmldir
+  tm-grammars.qss
+  tm-grammars.r
+  tm-grammars.racket
+  tm-grammars.raku
+  tm-grammars.razor
   tm-grammars.reason
+  tm-grammars.reg
+  tm-grammars.regexp
+  tm-grammars.rel
+  tm-grammars.riscv
+  tm-grammars.ron
+  tm-grammars.rosmsg
+  tm-grammars.rst
   tm-grammars.ruby
   tm-grammars.rust
+  tm-grammars.sas
+  tm-grammars.sass
+  tm-grammars.scala
+  tm-grammars.scheme
+  tm-grammars.scss
+  tm-grammars.sdbl
+  tm-grammars.shaderlab
   tm-grammars.shellscript
+  tm-grammars.shellsession
+  tm-grammars.smalltalk
+  tm-grammars.solidity
+  tm-grammars.soy
+  tm-grammars.sparql
+  tm-grammars.splunk
   tm-grammars.sql
+  tm-grammars.ssh-config
+  tm-grammars.stata
+  tm-grammars.stylus
+  tm-grammars.surrealql
+  tm-grammars.svelte
+  tm-grammars.swift
+  tm-grammars.system-verilog
+  tm-grammars.systemd
+  tm-grammars.talonscript
+  tm-grammars.tasl
+  tm-grammars.tcl
+  tm-grammars.templ
+  tm-grammars.terraform
+  tm-grammars.tex
   tm-grammars.toml
+  tm-grammars.ts-tags
+  tm-grammars.tsv
   tm-grammars.tsx
+  tm-grammars.turtle
+  tm-grammars.twig
   tm-grammars.typescript
-  tm-grammars.yaml))
+  tm-grammars.typespec
+  tm-grammars.typst
+  tm-grammars.v
+  tm-grammars.vala
+  tm-grammars.vb
+  tm-grammars.verilog
+  tm-grammars.vhdl
+  tm-grammars.viml
+  tm-grammars.vue
+  tm-grammars.vue-directives
+  tm-grammars.vue-html
+  tm-grammars.vue-interpolations
+  tm-grammars.vue-sfc-style-variable-injection
+  tm-grammars.vue-vine
+  tm-grammars.vyper
+  tm-grammars.wasm
+  tm-grammars.wenyan
+  tm-grammars.wgsl
+  tm-grammars.wikitext
+  tm-grammars.wit
+  tm-grammars.wolfram
+  tm-grammars.xml
+  tm-grammars.xsl
+  tm-grammars.yaml
+  tm-grammars.zenscript
+  tm-grammars.zig
+  ))
 
 (rule
  (alias gen)

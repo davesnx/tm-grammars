@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_fortran_fixed_form)
+ (public_name tm-grammars.fortran-fixed-form))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/fortran-fixed-form.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_fortran_fixed_form.ml tm_grammar_fortran_fixed_form.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh fortran-fixed-form ../../vendor/fortran-fixed-form.json)))

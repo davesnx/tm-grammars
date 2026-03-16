@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_bicep)
+ (public_name tm-grammars.bicep))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/bicep.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_bicep.ml tm_grammar_bicep.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh bicep ../../vendor/bicep.json)))

@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_just)
+ (public_name tm-grammars.just))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/just.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_just.ml tm_grammar_just.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh just ../../vendor/just.json)))

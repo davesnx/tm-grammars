@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_asciidoc)
+ (public_name tm-grammars.asciidoc))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/asciidoc.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_asciidoc.ml tm_grammar_asciidoc.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh asciidoc ../../vendor/asciidoc.json)))

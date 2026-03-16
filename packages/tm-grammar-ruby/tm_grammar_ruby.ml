@@ -1544,7 +1544,12 @@ let json = {json|{
     },
     {
       "begin": "(?=(?><<[-~]?([\"'`]?)((?:[_\\w]+_|)HTML)\\b\\1))",
-      "end": "(?!\\G)",
+      "end": "^\\s*((?:[_\\w]+_|)HTML)$\\n?",
+      "endCaptures": {
+        "0": {
+          "name": "string.definition.end.ruby"
+        }
+      },
       "name": "meta.embedded.block.html",
       "patterns": [
         {
@@ -1555,12 +1560,6 @@ let json = {json|{
             }
           },
           "contentName": "text.html",
-          "end": "^\\s*\\2$\\n?",
-          "endCaptures": {
-            "0": {
-              "name": "string.definition.end.ruby"
-            }
-          },
           "patterns": [
             {
               "include": "#heredoc"
@@ -1574,13 +1573,19 @@ let json = {json|{
             {
               "include": "#escaped_char"
             }
-          ]
+          ],
+          "while": "^(?!\\s*((?:[_\\w]+_|)HTML)\\s*$)"
         }
       ]
     },
     {
       "begin": "(?=(?><<[-~]?([\"'`]?)((?:[_\\w]+_|)HAML)\\b\\1))",
-      "end": "(?!\\G)",
+      "end": "^\\s*((?:[_\\w]+_|)HAML)$\\n?",
+      "endCaptures": {
+        "0": {
+          "name": "string.definition.end.ruby"
+        }
+      },
       "name": "meta.embedded.block.haml",
       "patterns": [
         {
@@ -1591,12 +1596,6 @@ let json = {json|{
             }
           },
           "contentName": "text.haml",
-          "end": "^\\s*\\2$\\n?",
-          "endCaptures": {
-            "0": {
-              "name": "string.definition.end.ruby"
-            }
-          },
           "patterns": [
             {
               "include": "#heredoc"
@@ -1610,13 +1609,19 @@ let json = {json|{
             {
               "include": "#escaped_char"
             }
-          ]
+          ],
+          "while": "^(?!\\s*((?:[_\\w]+_|)HAML)\\s*$)"
         }
       ]
     },
     {
       "begin": "(?=(?><<[-~]?([\"'`]?)((?:[_\\w]+_|)XML)\\b\\1))",
-      "end": "(?!\\G)",
+      "end": "^\\s*((?:[_\\w]+_|)XML)$\\n?",
+      "endCaptures": {
+        "0": {
+          "name": "string.definition.end.ruby"
+        }
+      },
       "name": "meta.embedded.block.xml",
       "patterns": [
         {
@@ -1627,12 +1632,6 @@ let json = {json|{
             }
           },
           "contentName": "text.xml",
-          "end": "^\\s*\\2$\\n?",
-          "endCaptures": {
-            "0": {
-              "name": "string.definition.end.ruby"
-            }
-          },
           "patterns": [
             {
               "include": "#heredoc"
@@ -1646,13 +1645,19 @@ let json = {json|{
             {
               "include": "#escaped_char"
             }
-          ]
+          ],
+          "while": "^(?!\\s*((?:[_\\w]+_|)XML)\\s*$)"
         }
       ]
     },
     {
       "begin": "(?=(?><<[-~]?([\"'`]?)((?:[_\\w]+_|)SQL)\\b\\1))",
-      "end": "(?!\\G)",
+      "end": "^\\s*((?:[_\\w]+_|)SQL)$\\n?",
+      "endCaptures": {
+        "0": {
+          "name": "string.definition.end.ruby"
+        }
+      },
       "name": "meta.embedded.block.sql",
       "patterns": [
         {
@@ -1663,12 +1668,6 @@ let json = {json|{
             }
           },
           "contentName": "source.sql",
-          "end": "^\\s*\\2$\\n?",
-          "endCaptures": {
-            "0": {
-              "name": "string.definition.end.ruby"
-            }
-          },
           "patterns": [
             {
               "include": "#heredoc"
@@ -1682,13 +1681,19 @@ let json = {json|{
             {
               "include": "#escaped_char"
             }
-          ]
+          ],
+          "while": "^(?!\\s*((?:[_\\w]+_|)SQL)\\s*$)"
         }
       ]
     },
     {
       "begin": "(?=(?><<[-~]?([\"'`]?)((?:[_\\w]+_|)G(?:RAPHQL|QL))\\b\\1))",
-      "end": "(?!\\G)",
+      "end": "^\\s*((?:[_\\w]+_|)G(?:RAPHQL|QL))$\\n?",
+      "endCaptures": {
+        "0": {
+          "name": "string.definition.end.ruby"
+        }
+      },
       "name": "meta.embedded.block.graphql",
       "patterns": [
         {
@@ -1699,12 +1704,6 @@ let json = {json|{
             }
           },
           "contentName": "source.graphql",
-          "end": "^\\s*\\2$\\n?",
-          "endCaptures": {
-            "0": {
-              "name": "string.definition.end.ruby"
-            }
-          },
           "patterns": [
             {
               "include": "#heredoc"
@@ -1718,13 +1717,19 @@ let json = {json|{
             {
               "include": "#escaped_char"
             }
-          ]
+          ],
+          "while": "^(?!\\s*((?:[_\\w]+_|)G(?:RAPHQL|QL))\\s*$)"
         }
       ]
     },
     {
       "begin": "(?=(?><<[-~]?([\"'`]?)((?:[_\\w]+_|)CSS)\\b\\1))",
-      "end": "(?!\\G)",
+      "end": "^\\s*((?:[_\\w]+_|)CSS)$\\n?",
+      "endCaptures": {
+        "0": {
+          "name": "string.definition.end.ruby"
+        }
+      },
       "name": "meta.embedded.block.css",
       "patterns": [
         {
@@ -1735,12 +1740,6 @@ let json = {json|{
             }
           },
           "contentName": "source.css",
-          "end": "^\\s*\\2$\\n?",
-          "endCaptures": {
-            "0": {
-              "name": "string.definition.end.ruby"
-            }
-          },
           "patterns": [
             {
               "include": "#heredoc"
@@ -1754,13 +1753,19 @@ let json = {json|{
             {
               "include": "#escaped_char"
             }
-          ]
+          ],
+          "while": "^(?!\\s*((?:[_\\w]+_|)CSS)\\s*$)"
         }
       ]
     },
     {
       "begin": "(?=(?><<[-~]?([\"'`]?)((?:[_\\w]+_|)CPP)\\b\\1))",
-      "end": "(?!\\G)",
+      "end": "^\\s*((?:[_\\w]+_|)CPP)$\\n?",
+      "endCaptures": {
+        "0": {
+          "name": "string.definition.end.ruby"
+        }
+      },
       "name": "meta.embedded.block.cpp",
       "patterns": [
         {
@@ -1771,12 +1776,6 @@ let json = {json|{
             }
           },
           "contentName": "source.cpp",
-          "end": "^\\s*\\2$\\n?",
-          "endCaptures": {
-            "0": {
-              "name": "string.definition.end.ruby"
-            }
-          },
           "patterns": [
             {
               "include": "#heredoc"
@@ -1790,13 +1789,19 @@ let json = {json|{
             {
               "include": "#escaped_char"
             }
-          ]
+          ],
+          "while": "^(?!\\s*((?:[_\\w]+_|)CPP)\\s*$)"
         }
       ]
     },
     {
       "begin": "(?=(?><<[-~]?([\"'`]?)((?:[_\\w]+_|)C)\\b\\1))",
-      "end": "(?!\\G)",
+      "end": "^\\s*((?:[_\\w]+_|)C)$\\n?",
+      "endCaptures": {
+        "0": {
+          "name": "string.definition.end.ruby"
+        }
+      },
       "name": "meta.embedded.block.c",
       "patterns": [
         {
@@ -1807,12 +1812,6 @@ let json = {json|{
             }
           },
           "contentName": "source.c",
-          "end": "^\\s*\\2$\\n?",
-          "endCaptures": {
-            "0": {
-              "name": "string.definition.end.ruby"
-            }
-          },
           "patterns": [
             {
               "include": "#heredoc"
@@ -1826,13 +1825,19 @@ let json = {json|{
             {
               "include": "#escaped_char"
             }
-          ]
+          ],
+          "while": "^(?!\\s*((?:[_\\w]+_|)C)\\s*$)"
         }
       ]
     },
     {
       "begin": "(?=(?><<[-~]?([\"'`]?)((?:[_\\w]+_|)J(?:S|AVASCRIPT))\\b\\1))",
-      "end": "(?!\\G)",
+      "end": "^\\s*((?:[_\\w]+_|)J(?:S|AVASCRIPT))$\\n?",
+      "endCaptures": {
+        "0": {
+          "name": "string.definition.end.ruby"
+        }
+      },
       "name": "meta.embedded.block.js",
       "patterns": [
         {
@@ -1843,12 +1848,6 @@ let json = {json|{
             }
           },
           "contentName": "source.js",
-          "end": "^\\s*\\2$\\n?",
-          "endCaptures": {
-            "0": {
-              "name": "string.definition.end.ruby"
-            }
-          },
           "patterns": [
             {
               "include": "#heredoc"
@@ -1862,13 +1861,19 @@ let json = {json|{
             {
               "include": "#escaped_char"
             }
-          ]
+          ],
+          "while": "^(?!\\s*((?:[_\\w]+_|)J(?:S|AVASCRIPT))\\s*$)"
         }
       ]
     },
     {
       "begin": "(?=(?><<[-~]?([\"'`]?)((?:[_\\w]+_|)JQUERY)\\b\\1))",
-      "end": "(?!\\G)",
+      "end": "^\\s*((?:[_\\w]+_|)JQUERY)$\\n?",
+      "endCaptures": {
+        "0": {
+          "name": "string.definition.end.ruby"
+        }
+      },
       "name": "meta.embedded.block.js.jquery",
       "patterns": [
         {
@@ -1879,12 +1884,6 @@ let json = {json|{
             }
           },
           "contentName": "source.js.jquery",
-          "end": "^\\s*\\2$\\n?",
-          "endCaptures": {
-            "0": {
-              "name": "string.definition.end.ruby"
-            }
-          },
           "patterns": [
             {
               "include": "#heredoc"
@@ -1898,13 +1897,19 @@ let json = {json|{
             {
               "include": "#escaped_char"
             }
-          ]
+          ],
+          "while": "^(?!\\s*((?:[_\\w]+_|)JQUERY)\\s*$)"
         }
       ]
     },
     {
       "begin": "(?=(?><<[-~]?([\"'`]?)((?:[_\\w]+_|)SH(?:|ELL))\\b\\1))",
-      "end": "(?!\\G)",
+      "end": "^\\s*((?:[_\\w]+_|)SH(?:|ELL))$\\n?",
+      "endCaptures": {
+        "0": {
+          "name": "string.definition.end.ruby"
+        }
+      },
       "name": "meta.embedded.block.shell",
       "patterns": [
         {
@@ -1915,12 +1920,6 @@ let json = {json|{
             }
           },
           "contentName": "source.shell",
-          "end": "^\\s*\\2$\\n?",
-          "endCaptures": {
-            "0": {
-              "name": "string.definition.end.ruby"
-            }
-          },
           "patterns": [
             {
               "include": "#heredoc"
@@ -1934,13 +1933,19 @@ let json = {json|{
             {
               "include": "#escaped_char"
             }
-          ]
+          ],
+          "while": "^(?!\\s*((?:[_\\w]+_|)SH(?:|ELL))\\s*$)"
         }
       ]
     },
     {
       "begin": "(?=(?><<[-~]?([\"'`]?)((?:[_\\w]+_|)LUA)\\b\\1))",
-      "end": "(?!\\G)",
+      "end": "^\\s*((?:[_\\w]+_|)LUA)$\\n?",
+      "endCaptures": {
+        "0": {
+          "name": "string.definition.end.ruby"
+        }
+      },
       "name": "meta.embedded.block.lua",
       "patterns": [
         {
@@ -1951,12 +1956,6 @@ let json = {json|{
             }
           },
           "contentName": "source.lua",
-          "end": "^\\s*\\2$\\n?",
-          "endCaptures": {
-            "0": {
-              "name": "string.definition.end.ruby"
-            }
-          },
           "patterns": [
             {
               "include": "#heredoc"
@@ -1970,13 +1969,19 @@ let json = {json|{
             {
               "include": "#escaped_char"
             }
-          ]
+          ],
+          "while": "^(?!\\s*((?:[_\\w]+_|)LUA)\\s*$)"
         }
       ]
     },
     {
       "begin": "(?=(?><<[-~]?([\"'`]?)((?:[_\\w]+_|)RUBY)\\b\\1))",
-      "end": "(?!\\G)",
+      "end": "^\\s*((?:[_\\w]+_|)RUBY)$\\n?",
+      "endCaptures": {
+        "0": {
+          "name": "string.definition.end.ruby"
+        }
+      },
       "name": "meta.embedded.block.ruby",
       "patterns": [
         {
@@ -1987,12 +1992,6 @@ let json = {json|{
             }
           },
           "contentName": "source.ruby",
-          "end": "^\\s*\\2$\\n?",
-          "endCaptures": {
-            "0": {
-              "name": "string.definition.end.ruby"
-            }
-          },
           "patterns": [
             {
               "include": "#heredoc"
@@ -2006,13 +2005,19 @@ let json = {json|{
             {
               "include": "#escaped_char"
             }
-          ]
+          ],
+          "while": "^(?!\\s*((?:[_\\w]+_|)RUBY)\\s*$)"
         }
       ]
     },
     {
       "begin": "(?=(?><<[-~]?([\"'`]?)((?:[_\\w]+_|)YA?ML)\\b\\1))",
-      "end": "(?!\\G)",
+      "end": "^\\s*((?:[_\\w]+_|)YA?ML)$\\n?",
+      "endCaptures": {
+        "0": {
+          "name": "string.definition.end.ruby"
+        }
+      },
       "name": "meta.embedded.block.yaml",
       "patterns": [
         {
@@ -2023,12 +2028,6 @@ let json = {json|{
             }
           },
           "contentName": "source.yaml",
-          "end": "^\\s*\\2$\\n?",
-          "endCaptures": {
-            "0": {
-              "name": "string.definition.end.ruby"
-            }
-          },
           "patterns": [
             {
               "include": "#heredoc"
@@ -2042,13 +2041,19 @@ let json = {json|{
             {
               "include": "#escaped_char"
             }
-          ]
+          ],
+          "while": "^(?!\\s*((?:[_\\w]+_|)YA?ML)\\s*$)"
         }
       ]
     },
     {
       "begin": "(?=(?><<[-~]?([\"'`]?)((?:[_\\w]+_|)SLIM)\\b\\1))",
-      "end": "(?!\\G)",
+      "end": "^\\s*((?:[_\\w]+_|)SLIM)$\\n?",
+      "endCaptures": {
+        "0": {
+          "name": "string.definition.end.ruby"
+        }
+      },
       "name": "meta.embedded.block.slim",
       "patterns": [
         {
@@ -2059,12 +2064,6 @@ let json = {json|{
             }
           },
           "contentName": "text.slim",
-          "end": "^\\s*\\2$\\n?",
-          "endCaptures": {
-            "0": {
-              "name": "string.definition.end.ruby"
-            }
-          },
           "patterns": [
             {
               "include": "#heredoc"
@@ -2078,7 +2077,8 @@ let json = {json|{
             {
               "include": "#escaped_char"
             }
-          ]
+          ],
+          "while": "^(?!\\s*((?:[_\\w]+_|)SLIM)\\s*$)"
         }
       ]
     },

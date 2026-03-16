@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_turtle)
+ (public_name tm-grammars.turtle))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/turtle.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_turtle.ml tm_grammar_turtle.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh turtle ../../vendor/turtle.json)))

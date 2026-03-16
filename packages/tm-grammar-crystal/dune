@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_crystal)
+ (public_name tm-grammars.crystal))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/crystal.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_crystal.ml tm_grammar_crystal.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh crystal ../../vendor/crystal.json)))

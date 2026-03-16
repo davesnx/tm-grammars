@@ -1,0 +1,12 @@
+(library
+ (name tm_grammar_vyper)
+ (public_name tm-grammars.vyper))
+
+(rule
+ (alias gen)
+ (deps ../../vendor/vyper.json ../../scripts/gen_pkg_module.sh)
+ (targets tm_grammar_vyper.ml tm_grammar_vyper.mli)
+ (mode
+  (promote (until-clean)))
+ (action
+  (run bash ../../scripts/gen_pkg_module.sh vyper ../../vendor/vyper.json)))
