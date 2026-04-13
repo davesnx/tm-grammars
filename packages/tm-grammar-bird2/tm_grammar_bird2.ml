@@ -1,5 +1,7 @@
 let lang_id = "bird2"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "BIRD2 Configuration",
   "fileTypes": [
     "conf",

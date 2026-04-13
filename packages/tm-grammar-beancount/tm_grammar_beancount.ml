@@ -1,5 +1,7 @@
 let lang_id = "beancount"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Beancount",
   "fileTypes": [
     "beancount"

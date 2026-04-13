@@ -1,5 +1,7 @@
 let lang_id = "bibtex"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "BibTeX",
   "name": "bibtex",
   "patterns": [

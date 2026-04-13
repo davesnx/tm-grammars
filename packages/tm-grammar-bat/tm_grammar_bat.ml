@@ -1,5 +1,7 @@
 let lang_id = "bat"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Batch File",
   "injections": {
     "L:meta.block.repeat.batchfile": {

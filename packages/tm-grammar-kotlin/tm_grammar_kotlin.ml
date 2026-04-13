@@ -1,5 +1,7 @@
 let lang_id = "kotlin"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Kotlin",
   "fileTypes": [
     "kt",

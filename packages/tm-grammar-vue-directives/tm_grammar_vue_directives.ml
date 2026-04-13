@@ -1,5 +1,7 @@
 let lang_id = "vue-directives"
-let json = {json|{
+
+let json =
+  {json|{
   "fileTypes": [
   ],
   "injectTo": [

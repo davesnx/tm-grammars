@@ -1,5 +1,7 @@
 let lang_id = "http"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "HTTP",
   "fileTypes": [
     "http",

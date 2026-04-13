@@ -1,5 +1,7 @@
 let lang_id = "go"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Go",
   "name": "go",
   "patterns": [

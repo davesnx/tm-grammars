@@ -1,5 +1,7 @@
 let lang_id = "angular-template"
-let json = {json|{
+
+let json =
+  {json|{
   "injectTo": [
     "text.html.derivative",
     "text.html.derivative.ng",

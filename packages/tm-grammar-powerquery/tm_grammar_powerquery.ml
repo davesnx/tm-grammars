@@ -1,5 +1,7 @@
 let lang_id = "powerquery"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "PowerQuery",
   "fileTypes": [
     "pq",

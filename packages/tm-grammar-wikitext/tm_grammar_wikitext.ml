@@ -1,5 +1,7 @@
 let lang_id = "wikitext"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Wikitext",
   "name": "wikitext",
   "patterns": [

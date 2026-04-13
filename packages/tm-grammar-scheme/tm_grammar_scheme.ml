@@ -1,5 +1,7 @@
 let lang_id = "scheme"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Scheme",
   "fileTypes": [
     "scm",

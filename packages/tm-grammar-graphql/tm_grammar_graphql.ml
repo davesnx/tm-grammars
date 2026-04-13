@@ -1,5 +1,7 @@
 let lang_id = "graphql"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "GraphQL",
   "fileTypes": [
     "graphql",

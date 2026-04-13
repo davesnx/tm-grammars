@@ -1,5 +1,7 @@
 let lang_id = "actionscript-3"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "ActionScript",
   "fileTypes": [
     "as"

@@ -1,5 +1,7 @@
 let lang_id = "diff"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Diff",
   "name": "diff",
   "patterns": [

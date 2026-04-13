@@ -1,5 +1,7 @@
 let lang_id = "riscv"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "RISC-V",
   "fileTypes": [
     "S",

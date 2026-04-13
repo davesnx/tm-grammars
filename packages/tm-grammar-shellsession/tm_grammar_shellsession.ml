@@ -1,5 +1,7 @@
 let lang_id = "shellsession"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Shell Session",
   "fileTypes": [
     "sh-session"

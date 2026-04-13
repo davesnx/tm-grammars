@@ -1,5 +1,7 @@
 let lang_id = "apache"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Apache Conf",
   "fileTypes": [
     "conf",

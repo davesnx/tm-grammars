@@ -1,5 +1,7 @@
 let lang_id = "nix"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Nix",
   "fileTypes": [
     "nix"

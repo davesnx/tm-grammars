@@ -1,5 +1,7 @@
 let lang_id = "hxml"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "HXML",
   "fileTypes": [
     "hxml"

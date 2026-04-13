@@ -1,5 +1,7 @@
 let lang_id = "html"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "HTML",
   "injections": {
     "R:text.html - (comment.block, text.html meta.embedded, meta.tag.*.*.html, meta.tag.*.*.*.html, meta.tag.*.*.*.*.html)": {

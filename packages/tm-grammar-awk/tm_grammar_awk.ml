@@ -1,5 +1,7 @@
 let lang_id = "awk"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "AWK",
   "fileTypes": [
     "awk"

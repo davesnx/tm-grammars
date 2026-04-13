@@ -1,5 +1,7 @@
 let lang_id = "git-rebase"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Git Rebase Message",
   "name": "git-rebase",
   "patterns": [

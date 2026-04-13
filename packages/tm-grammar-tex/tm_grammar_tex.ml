@@ -1,5 +1,7 @@
 let lang_id = "tex"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "TeX",
   "name": "tex",
   "patterns": [

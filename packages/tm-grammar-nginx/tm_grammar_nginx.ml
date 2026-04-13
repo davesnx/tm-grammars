@@ -1,5 +1,7 @@
 let lang_id = "nginx"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Nginx",
   "fileTypes": [
     "conf.erb",

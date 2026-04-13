@@ -1,5 +1,7 @@
 let lang_id = "elixir"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Elixir",
   "fileTypes": [
     "ex",

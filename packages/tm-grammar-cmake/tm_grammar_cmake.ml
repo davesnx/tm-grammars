@@ -1,5 +1,7 @@
 let lang_id = "cmake"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "CMake",
   "fileTypes": [
     "cmake",

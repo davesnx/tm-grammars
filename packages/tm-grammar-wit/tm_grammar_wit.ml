@@ -1,5 +1,7 @@
 let lang_id = "wit"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "WebAssembly Interface Types",
   "foldingStartMarker": "([\\[{])\\s*",
   "foldingStopMarker": "\\s*([]}])",

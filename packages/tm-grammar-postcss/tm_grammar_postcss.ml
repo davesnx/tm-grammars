@@ -1,5 +1,7 @@
 let lang_id = "postcss"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "PostCSS",
   "fileTypes": [
     "pcss",

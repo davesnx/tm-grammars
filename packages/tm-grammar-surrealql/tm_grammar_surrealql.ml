@@ -1,5 +1,7 @@
 let lang_id = "surrealql"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "SurrealQL",
   "fileTypes": [
     ".surql",

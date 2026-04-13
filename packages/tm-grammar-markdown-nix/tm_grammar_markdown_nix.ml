@@ -1,5 +1,7 @@
 let lang_id = "markdown-nix"
-let json = {json|{
+
+let json =
+  {json|{
   "fileTypes": [
   ],
   "injectTo": [

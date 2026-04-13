@@ -1,5 +1,7 @@
 let lang_id = "vue-html"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Vue HTML",
   "fileTypes": [
   ],

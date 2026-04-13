@@ -1,5 +1,7 @@
 let lang_id = "codeowners"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "CODEOWNERS",
   "name": "codeowners",
   "patterns": [

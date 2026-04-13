@@ -1,5 +1,7 @@
 let lang_id = "vue-interpolations"
-let json = {json|{
+
+let json =
+  {json|{
   "fileTypes": [
   ],
   "injectTo": [

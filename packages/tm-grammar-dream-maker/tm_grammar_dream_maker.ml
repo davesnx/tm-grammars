@@ -1,5 +1,7 @@
 let lang_id = "dream-maker"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Dream Maker",
   "fileTypes": [
     "dm",

@@ -1,5 +1,7 @@
 let lang_id = "soy"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Closure Templates",
   "fileTypes": [
     "soy"

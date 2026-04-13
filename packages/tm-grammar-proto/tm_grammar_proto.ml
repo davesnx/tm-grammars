@@ -1,5 +1,7 @@
 let lang_id = "proto"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Protocol Buffer 3",
   "fileTypes": [
     "proto"

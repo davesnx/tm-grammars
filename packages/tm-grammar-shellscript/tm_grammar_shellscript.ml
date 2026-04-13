@@ -1,5 +1,7 @@
 let lang_id = "shellscript"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Shell",
   "name": "shellscript",
   "patterns": [

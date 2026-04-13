@@ -1,5 +1,7 @@
 let lang_id = "asm"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Assembly",
   "fileTypes": [
     "asm",

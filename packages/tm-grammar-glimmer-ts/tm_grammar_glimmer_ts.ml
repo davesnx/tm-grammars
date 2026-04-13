@@ -1,5 +1,7 @@
 let lang_id = "glimmer-ts"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Glimmer TS",
   "injections": {
     "L:source.gts -comment -(string -meta.embedded)": {

@@ -1,5 +1,7 @@
 let lang_id = "rst"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "reStructuredText",
   "name": "rst",
   "patterns": [

@@ -1,5 +1,7 @@
 let lang_id = "nextflow-groovy"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Nextflow Groovy",
   "foldingStartMarker": "(\\{\\s*$|^\\s*// \\{\\{\\{)",
   "foldingStopMarker": "^\\s*(}|// }}}$)",

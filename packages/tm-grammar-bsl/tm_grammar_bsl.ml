@@ -1,5 +1,7 @@
 let lang_id = "bsl"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "1C (Enterprise)",
   "fileTypes": [
     "bsl",

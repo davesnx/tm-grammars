@@ -1,5 +1,7 @@
 let lang_id = "puppet"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Puppet",
   "fileTypes": [
     "pp"

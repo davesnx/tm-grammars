@@ -1,5 +1,7 @@
 let lang_id = "talonscript"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "TalonScript",
   "name": "talonscript",
   "patterns": [

@@ -1,5 +1,7 @@
 let lang_id = "cobol"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "COBOL",
   "fileTypes": [
     "ccp",

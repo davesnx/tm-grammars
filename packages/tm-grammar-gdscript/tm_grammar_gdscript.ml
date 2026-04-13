@@ -1,5 +1,7 @@
 let lang_id = "gdscript"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "GDScript",
   "fileTypes": [
     "gd"

@@ -1,5 +1,7 @@
 let lang_id = "markdown-vue"
-let json = {json|{
+
+let json =
+  {json|{
   "fileTypes": [
   ],
   "injectTo": [

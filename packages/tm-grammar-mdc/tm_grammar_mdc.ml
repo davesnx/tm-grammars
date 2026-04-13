@@ -1,5 +1,7 @@
 let lang_id = "mdc"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "MDC",
   "injectionSelector": "L:text.html.markdown",
   "name": "mdc",

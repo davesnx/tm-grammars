@@ -1,5 +1,7 @@
 let lang_id = "terraform"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Terraform",
   "fileTypes": [
     "tf",

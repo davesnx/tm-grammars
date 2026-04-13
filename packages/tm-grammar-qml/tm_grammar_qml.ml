@@ -1,5 +1,7 @@
 let lang_id = "qml"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "QML",
   "name": "qml",
   "patterns": [

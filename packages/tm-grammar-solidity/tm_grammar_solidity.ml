@@ -1,5 +1,7 @@
 let lang_id = "solidity"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Solidity",
   "fileTypes": [
     "sol"

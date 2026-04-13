@@ -1,5 +1,7 @@
 let lang_id = "wasm"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "WebAssembly",
   "name": "wasm",
   "patterns": [

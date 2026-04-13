@@ -1,5 +1,7 @@
 let lang_id = "codeql"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "CodeQL",
   "fileTypes": [
     "ql",

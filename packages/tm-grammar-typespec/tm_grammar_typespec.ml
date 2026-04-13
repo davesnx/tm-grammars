@@ -1,5 +1,7 @@
 let lang_id = "typespec"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "TypeSpec",
   "fileTypes": [
     "tsp"

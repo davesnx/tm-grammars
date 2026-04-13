@@ -1,5 +1,7 @@
 let lang_id = "powershell"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "PowerShell",
   "name": "powershell",
   "patterns": [

@@ -1,5 +1,7 @@
 let lang_id = "sdbl"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "1C (Query)",
   "fileTypes": [
     "sdbl",

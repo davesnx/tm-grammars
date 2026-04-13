@@ -1,5 +1,7 @@
 let lang_id = "shaderlab"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "ShaderLab",
   "name": "shaderlab",
   "patterns": [

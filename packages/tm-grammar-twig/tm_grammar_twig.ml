@@ -1,5 +1,7 @@
 let lang_id = "twig"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Twig",
   "fileTypes": [
     "twig",

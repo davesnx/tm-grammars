@@ -1,5 +1,7 @@
 let lang_id = "viml"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Vim Script",
   "name": "viml",
   "patterns": [

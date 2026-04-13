@@ -1,5 +1,7 @@
 let lang_id = "ocamllex"
-let json = {json|{
+
+let json =
+  {json|{
   "name": "OCamllex",
   "scopeName": "source.ocaml.ocamllex",
   "fileTypes": ["mll"],

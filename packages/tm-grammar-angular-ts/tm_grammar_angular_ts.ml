@@ -1,5 +1,7 @@
 let lang_id = "angular-ts"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Angular TypeScript",
   "name": "angular-ts",
   "patterns": [

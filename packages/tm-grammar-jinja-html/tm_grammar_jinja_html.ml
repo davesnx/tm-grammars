@@ -1,5 +1,7 @@
 let lang_id = "jinja-html"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "jinja-html",
   "firstLineMatch": "^\\{% extends [\"'][^\"']+[\"'] %}",
   "foldingStartMarker": "(<(?i:(head|table|tr|div|style|script|ul|ol|form|dl))\\b.*?>|\\{%\\s*(block|filter|for|if|macro|raw))",

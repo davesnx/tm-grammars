@@ -1,5 +1,7 @@
 let lang_id = "gdresource"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "GDResource",
   "name": "gdresource",
   "patterns": [

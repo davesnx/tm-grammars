@@ -1,5 +1,7 @@
 let lang_id = "mipsasm"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "MIPS Assembly",
   "fileTypes": [
     "s",

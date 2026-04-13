@@ -1,5 +1,7 @@
 let lang_id = "apex"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Apex",
   "fileTypes": [
     "apex",

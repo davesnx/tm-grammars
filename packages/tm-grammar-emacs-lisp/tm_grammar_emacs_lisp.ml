@@ -1,5 +1,7 @@
 let lang_id = "emacs-lisp"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Emacs Lisp",
   "fileTypes": [
     "el",

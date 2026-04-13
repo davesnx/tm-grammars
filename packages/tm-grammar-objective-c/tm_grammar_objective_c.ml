@@ -1,5 +1,7 @@
 let lang_id = "objective-c"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Objective-C",
   "name": "objective-c",
   "patterns": [

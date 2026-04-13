@@ -1,5 +1,7 @@
 let lang_id = "razor"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "ASP.NET Razor",
   "fileTypes": [
     "razor",

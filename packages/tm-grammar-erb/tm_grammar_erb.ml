@@ -1,5 +1,7 @@
 let lang_id = "erb"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "ERB",
   "fileTypes": [
     "erb",

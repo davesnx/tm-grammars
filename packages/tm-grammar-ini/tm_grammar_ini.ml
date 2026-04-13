@@ -1,5 +1,7 @@
 let lang_id = "ini"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "INI",
   "name": "ini",
   "patterns": [

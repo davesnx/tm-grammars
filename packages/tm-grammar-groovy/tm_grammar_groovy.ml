@@ -1,5 +1,7 @@
 let lang_id = "groovy"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Groovy",
   "name": "groovy",
   "patterns": [

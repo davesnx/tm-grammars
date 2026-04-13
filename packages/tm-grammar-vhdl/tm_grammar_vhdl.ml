@@ -1,5 +1,7 @@
 let lang_id = "vhdl"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "VHDL",
   "fileTypes": [
     "vhd",

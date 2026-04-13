@@ -1,5 +1,7 @@
 let lang_id = "vue-sfc-style-variable-injection"
-let json = {json|{
+
+let json =
+  {json|{
   "fileTypes": [
   ],
   "injectTo": [

@@ -1,5 +1,7 @@
 let lang_id = "jssm"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "JSSM",
   "fileTypes": [
     "jssm",

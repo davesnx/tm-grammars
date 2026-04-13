@@ -1,5 +1,7 @@
 let lang_id = "moonbit"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "MoonBit",
   "fileTypes": [
     "mbt"

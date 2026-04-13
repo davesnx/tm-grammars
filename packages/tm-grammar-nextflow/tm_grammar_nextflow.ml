@@ -1,5 +1,7 @@
 let lang_id = "nextflow"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Nextflow",
   "name": "nextflow",
   "patterns": [

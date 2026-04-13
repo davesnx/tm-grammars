@@ -1,5 +1,7 @@
 let lang_id = "vb"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Visual Basic",
   "name": "vb",
   "patterns": [

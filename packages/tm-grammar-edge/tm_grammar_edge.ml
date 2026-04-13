@@ -1,5 +1,7 @@
 let lang_id = "edge"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Edge",
   "injections": {
     "text.html.edge - (meta.embedded | meta.tag | comment.block.edge), L:(text.html.edge meta.tag - (comment.block.edge | meta.embedded.block.edge)), L:(source.ts.embedded.html - (comment.block.edge | meta.embedded.block.edge))": {

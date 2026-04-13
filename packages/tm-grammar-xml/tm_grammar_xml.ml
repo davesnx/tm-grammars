@@ -1,5 +1,7 @@
 let lang_id = "xml"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "XML",
   "name": "xml",
   "patterns": [

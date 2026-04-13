@@ -1,5 +1,7 @@
 let lang_id = "es-tag-css"
-let json = {json|{
+
+let json =
+  {json|{
   "fileTypes": [
     "js",
     "jsx",

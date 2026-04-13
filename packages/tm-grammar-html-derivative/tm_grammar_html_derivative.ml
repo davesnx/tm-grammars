@@ -1,5 +1,7 @@
 let lang_id = "html-derivative"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "HTML (Derivative)",
   "injections": {
     "R:text.html - (comment.block, text.html meta.embedded, meta.tag.*.*.html, meta.tag.*.*.*.html, meta.tag.*.*.*.*.html)": {

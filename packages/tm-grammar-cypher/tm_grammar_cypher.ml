@@ -1,5 +1,7 @@
 let lang_id = "cypher"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Cypher",
   "fileTypes": [
     "cql",

@@ -1,5 +1,7 @@
 let lang_id = "reg"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Windows Registry Script",
   "fileTypes": [
     "reg",

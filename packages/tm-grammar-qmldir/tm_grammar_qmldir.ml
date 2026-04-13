@@ -1,5 +1,7 @@
 let lang_id = "qmldir"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "QML Directory",
   "name": "qmldir",
   "patterns": [

@@ -1,5 +1,7 @@
 let lang_id = "fluent"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Fluent",
   "name": "fluent",
   "patterns": [

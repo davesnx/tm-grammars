@@ -1,5 +1,7 @@
 let lang_id = "cram"
-let json = {json|{
+
+let json =
+  {json|{
   "scopeName": "source.cram",
   "fileTypes": ["t"],
   "patterns": [

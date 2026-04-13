@@ -1,5 +1,7 @@
 let lang_id = "gdshader"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "GDShader",
   "fileTypes": [
     "gdshader"

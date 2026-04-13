@@ -1,5 +1,7 @@
 let lang_id = "ts-tags"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "TypeScript with Tags",
   "name": "ts-tags",
   "patterns": [

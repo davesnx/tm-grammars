@@ -1,5 +1,7 @@
 let lang_id = "haml"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Ruby Haml",
   "fileTypes": [
     "haml",

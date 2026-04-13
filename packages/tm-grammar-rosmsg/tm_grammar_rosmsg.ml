@@ -1,5 +1,7 @@
 let lang_id = "rosmsg"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "ROS Interface",
   "fileTypes": [
     "msg",

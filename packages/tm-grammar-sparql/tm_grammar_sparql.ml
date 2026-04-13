@@ -1,5 +1,7 @@
 let lang_id = "sparql"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "SPARQL",
   "fileTypes": [
     "rq",

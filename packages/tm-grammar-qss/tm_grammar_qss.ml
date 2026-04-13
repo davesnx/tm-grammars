@@ -1,5 +1,7 @@
 let lang_id = "qss"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Qt Style Sheets",
   "name": "qss",
   "patterns": [

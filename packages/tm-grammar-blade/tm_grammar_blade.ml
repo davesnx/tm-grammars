@@ -1,5 +1,7 @@
 let lang_id = "blade"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Blade",
   "fileTypes": [
     "blade.php"

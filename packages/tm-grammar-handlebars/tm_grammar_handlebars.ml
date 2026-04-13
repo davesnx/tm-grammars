@@ -1,5 +1,7 @@
 let lang_id = "handlebars"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Handlebars",
   "name": "handlebars",
   "patterns": [

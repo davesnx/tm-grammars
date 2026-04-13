@@ -1,5 +1,7 @@
 let lang_id = "racket"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Racket",
   "name": "racket",
   "patterns": [

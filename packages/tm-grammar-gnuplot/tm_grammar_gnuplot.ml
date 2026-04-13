@@ -1,5 +1,7 @@
 let lang_id = "gnuplot"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Gnuplot",
   "fileTypes": [
     "gp",

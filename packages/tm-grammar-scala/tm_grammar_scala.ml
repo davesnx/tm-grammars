@@ -1,5 +1,7 @@
 let lang_id = "scala"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Scala",
   "fileTypes": [
     "scala"

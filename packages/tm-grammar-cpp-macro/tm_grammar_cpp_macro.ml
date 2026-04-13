@@ -1,5 +1,7 @@
 let lang_id = "cpp-macro"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "C++",
   "name": "cpp-macro",
   "patterns": [

@@ -1,5 +1,7 @@
 let lang_id = "plsql"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "PL/SQL",
   "fileTypes": [
     "sql",

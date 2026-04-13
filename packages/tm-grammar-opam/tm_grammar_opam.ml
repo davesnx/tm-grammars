@@ -1,5 +1,7 @@
 let lang_id = "opam"
-let json = {json|{
+
+let json =
+  {json|{
   "scopeName": "source.ocaml.opam",
   "fileTypes": ["opam"],
   "patterns": [

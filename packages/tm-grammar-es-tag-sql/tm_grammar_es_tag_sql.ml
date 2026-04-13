@@ -1,5 +1,7 @@
 let lang_id = "es-tag-sql"
-let json = {json|{
+
+let json =
+  {json|{
   "injectTo": [
     "source.ts",
     "source.js"

@@ -1,5 +1,7 @@
 let lang_id = "angular-expression"
-let json = {json|{
+
+let json =
+  {json|{
   "injectionSelector": "L:text.html -comment",
   "name": "angular-expression",
   "patterns": [

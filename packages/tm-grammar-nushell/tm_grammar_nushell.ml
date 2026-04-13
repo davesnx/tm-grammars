@@ -1,5 +1,7 @@
 let lang_id = "nushell"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "nushell",
   "name": "nushell",
   "patterns": [

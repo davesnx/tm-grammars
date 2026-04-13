@@ -1,5 +1,7 @@
 let lang_id = "common-lisp"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Common Lisp",
   "fileTypes": [
     "lisp",

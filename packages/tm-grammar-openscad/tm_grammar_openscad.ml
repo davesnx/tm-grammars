@@ -1,5 +1,7 @@
 let lang_id = "openscad"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "OpenSCAD",
   "fileTypes": [
     "scad"

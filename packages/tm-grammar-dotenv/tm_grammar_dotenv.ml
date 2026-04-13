@@ -1,5 +1,7 @@
 let lang_id = "dotenv"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "dotEnv",
   "name": "dotenv",
   "patterns": [

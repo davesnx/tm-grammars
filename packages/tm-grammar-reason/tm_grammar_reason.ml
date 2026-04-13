@@ -1,5 +1,7 @@
 let lang_id = "reason"
-let json = {json|{
+
+let json =
+  {json|{
   "name": "Reason",
   "scopeName": "source.reason",
   "fileTypes": ["re", "rei"],

@@ -1,5 +1,7 @@
 let lang_id = "angular-inline-template"
-let json = {json|{
+
+let json =
+  {json|{
   "injectTo": [
     "source.ts.ng"
   ],

@@ -1,5 +1,7 @@
 let lang_id = "jinja"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Jinja",
   "foldingStartMarker": "(\\{%\\s*(block|filter|for|if|macro|raw))",
   "foldingStopMarker": "(\\{%\\s*(end(?:block|filter|for|if|macro|raw))\\s*%})",

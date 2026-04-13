@@ -1,5 +1,7 @@
 let lang_id = "menhir"
-let json = {json|{
+
+let json =
+  {json|{
   "name": "Menhir",
   "scopeName": "source.ocaml.menhir",
   "fileTypes": ["mly", "vy"],

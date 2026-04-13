@@ -1,5 +1,7 @@
 let lang_id = "stylus"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Stylus",
   "fileTypes": [
     "styl",

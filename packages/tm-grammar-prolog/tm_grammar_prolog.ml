@@ -1,5 +1,7 @@
 let lang_id = "prolog"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Prolog",
   "fileTypes": [
     "pl",

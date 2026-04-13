@@ -1,5 +1,7 @@
 let lang_id = "matlab"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "MATLAB",
   "fileTypes": [
     "m"

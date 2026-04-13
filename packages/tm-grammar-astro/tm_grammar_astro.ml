@@ -1,5 +1,7 @@
 let lang_id = "astro"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Astro",
   "fileTypes": [
     "astro"

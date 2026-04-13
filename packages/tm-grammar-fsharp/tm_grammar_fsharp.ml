@@ -1,5 +1,7 @@
 let lang_id = "fsharp"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "F#",
   "name": "fsharp",
   "patterns": [

@@ -1,5 +1,7 @@
 let lang_id = "prisma"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Prisma",
   "fileTypes": [
     "prisma"

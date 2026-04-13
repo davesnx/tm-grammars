@@ -1,5 +1,7 @@
 let lang_id = "json5"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "JSON5",
   "fileTypes": [
     "json5"

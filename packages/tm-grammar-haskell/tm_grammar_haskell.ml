@@ -1,5 +1,7 @@
 let lang_id = "haskell"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Haskell",
   "fileTypes": [
     "hs",

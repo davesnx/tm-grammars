@@ -1,5 +1,7 @@
 let lang_id = "asciidoc"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "AsciiDoc",
   "fileTypes": [
     "ad",

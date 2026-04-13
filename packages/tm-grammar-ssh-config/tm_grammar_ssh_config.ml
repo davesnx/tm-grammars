@@ -1,5 +1,7 @@
 let lang_id = "ssh-config"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "SSH Config",
   "fileTypes": [
     "ssh_config",

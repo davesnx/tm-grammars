@@ -1,5 +1,7 @@
 let lang_id = "xsl"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "XSL",
   "name": "xsl",
   "patterns": [

@@ -1,5 +1,7 @@
 let lang_id = "desktop"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Desktop",
   "name": "desktop",
   "patterns": [

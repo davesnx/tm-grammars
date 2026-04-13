@@ -1,5 +1,7 @@
 let lang_id = "glsl"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "GLSL",
   "fileTypes": [
     "vs",

@@ -1,5 +1,7 @@
 let lang_id = "yaml"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "YAML",
   "fileTypes": [
     "yaml",

@@ -1,5 +1,7 @@
 let lang_id = "git-commit"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Git Commit Message",
   "name": "git-commit",
   "patterns": [

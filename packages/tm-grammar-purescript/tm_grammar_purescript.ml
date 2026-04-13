@@ -1,5 +1,7 @@
 let lang_id = "purescript"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "PureScript",
   "fileTypes": [
     "purs"

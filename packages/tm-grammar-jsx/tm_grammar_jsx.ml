@@ -1,5 +1,7 @@
 let lang_id = "jsx"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "JSX",
   "name": "jsx",
   "patterns": [

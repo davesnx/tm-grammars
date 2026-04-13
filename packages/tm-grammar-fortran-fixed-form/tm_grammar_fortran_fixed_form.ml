@@ -1,5 +1,7 @@
 let lang_id = "fortran-fixed-form"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Fortran (Fixed Form)",
   "fileTypes": [
     "f",

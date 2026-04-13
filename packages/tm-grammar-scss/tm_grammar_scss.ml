@@ -1,5 +1,7 @@
 let lang_id = "scss"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "SCSS",
   "name": "scss",
   "patterns": [

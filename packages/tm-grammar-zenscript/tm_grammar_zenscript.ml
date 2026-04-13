@@ -1,5 +1,7 @@
 let lang_id = "zenscript"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "ZenScript",
   "fileTypes": [
     "zs"

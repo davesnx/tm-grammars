@@ -1,5 +1,7 @@
 let lang_id = "sass"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Sass",
   "fileTypes": [
     "sass"

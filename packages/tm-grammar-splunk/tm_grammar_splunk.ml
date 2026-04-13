@@ -1,5 +1,7 @@
 let lang_id = "splunk"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Splunk Query Language",
   "fileTypes": [
     "splunk",

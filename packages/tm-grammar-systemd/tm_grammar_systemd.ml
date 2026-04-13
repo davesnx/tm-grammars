@@ -1,5 +1,7 @@
 let lang_id = "systemd"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Systemd Units",
   "name": "systemd",
   "patterns": [

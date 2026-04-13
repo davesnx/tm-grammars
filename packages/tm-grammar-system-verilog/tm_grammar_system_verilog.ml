@@ -1,5 +1,7 @@
 let lang_id = "system-verilog"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "SystemVerilog",
   "fileTypes": [
     "v",

@@ -1,5 +1,7 @@
 let lang_id = "vue-vine"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Vue Vine",
   "name": "vue-vine",
   "patterns": [

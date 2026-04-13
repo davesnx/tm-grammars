@@ -1,5 +1,7 @@
 let lang_id = "glimmer-js"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Glimmer JS",
   "injections": {
     "L:source.gjs -comment -(string -meta.embedded)": {

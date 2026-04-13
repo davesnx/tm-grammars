@@ -1,5 +1,7 @@
 let lang_id = "fortran-free-form"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Fortran (Free Form)",
   "fileTypes": [
     "f90",

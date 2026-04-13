@@ -1,5 +1,7 @@
 let lang_id = "wolfram"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Wolfram",
   "fileTypes": [
     "wl",

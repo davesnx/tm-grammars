@@ -1,5 +1,7 @@
 let lang_id = "gherkin"
-let json = {json|{
+
+let json =
+  {json|{
   "displayName": "Gherkin",
   "fileTypes": [
     "feature"
