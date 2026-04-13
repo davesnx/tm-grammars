@@ -55,12 +55,8 @@ install: ## Install dependencies
 	opam update
 	opam install . --deps-only --with-test --with-doc --with-dev-setup -y
 
-.PHONY: pin
-pin: ## Pin grammar compatibility fixes
-	opam pin textmate-language https://github.com/davesnx/ocaml-textmate-language.git#grammar-compatibility-fixes -y
-
 .PHONY: init
-init: setup-githooks create-switch pin install ## Create a local dev environment
+init: setup-githooks create-switch install ## Create a local dev environment
 
 .PHONY: update
 update: sync generate build ## Sync + generate + build (full refresh)
