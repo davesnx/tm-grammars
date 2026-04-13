@@ -16,9 +16,16 @@ sync: ## Download grammars from upstream sources
 	@bash scripts/sync.sh
 
 .PHONY: generate
-generate: ## Generate all derived files via dune
+generate: ## Generate all derived files
 	@bash scripts/gen_package_dunes.sh sources.json
-	$(DUNE) build @gen --auto-promote
+	@(cd packages/tm-grammars && bash ../../scripts/gen_all_module.sh ../../sources.json)
+	@for dir in packages/tm-grammar-*; do \
+		lang_id=$$(basename "$$dir" | sed 's/^tm-grammar-//'); \
+		json_file="vendor/$$lang_id.json"; \
+		if [ -f "$$json_file" ]; then \
+			(cd "$$dir" && bash ../../scripts/gen_pkg_module.sh "$$lang_id" "../../$$json_file"); \
+		fi; \
+	done
 	@bash scripts/gen_third_party_licenses.sh sources.json THIRD-PARTY-LICENSES
 	$(DUNE) build tm-grammars.opam --auto-promote
 

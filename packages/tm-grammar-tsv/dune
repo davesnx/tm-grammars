@@ -1,12 +1,3 @@
 (library
  (name tm_grammar_tsv)
  (public_name tm-grammars.tsv))
-
-(rule
- (alias gen)
- (deps ../../vendor/tsv.json ../../scripts/gen_pkg_module.sh)
- (targets tm_grammar_tsv.ml tm_grammar_tsv.mli)
- (mode
-  (promote (until-clean)))
- (action
-  (run bash ../../scripts/gen_pkg_module.sh tsv ../../vendor/tsv.json)))

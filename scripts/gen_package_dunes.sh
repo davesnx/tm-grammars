@@ -41,15 +41,6 @@ for lang_id in "${lang_ids[@]}"; do
 (library
  (name $module_name)
  (public_name tm-grammars.$public_id))
-
-(rule
- (alias gen)
- (deps ../../vendor/$lang_id.json ../../scripts/gen_pkg_module.sh)
- (targets $module_name.ml $module_name.mli)
- (mode
-  (promote (until-clean)))
- (action
-  (run bash ../../scripts/gen_pkg_module.sh $lang_id ../../vendor/$lang_id.json)))
 EOF
 done
 
@@ -67,13 +58,4 @@ tm_grammars_dune="$ROOT_DIR/packages/tm-grammars/dune"
     printf '  tm-grammars.%s\n' "$public_id"
   done
   echo "  ))"
-  echo ""
-  echo "(rule"
-  echo " (alias gen)"
-  echo " (deps ../../sources.json ../../scripts/gen_all_module.sh)"
-  echo " (targets tm_grammars.ml tm_grammars.mli)"
-  echo " (mode"
-  echo "  (promote (until-clean)))"
-  echo " (action"
-  echo "  (run bash ../../scripts/gen_all_module.sh ../../sources.json)))"
 } > "$tm_grammars_dune"

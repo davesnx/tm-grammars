@@ -1,12 +1,3 @@
 (library
  (name tm_grammar_mipsasm)
  (public_name tm-grammars.mipsasm))
-
-(rule
- (alias gen)
- (deps ../../vendor/mipsasm.json ../../scripts/gen_pkg_module.sh)
- (targets tm_grammar_mipsasm.ml tm_grammar_mipsasm.mli)
- (mode
-  (promote (until-clean)))
- (action
-  (run bash ../../scripts/gen_pkg_module.sh mipsasm ../../vendor/mipsasm.json)))

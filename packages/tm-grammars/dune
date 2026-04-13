@@ -263,12 +263,3 @@
   tm-grammars.zenscript
   tm-grammars.zig
   ))
-
-(rule
- (alias gen)
- (deps ../../sources.json ../../scripts/gen_all_module.sh)
- (targets tm_grammars.ml tm_grammars.mli)
- (mode
-  (promote (until-clean)))
- (action
-  (run bash ../../scripts/gen_all_module.sh ../../sources.json)))
