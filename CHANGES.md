@@ -1,3 +1,7 @@
+## 2.0.0
+
+- Fix package generation
+
 ## 1.1.0
 
 - Fix package generation
