@@ -1,10 +1,10 @@
 (rule
  (alias doc-markdown)
  (deps
-   README.mld
-   sources.json
-   scripts/gen_readme_md.sh
-   (glob_files packages/tm-grammar-*/dune))
+  README.mld
+  sources.json
+  scripts/gen_readme_md.sh
+   (glob_files packages/*/dune))
  (target README.md)
  (mode promote)
  (action

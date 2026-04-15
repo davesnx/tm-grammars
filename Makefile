@@ -19,8 +19,9 @@ sync: ## Download grammars from upstream sources
 generate: ## Generate all derived files
 	@bash scripts/gen_package_dunes.sh sources.json
 	@(cd packages/tm-grammars && bash ../../scripts/gen_all_module.sh ../../sources.json)
-	@for dir in packages/tm-grammar-*; do \
-		lang_id=$$(basename "$$dir" | sed 's/^tm-grammar-//'); \
+	@for dir in packages/*/; do \
+		lang_id=$$(basename "$$dir"); \
+		[ "$$lang_id" = "tm-grammars" ] && continue; \
 		json_file="vendor/$$lang_id.json"; \
 		if [ -f "$$json_file" ]; then \
 			(cd "$$dir" && bash ../../scripts/gen_pkg_module.sh "$$lang_id" "../../$$json_file"); \
@@ -61,6 +62,10 @@ create-switch: ## Create opam switch
 install: ## Install dependencies
 	opam update
 	opam install . --deps-only --with-test --with-doc --with-dev-setup -y
+
+.PHONY: format fmt
+format fmt: ## Format code
+	$(DUNE) build @fmt
 
 .PHONY: init
 init: setup-githooks create-switch install ## Create a local dev environment

@@ -13,23 +13,9 @@ ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 
 mapfile -t lang_ids < <(jq -r 'keys[]' "$sources_json")
 
-declare -A wanted=()
-for lang_id in "${lang_ids[@]}"; do
-  wanted["$lang_id"]=1
-done
-
-for dir in "$ROOT_DIR"/packages/tm-grammar-*; do
-  [ -d "$dir" ] || continue
-  id="$(basename "$dir")"
-  id="${id#tm-grammar-}"
-  if [ -z "${wanted[$id]+x}" ]; then
-    rm -rf "$dir"
-  fi
-done
-
 for lang_id in "${lang_ids[@]}"; do
   module_name="tm_grammar_$(echo "$lang_id" | tr '-' '_')"
-  package_dir="$ROOT_DIR/packages/tm-grammar-$lang_id"
+  package_dir="$ROOT_DIR/packages/$lang_id"
   public_id="$lang_id"
 
   if [ "$lang_id" = "opam" ]; then
@@ -50,12 +36,17 @@ tm_grammars_dune="$ROOT_DIR/packages/tm-grammars/dune"
   echo " (name tm_grammars)"
   echo " (public_name tm-grammars)"
   echo " (libraries"
-  for lang_id in "${lang_ids[@]}"; do
+  last_idx=$(( ${#lang_ids[@]} - 1 ))
+  for i in "${!lang_ids[@]}"; do
+    lang_id="${lang_ids[$i]}"
     public_id="$lang_id"
     if [ "$lang_id" = "opam" ]; then
       public_id="opam-file"
     fi
-    printf '  tm-grammars.%s\n' "$public_id"
+    if [ "$i" -eq "$last_idx" ]; then
+      printf '  tm-grammars.%s))\n' "$public_id"
+    else
+      printf '  tm-grammars.%s\n' "$public_id"
+    fi
   done
-  echo "  ))"
 } > "$tm_grammars_dune"

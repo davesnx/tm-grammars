@@ -261,5 +261,4 @@
   tm-grammars.xsl
   tm-grammars.yaml
   tm-grammars.zenscript
-  tm-grammars.zig
-  ))
+  tm-grammars.zig))
