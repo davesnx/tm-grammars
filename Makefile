@@ -28,27 +28,27 @@ generate: ## Generate all derived files
 		fi; \
 	done
 	@bash scripts/gen_third_party_licenses.sh sources.json THIRD-PARTY-LICENSES
-	$(DUNE) build tm-grammars.opam --auto-promote
+	$(DUNE) build --root . tm-grammars.opam --auto-promote
 
 .PHONY: build
 build: ## Build all packages
-	$(DUNE) build @all
+	$(DUNE) build --root . @all
 
 .PHONY: dev
 dev: ## Build in watch mode
-	$(DUNE) build -w @all
+	$(DUNE) build --root . -w @all
 
 .PHONY: test
 test: ## Run tests
-	$(DUNE) build @runtest
+	$(DUNE) build --root . @runtest
 
 .PHONY: docs
 docs: ## Build docs and refresh README.md
-	$(DUNE) build @doc @doc-markdown --auto-promote
+	$(DUNE) build --root . @doc @doc-markdown --auto-promote
 
 .PHONY: clean
 clean: ## Clean build artifacts
-	$(DUNE) clean
+	$(DUNE) clean --root .
 
 .PHONY: setup-githooks
 setup-githooks: ## Setup githooks
@@ -65,7 +65,7 @@ install: ## Install dependencies
 
 .PHONY: format fmt
 format fmt: ## Format code
-	$(DUNE) build @fmt
+	$(DUNE) build --root . @fmt
 
 .PHONY: init
 init: setup-githooks create-switch install ## Create a local dev environment
