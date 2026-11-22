@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_vesper)
+ (public_name tm-themes.vesper))

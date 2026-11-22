@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_catppuccin_macchiato)
+ (public_name tm-themes.catppuccin-macchiato))

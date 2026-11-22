@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_dracula_soft)
+ (public_name tm-themes.dracula-soft))

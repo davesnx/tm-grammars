@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_one_dark_pro)
+ (public_name tm-themes.one-dark-pro))

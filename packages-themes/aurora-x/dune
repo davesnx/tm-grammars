@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_aurora_x)
+ (public_name tm-themes.aurora-x))

@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_laserwave)
+ (public_name tm-themes.laserwave))

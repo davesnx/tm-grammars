@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_material_theme_lighter)
+ (public_name tm-themes.material-theme-lighter))

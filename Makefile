@@ -12,23 +12,19 @@ help: ## Print this help message
 	@echo "";
 
 .PHONY: sync
-sync: ## Download grammars from upstream sources
-	@bash scripts/sync.sh
+sync: ## Download grammars and themes from upstream sources
+	@bash scripts/sync.sh grammars
+	@bash scripts/sync.sh themes
 
 .PHONY: generate
 generate: ## Generate all derived files
-	@bash scripts/gen_package_dunes.sh sources.json
-	@(cd packages/tm-grammars && bash ../../scripts/gen_all_module.sh ../../sources.json)
-	@for dir in packages/*/; do \
-		lang_id=$$(basename "$$dir"); \
-		[ "$$lang_id" = "tm-grammars" ] && continue; \
-		json_file="vendor/$$lang_id.json"; \
-		if [ -f "$$json_file" ]; then \
-			(cd "$$dir" && bash ../../scripts/gen_pkg_module.sh "$$lang_id" "../../$$json_file"); \
-		fi; \
+	@for kind in grammars themes; do \
+		bash scripts/gen_package_dunes.sh $$kind; \
+		bash scripts/gen_all_module.sh $$kind; \
+		bash scripts/gen_pkg_module.sh $$kind; \
 	done
-	@bash scripts/gen_third_party_licenses.sh sources.json THIRD-PARTY-LICENSES
-	$(DUNE) build --root . tm-grammars.opam --auto-promote
+	@bash scripts/gen_third_party_licenses.sh THIRD-PARTY-LICENSES
+	$(DUNE) build --root . tm-grammars.opam tm-themes.opam --auto-promote
 
 .PHONY: build
 build: ## Build all packages

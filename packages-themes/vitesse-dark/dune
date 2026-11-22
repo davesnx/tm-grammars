@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_vitesse_dark)
+ (public_name tm-themes.vitesse-dark))

@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_dark_plus)
+ (public_name tm-themes.dark-plus))

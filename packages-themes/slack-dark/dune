@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_slack_dark)
+ (public_name tm-themes.slack-dark))

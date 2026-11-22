@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_monokai)
+ (public_name tm-themes.monokai))

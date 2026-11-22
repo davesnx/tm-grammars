@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_everforest_light)
+ (public_name tm-themes.everforest-light))

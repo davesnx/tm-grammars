@@ -1,3 +1,7 @@
+## Unreleased
+
+- Add the `tm-themes` package with every Shiki theme from shikijs/textmate-grammars-themes
+
 ## 2.0.0
 
 - Fix package generation

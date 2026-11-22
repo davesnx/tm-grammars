@@ -50,6 +50,38 @@ let grammar_tsx = Tm_grammar_tsx.json
 3. Run `make generate` to regenerate packages and metadata.
 4. Run `make build` (and optionally `make test`) to verify everything still builds.
 
+{1 Themes}
+
+The [tm-themes] package exposes the Shiki TextMate themes as JSON strings in the same way. Each theme is a library ([tm-themes.nord], [tm-themes.dark-plus], etc.).
+
+{@dune[
+(libraries tm-themes)
+]}
+
+{@ocaml[
+let nord = Tm_themes.nord
+let dark_plus = Tm_themes.find "dark-plus"   (* string option *)
+let names = Tm_themes.available            (* string list *)
+]}
+
+Depend on a sublibrary to pull in only one theme:
+
+{@dune[
+(libraries tm-themes.nord)
+]}
+
+{@ocaml[
+let nord = Tm_theme_nord.json
+]}
+
+{2 Supported theme ids}
+
+@@SUPPORTED_THEME_IDS@@.
+
+{2 How to add a new theme}
+
+Add an entry in [themes.json](themes.json), run `make sync` to download it into `vendor-themes/<theme-id>.json`, then run `make generate` and `make build`.
+
 {1 License}
 
 MIT. See `LICENSE`.

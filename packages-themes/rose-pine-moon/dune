@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_rose_pine_moon)
+ (public_name tm-themes.rose-pine-moon))

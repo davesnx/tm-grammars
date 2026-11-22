@@ -1,18 +1,19 @@
 Third-Party Licenses
 ====================
 
-This project vendors TextMate grammar files from external sources.
-The source and license metadata below is generated from `sources.json`.
-`license` uses SPDX identifiers when known. `NOASSERTION` means no explicit
-license assertion was available from upstream metadata.
+This project vendors TextMate grammar and theme files from external sources.
+The source and license metadata below is generated from `sources.json`
+(grammars) and `themes.json` (themes). `license` uses SPDX identifiers when
+known. `NOASSERTION` means no explicit license assertion was available from
+upstream metadata.
 
-For the full license terms of each grammar, follow the listed license URL.
+For the full license terms of each grammar or theme, follow the listed license URL.
 
 Intermediary Distribution
 ------------------------
 
 Repository:  https://github.com/shikijs/textmate-grammars-themes
-Package:     packages/tm-grammars
+Packages:    packages/tm-grammars, packages/tm-themes
 License:     MIT
 License URL: https://raw.githubusercontent.com/shikijs/textmate-grammars-themes/main/LICENSE
 
@@ -282,3 +283,75 @@ xsl | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscod
 yaml | textmate/yaml.tmbundle | NOASSERTION | n/a
 zenscript | CraftTweaker/ZenScript-tmLanguage | MIT | https://raw.githubusercontent.com/CraftTweaker/ZenScript-tmLanguage/master/LICENSE
 zig | ziglang/vscode-zig | MIT | https://raw.githubusercontent.com/ziglang/vscode-zig/master/LICENSE
+
+Per-Theme Metadata
+------------------
+
+Format:
+theme-id | original-source | license | license-url
+
+andromeeda | EliverLara/Andromeda | MIT | https://raw.githubusercontent.com/EliverLara/Andromeda/master/LICENSE.md
+aurora-x | marqu3ss/Aurora-X | GPL-3.0 | https://raw.githubusercontent.com/marqu3ss/Aurora-X/master/LICENSE
+ayu-dark | ayu-theme/vscode-ayu | MIT | https://raw.githubusercontent.com/ayu-theme/vscode-ayu/master/LICENSE
+ayu-light | ayu-theme/vscode-ayu | MIT | https://raw.githubusercontent.com/ayu-theme/vscode-ayu/master/LICENSE
+ayu-mirage | ayu-theme/vscode-ayu | MIT | https://raw.githubusercontent.com/ayu-theme/vscode-ayu/master/LICENSE
+catppuccin-frappe | catppuccin/vscode | MIT | https://raw.githubusercontent.com/catppuccin/vscode/main/LICENSE
+catppuccin-latte | catppuccin/vscode | MIT | https://raw.githubusercontent.com/catppuccin/vscode/main/LICENSE
+catppuccin-macchiato | catppuccin/vscode | MIT | https://raw.githubusercontent.com/catppuccin/vscode/main/LICENSE
+catppuccin-mocha | catppuccin/vscode | MIT | https://raw.githubusercontent.com/catppuccin/vscode/main/LICENSE
+dark-plus | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+dracula | dracula/visual-studio-code | MIT | https://raw.githubusercontent.com/dracula/visual-studio-code/main/LICENSE
+dracula-soft | dracula/visual-studio-code | MIT | https://raw.githubusercontent.com/dracula/visual-studio-code/main/LICENSE
+everforest-dark | sainnhe/everforest-vscode | MIT | https://raw.githubusercontent.com/sainnhe/everforest-vscode/master/LICENSE
+everforest-light | sainnhe/everforest-vscode | MIT | https://raw.githubusercontent.com/sainnhe/everforest-vscode/master/LICENSE
+github-dark | primer/github-vscode-theme | MIT | https://raw.githubusercontent.com/primer/github-vscode-theme/main/LICENSE
+github-dark-default | primer/github-vscode-theme | MIT | https://raw.githubusercontent.com/primer/github-vscode-theme/main/LICENSE
+github-dark-dimmed | primer/github-vscode-theme | MIT | https://raw.githubusercontent.com/primer/github-vscode-theme/main/LICENSE
+github-dark-high-contrast | primer/github-vscode-theme | MIT | https://raw.githubusercontent.com/primer/github-vscode-theme/main/LICENSE
+github-light | primer/github-vscode-theme | MIT | https://raw.githubusercontent.com/primer/github-vscode-theme/main/LICENSE
+github-light-default | primer/github-vscode-theme | MIT | https://raw.githubusercontent.com/primer/github-vscode-theme/main/LICENSE
+github-light-high-contrast | primer/github-vscode-theme | MIT | https://raw.githubusercontent.com/primer/github-vscode-theme/main/LICENSE
+gruvbox-dark-hard | jdinhify/vscode-theme-gruvbox | MIT | https://raw.githubusercontent.com/jdinhify/vscode-theme-gruvbox/main/LICENSE
+gruvbox-dark-medium | jdinhify/vscode-theme-gruvbox | MIT | https://raw.githubusercontent.com/jdinhify/vscode-theme-gruvbox/main/LICENSE
+gruvbox-dark-soft | jdinhify/vscode-theme-gruvbox | MIT | https://raw.githubusercontent.com/jdinhify/vscode-theme-gruvbox/main/LICENSE
+gruvbox-light-hard | jdinhify/vscode-theme-gruvbox | MIT | https://raw.githubusercontent.com/jdinhify/vscode-theme-gruvbox/main/LICENSE
+gruvbox-light-medium | jdinhify/vscode-theme-gruvbox | MIT | https://raw.githubusercontent.com/jdinhify/vscode-theme-gruvbox/main/LICENSE
+gruvbox-light-soft | jdinhify/vscode-theme-gruvbox | MIT | https://raw.githubusercontent.com/jdinhify/vscode-theme-gruvbox/main/LICENSE
+horizon | alexandernanberg/horizon-theme-vscode | MIT | https://raw.githubusercontent.com/alexandernanberg/horizon-theme-vscode/master/LICENSE
+horizon-bright | alexandernanberg/horizon-theme-vscode | MIT | https://raw.githubusercontent.com/alexandernanberg/horizon-theme-vscode/master/LICENSE
+houston | withastro/houston-vscode | MIT | https://raw.githubusercontent.com/withastro/houston-vscode/main/LICENSE
+kanagawa-dragon | metapho-re/kanagawa-vscode-theme | MIT | https://raw.githubusercontent.com/metapho-re/kanagawa-vscode-theme/main/LICENSE
+kanagawa-lotus | metapho-re/kanagawa-vscode-theme | MIT | https://raw.githubusercontent.com/metapho-re/kanagawa-vscode-theme/main/LICENSE
+kanagawa-wave | metapho-re/kanagawa-vscode-theme | MIT | https://raw.githubusercontent.com/metapho-re/kanagawa-vscode-theme/main/LICENSE
+laserwave | Jaredk3nt/laserwave | MIT | https://raw.githubusercontent.com/Jaredk3nt/laserwave/master/LICENSE
+light-plus | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+material-theme | antfu/vsc-material-theme | Apache-2.0 | https://raw.githubusercontent.com/antfu/vsc-material-theme/main/LICENSE
+material-theme-darker | antfu/vsc-material-theme | Apache-2.0 | https://raw.githubusercontent.com/antfu/vsc-material-theme/main/LICENSE
+material-theme-lighter | antfu/vsc-material-theme | Apache-2.0 | https://raw.githubusercontent.com/antfu/vsc-material-theme/main/LICENSE
+material-theme-ocean | antfu/vsc-material-theme | Apache-2.0 | https://raw.githubusercontent.com/antfu/vsc-material-theme/main/LICENSE
+material-theme-palenight | antfu/vsc-material-theme | Apache-2.0 | https://raw.githubusercontent.com/antfu/vsc-material-theme/main/LICENSE
+min-dark | misolori/min-theme | MIT | https://raw.githubusercontent.com/miguelsolorio/min-theme/master/LICENSE
+min-light | misolori/min-theme | MIT | https://raw.githubusercontent.com/miguelsolorio/min-theme/master/LICENSE
+monokai | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+night-owl | sdras/night-owl-vscode-theme | MIT | https://raw.githubusercontent.com/sdras/night-owl-vscode-theme/main/LICENSE.md
+night-owl-light | sdras/night-owl-vscode-theme | MIT | https://raw.githubusercontent.com/sdras/night-owl-vscode-theme/main/LICENSE.md
+nord | arcticicestudio/nord-visual-studio-code | MIT | https://raw.githubusercontent.com/nordtheme/visual-studio-code/develop/license
+one-dark-pro | Binaryify/OneDark-Pro | MIT | https://raw.githubusercontent.com/Binaryify/OneDark-Pro/master/LICENSE.txt
+one-light | akamud/vscode-theme-onelight | MIT | https://raw.githubusercontent.com/akamud/vscode-theme-onelight/master/LICENSE
+plastic | will-stone/plastic | MIT | https://raw.githubusercontent.com/will-stone/plastic/main/LICENSE
+poimandres | drcmda/poimandres-theme | MIT | https://raw.githubusercontent.com/drcmda/poimandres-theme/main/LICENSE
+red | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+rose-pine | rose-pine/vscode | MIT | https://raw.githubusercontent.com/rose-pine/vscode/main/LICENSE
+rose-pine-dawn | rose-pine/vscode | MIT | https://raw.githubusercontent.com/rose-pine/vscode/main/LICENSE
+rose-pine-moon | rose-pine/vscode | MIT | https://raw.githubusercontent.com/rose-pine/vscode/main/LICENSE
+slack-dark | slack-theme/visual-studio-code | MIT | https://raw.githubusercontent.com/slack-theme/visual-studio-code/master/License
+slack-ochin | slack-theme/visual-studio-code | MIT | https://raw.githubusercontent.com/slack-theme/visual-studio-code/master/License
+snazzy-light | loilo/vscode-snazzy-light | MIT | https://raw.githubusercontent.com/loilo/vscode-snazzy-light/master/LICENSE
+solarized-dark | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+solarized-light | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
+synthwave-84 | robb0wen/synthwave-vscode | MIT | https://raw.githubusercontent.com/robb0wen/synthwave-vscode/master/LICENSE
+tokyo-night | enkia/tokyo-night-vscode-theme | MIT | https://raw.githubusercontent.com/tokyo-night/tokyo-night-vscode-theme/master/LICENSE.txt
+vesper | raunofreiberg/vesper | MIT | https://raw.githubusercontent.com/raunofreiberg/vesper/main/LICENSE.md
+vitesse-black | antfu/vscode-theme-vitesse | MIT | https://raw.githubusercontent.com/antfu/vscode-theme-vitesse/main/LICENSE.md
+vitesse-dark | antfu/vscode-theme-vitesse | MIT | https://raw.githubusercontent.com/antfu/vscode-theme-vitesse/main/LICENSE.md
+vitesse-light | antfu/vscode-theme-vitesse | MIT | https://raw.githubusercontent.com/antfu/vscode-theme-vitesse/main/LICENSE.md

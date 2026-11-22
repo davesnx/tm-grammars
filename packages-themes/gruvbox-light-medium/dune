@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_gruvbox_light_medium)
+ (public_name tm-themes.gruvbox-light-medium))

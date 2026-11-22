@@ -1,3 +1,13 @@
 (test
  (name test_registry)
+ (package tm-grammars)
  (libraries tm-grammars))
+
+(test
+ (name test_themes)
+ (package tm-themes)
+ (libraries tm-themes)
+ (deps
+  (glob_files %{project_root}/vendor-themes/*.json))
+ (action
+  (run %{test} %{project_root}/vendor-themes)))

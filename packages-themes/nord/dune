@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_nord)
+ (public_name tm-themes.nord))

@@ -1,41 +1,38 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
-SOURCES="$ROOT_DIR/sources.json"
-VENDOR_DIR="$ROOT_DIR/vendor"
+source "$(dirname "${BASH_SOURCE[0]}")/kind.sh"
 
 if ! command -v jq &> /dev/null; then
   echo "error: jq is required but not installed" >&2
   exit 1
 fi
 
-mkdir -p "$VENDOR_DIR"
-rm -f "$VENDOR_DIR"/*.json
+mkdir -p "$vendor_dir"
+rm -f "$vendor_dir"/*.json
 
-lang_ids=$(jq -r 'keys[]' "$SOURCES")
-total=$(echo "$lang_ids" | wc -l | tr -d ' ')
+ids=$(jq -r 'keys[]' "$sources")
+total=$(echo "$ids" | wc -l | tr -d ' ')
 count=0
 
-for lang_id in $lang_ids; do
+for id in $ids; do
   count=$((count + 1))
-  repo=$(jq -r --arg k "$lang_id" '.[$k].repo' "$SOURCES")
-  path=$(jq -r --arg k "$lang_id" '.[$k].path' "$SOURCES")
-  commit=$(jq -r --arg k "$lang_id" '.[$k].commit' "$SOURCES")
+  repo=$(jq -r --arg k "$id" '.[$k].repo' "$sources")
+  path=$(jq -r --arg k "$id" '.[$k].path' "$sources")
+  commit=$(jq -r --arg k "$id" '.[$k].commit' "$sources")
 
   url="https://raw.githubusercontent.com/${repo}/${commit}/${path}"
-  dest="$VENDOR_DIR/${lang_id}.json"
+  dest="$vendor_dir/${id}.json"
 
-  printf "[%d/%d] %s ... " "$count" "$total" "$lang_id"
+  printf "[%d/%d] %s ... " "$count" "$total" "$id"
 
   if curl -sfL "$url" -o "$dest"; then
-    case "$lang_id" in
-      dune)
+    case "$package:$id" in
+      tm-grammars:dune)
         jq '.fileTypes |= ((. + ["dune-project", "dune-workspace"]) | unique)' "$dest" > "$dest.tmp"
         mv "$dest.tmp" "$dest"
         ;;
-      ocaml)
+      tm-grammars:ocaml)
         jq '.fileTypes |= ((. + ["mli", "eliomi"]) | unique)' "$dest" > "$dest.tmp"
         mv "$dest.tmp" "$dest"
         ;;
@@ -55,4 +52,4 @@ for lang_id in $lang_ids; do
 done
 
 echo ""
-echo "Synced $total grammars to vendor/"
+echo "Synced $total $1 to $(basename "$vendor_dir")/"

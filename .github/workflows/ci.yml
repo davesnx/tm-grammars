@@ -69,5 +69,7 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/') && matrix.os == 'ubuntu-latest'
         uses: davesnx/dune-release-action@v0.6.0
         with:
-          packages: tm-grammars
+          packages: |
+            tm-grammars
+            tm-themes
           github-token: ${{ secrets.GH_TOKEN }}

@@ -1,20 +1,22 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-if [ "$#" -ne 2 ]; then
-  echo "usage: $0 <README.mld> <sources.json>" >&2
+if [ "$#" -ne 3 ]; then
+  echo "usage: $0 <README.mld> <sources.json> <themes.json>" >&2
   exit 1
 fi
 
 template="$1"
 sources_json="$2"
+themes_json="$3"
 
-ids="$(jq -r 'keys[]' "$sources_json" | sed 's/^/`/' | sed 's/$/`/' | sed '$!s/$/,/' | tr '\n' ' ' | sed 's/[[:space:]]*$//')"
-
-escaped_ids="$(printf '%s\n' "$ids" | sed 's/[&|]/\\&/g')"
+ids() {
+  jq -r 'keys[]' "$1" | sed 's/^/`/' | sed 's/$/`/' | sed '$!s/$/,/' | tr '\n' ' ' | sed 's/[[:space:]]*$//' | sed 's/[&|]/\\&/g'
+}
 
 sed \
-  -e "s|@@SUPPORTED_LANGUAGE_IDS@@|$escaped_ids|" \
+  -e "s|@@SUPPORTED_LANGUAGE_IDS@@|$(ids "$sources_json")|" \
+  -e "s|@@SUPPORTED_THEME_IDS@@|$(ids "$themes_json")|" \
   -e 's/^{0 \(.*\)}$/# \1/' \
   -e 's/^{1 \(.*\)}$/## \1/' \
   -e 's/^{2 \(.*\)}$/### \1/' \

@@ -20,3 +20,13 @@
  (maintainers "David Sancho <dsnxmoreno@gmail.com>")
  (depends
   ocaml))
+
+(package
+ (name tm-themes)
+ (synopsis "TextMate themes as OCaml strings")
+ (description
+  "OCaml package that exposes the Shiki TextMate themes as JSON strings.")
+ (authors "David Sancho <dsnxmoreno@gmail.com>")
+ (maintainers "David Sancho <dsnxmoreno@gmail.com>")
+ (depends
+  ocaml))
