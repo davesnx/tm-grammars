@@ -5,6 +5,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 SOURCES="$ROOT_DIR/sources.json"
 VENDOR_DIR="$ROOT_DIR/vendor"
+PATCHES_DIR="$SCRIPT_DIR/patches"
 
 if ! command -v jq &> /dev/null; then
   echo "error: jq is required but not installed" >&2
@@ -12,9 +13,19 @@ if ! command -v jq &> /dev/null; then
 fi
 
 mkdir -p "$VENDOR_DIR"
-rm -f "$VENDOR_DIR"/*.json
 
-lang_ids=$(jq -r 'keys[]' "$SOURCES")
+if [ "$#" -gt 0 ]; then
+  for lang_id in "$@"; do
+    if ! jq -e --arg k "$lang_id" 'has($k)' "$SOURCES" > /dev/null; then
+      echo "error: unknown language id: $lang_id" >&2
+      exit 1
+    fi
+  done
+  lang_ids=$(printf '%s\n' "$@")
+else
+  rm -f "$VENDOR_DIR"/*.json
+  lang_ids=$(jq -r 'keys[]' "$SOURCES")
+fi
 total=$(echo "$lang_ids" | wc -l | tr -d ' ')
 count=0
 
@@ -30,16 +41,11 @@ for lang_id in $lang_ids; do
   printf "[%d/%d] %s ... " "$count" "$total" "$lang_id"
 
   if curl -sfL "$url" -o "$dest"; then
-    case "$lang_id" in
-      dune)
-        jq '.fileTypes |= ((. + ["dune-project", "dune-workspace"]) | unique)' "$dest" > "$dest.tmp"
-        mv "$dest.tmp" "$dest"
-        ;;
-      ocaml)
-        jq '.fileTypes |= ((. + ["mli", "eliomi"]) | unique)' "$dest" > "$dest.tmp"
-        mv "$dest.tmp" "$dest"
-        ;;
-    esac
+    patch="$PATCHES_DIR/${lang_id}.jq"
+    if [ -f "$patch" ]; then
+      jq -f "$patch" "$dest" > "$dest.tmp"
+      mv "$dest.tmp" "$dest"
+    fi
 
     if jq empty "$dest" 2>/dev/null; then
       echo "ok"

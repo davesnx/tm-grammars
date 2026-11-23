@@ -24,7 +24,7 @@ let () =
         Printf.eprintf "FAIL: Tm_grammars.find \"%s\" returned None\n" lang;
         exit 1
   in
-  let spot_checks = [ "ocaml"; "javascript"; "reason"; "json"; "css" ] in
+  let spot_checks = [ "ocaml"; "ocaml-interface"; "javascript"; "reason"; "json"; "css" ] in
   Printf.printf "Spot-checking %d grammars:\n" (List.length spot_checks);
   List.iter check_find spot_checks;
   (match Tm_grammars.find "this-language-does-not-exist" with

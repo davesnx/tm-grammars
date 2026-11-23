@@ -182,6 +182,7 @@ nushell | nushell/vscode-nushell-lang | MIT | https://raw.githubusercontent.com/
 objective-c | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
 objective-cpp | microsoft/vscode | MIT | https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt
 ocaml | ocamllabs/vscode-ocaml-platform | ISC | https://raw.githubusercontent.com/ocamllabs/vscode-ocaml-platform/master/LICENSE
+ocaml-interface | ocamllabs/vscode-ocaml-platform | ISC | https://raw.githubusercontent.com/ocamllabs/vscode-ocaml-platform/master/LICENSE
 ocamllex | ocamllabs/vscode-ocaml-platform | ISC | https://raw.githubusercontent.com/ocamllabs/vscode-ocaml-platform/master/LICENSE
 odin | DanielGavin/ols | MIT | https://raw.githubusercontent.com/DanielGavin/ols/master/LICENSE
 opam | ocamllabs/vscode-ocaml-platform | ISC | https://raw.githubusercontent.com/ocamllabs/vscode-ocaml-platform/master/LICENSE
