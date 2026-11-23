@@ -536,6 +536,15 @@ let json =
     "bindings": {
       "patterns": [
         {
+          "include": "#module-names"
+        },
+        {
+          "include": "#type-definition"
+        },
+        {
+          "include": "#type-annotation"
+        },
+        {
           "comment": "for loop",
           "match": "\\b(for)[[:space:]]+([[:lower:]_][[:word:]']*)",
           "captures": {
@@ -616,7 +625,7 @@ let json =
               "name": "keyword.ocaml"
             },
             "3": {
-              "name": "entity.name.function.binding.ocaml"
+              "name": "entity.name.type.parameter.ocaml"
             }
           }
         },
@@ -663,6 +672,18 @@ let json =
     },
     "operators": {
       "patterns": [
+        {
+          "comment": "field access",
+          "match": "(\\.)([[:lower:]_][[:word:]']*)",
+          "captures": {
+            "1": {
+              "name": "keyword.other.ocaml punctuation.other.period punctuation.separator.period"
+            },
+            "2": {
+              "name": "variable.other.property.ocaml"
+            }
+          }
+        },
         {
           "comment": "binding operator",
           "name": "keyword.ocaml",
@@ -837,6 +858,18 @@ let json =
           "end": "\\}",
           "patterns": [
             {
+              "comment": "record field name",
+              "match": "(?:(?<=\\{)|(?<=;)|(?<=\\bwith)|^)[[:space:]]*(?:(mutable)[[:space:]]+)?(?!_(?![[:word:]']))([[:lower:]_][[:word:]']*)(?=[[:space:]]*(?:[:;}]|=(?![=>~!?$&*+\\-/@^|%<:.])))",
+              "captures": {
+                "1": {
+                  "name": "keyword.other.ocaml"
+                },
+                "2": {
+                  "name": "variable.other.property.ocaml"
+                }
+              }
+            },
+            {
               "include": "$self"
             }
           ]
@@ -865,13 +898,25 @@ let json =
     "identifiers": {
       "patterns": [
         {
+          "comment": "module path qualifier",
+          "match": "\\b([[:upper:]][[:word:]']*+)[[:space:]]*(\\.)",
+          "captures": {
+            "1": {
+              "name": "entity.name.namespace.ocaml"
+            },
+            "2": {
+              "name": "keyword.other.ocaml punctuation.other.period punctuation.separator.period"
+            }
+          }
+        },
+        {
           "comment": "wildcard underscore",
           "name": "constant.language.ocaml",
           "match": "\\b_\\b"
         },
         {
-          "comment": "capital identifier for constructor, exception, or module",
-          "name": "constant.language.capital-identifier.ocaml",
+          "comment": "capital identifier for constructor or exception",
+          "name": "variable.other.enummember.ocaml",
           "match": "\\b[[:upper:]][[:word:]']*('|\\b)"
         },
         {
@@ -888,6 +933,407 @@ let json =
           "comment": "empty list (can be used as a constructor)",
           "name": "constant.language.list.ocaml",
           "match": "\\[\\]"
+        }
+      ]
+    },
+    "module-names": {
+      "patterns": [
+        {
+          "comment": "module type name",
+          "match": "\\b(module)[[:space:]]+(type)[[:space:]]+(?!of\\b)([[:upper:]][[:word:]']*+)",
+          "captures": {
+            "1": {
+              "name": "keyword.ocaml"
+            },
+            "2": {
+              "name": "keyword.ocaml"
+            },
+            "3": {
+              "name": "entity.name.type.interface.ocaml"
+            }
+          }
+        },
+        {
+          "comment": "module alias or functor application on one line",
+          "match": "\\b(?:(let)[[:space:]]+)?(module)[[:space:]]+(rec[[:space:]]+)?(?!type\\b)([[:upper:]][[:word:]']*+)[[:space:]]*(=)[[:space:]]*((?:[[:upper:]][[:word:]']*+[[:space:]]*\\.[[:space:]]*)*[[:upper:]][[:word:]']*+(?:[[:space:]]*\\([[:space:]]*(?:[[:upper:]][[:word:]']*+[[:space:]]*\\.[[:space:]]*)*[[:upper:]][[:word:]']*+[[:space:]]*\\))*)(?=[[:space:]]*(?:$|\\(\\*|;;|\\bin\\b))",
+          "captures": {
+            "1": {
+              "name": "keyword.ocaml"
+            },
+            "2": {
+              "name": "keyword.ocaml"
+            },
+            "3": {
+              "name": "keyword.ocaml"
+            },
+            "4": {
+              "name": "entity.name.namespace.ocaml"
+            },
+            "5": {
+              "name": "keyword.operator.ocaml"
+            },
+            "6": {
+              "patterns": [
+                {
+                  "match": "\\b[[:upper:]][[:word:]']*+",
+                  "name": "entity.name.namespace.ocaml"
+                },
+                {
+                  "match": "\\.",
+                  "name": "keyword.other.ocaml punctuation.other.period punctuation.separator.period"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "comment": "functor applied to a parenthesized argument",
+          "match": "\\b(?:(let)[[:space:]]+)?(module)[[:space:]]+(rec[[:space:]]+)?(?!type\\b)([[:upper:]][[:word:]']*+)[[:space:]]*(=)[[:space:]]*((?:[[:upper:]][[:word:]']*+[[:space:]]*\\.[[:space:]]*)*[[:upper:]][[:word:]']*+)(?=[[:space:]]*\\()",
+          "captures": {
+            "1": {
+              "name": "keyword.ocaml"
+            },
+            "2": {
+              "name": "keyword.ocaml"
+            },
+            "3": {
+              "name": "keyword.ocaml"
+            },
+            "4": {
+              "name": "entity.name.namespace.ocaml"
+            },
+            "5": {
+              "name": "keyword.operator.ocaml"
+            },
+            "6": {
+              "patterns": [
+                {
+                  "match": "\\b[[:upper:]][[:word:]']*+",
+                  "name": "entity.name.namespace.ocaml"
+                },
+                {
+                  "match": "\\.",
+                  "name": "keyword.other.ocaml punctuation.other.period punctuation.separator.period"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "comment": "module name after module",
+          "match": "\\b(?:(let)[[:space:]]+)?(module)[[:space:]]+(rec[[:space:]]+)?(?!type\\b)([[:upper:]][[:word:]']*+)",
+          "captures": {
+            "1": {
+              "name": "keyword.ocaml"
+            },
+            "2": {
+              "name": "keyword.ocaml"
+            },
+            "3": {
+              "name": "keyword.ocaml"
+            },
+            "4": {
+              "name": "entity.name.namespace.ocaml"
+            }
+          }
+        },
+        {
+          "comment": "module path after open or include",
+          "match": "\\b(?:(let)[[:space:]]+)?(open|include)(!?)[[:space:]]+((?:[[:upper:]][[:word:]']*+[[:space:]]*\\.[[:space:]]*)*)([[:upper:]][[:word:]']*+)(?![[:space:]]*\\.)",
+          "captures": {
+            "1": {
+              "name": "keyword.ocaml"
+            },
+            "2": {
+              "name": "keyword.ocaml"
+            },
+            "3": {
+              "name": "keyword.ocaml"
+            },
+            "4": {
+              "patterns": [
+                {
+                  "include": "#identifiers"
+                }
+              ]
+            },
+            "5": {
+              "name": "entity.name.namespace.ocaml"
+            }
+          }
+        }
+      ]
+    },
+    "type-expression": {
+      "patterns": [
+        {
+          "include": "#comments"
+        },
+        {
+          "include": "#attributes"
+        },
+        {
+          "include": "#extensions"
+        },
+        {
+          "include": "#strings"
+        },
+        {
+          "include": "#characters"
+        },
+        {
+          "comment": "locally abstract types in a polymorphic annotation",
+          "match": "\\b(type)[[:space:]]+([[:lower:]_][[:word:]']*(?:[[:space:]]+[[:lower:]_][[:word:]']*)*)[[:space:]]*(?=\\.)",
+          "captures": {
+            "1": {
+              "name": "keyword.ocaml"
+            },
+            "2": {
+              "name": "entity.name.type.parameter.ocaml"
+            }
+          }
+        },
+        {
+          "comment": "optional argument label",
+          "name": "variable.parameter.optional.ocaml",
+          "match": "\\?[[:lower:]_][[:word:]']*(?=:(?!:))"
+        },
+        {
+          "comment": "argument label",
+          "name": "variable.parameter.labeled.ocaml",
+          "match": "\\b[[:lower:]_][[:word:]']*(?=:(?!:))"
+        },
+        {
+          "begin": "\\(",
+          "end": "\\)",
+          "patterns": [
+            {
+              "include": "#type-expression"
+            }
+          ]
+        },
+        {
+          "begin": "\\[",
+          "end": "\\]",
+          "patterns": [
+            {
+              "include": "#type-expression"
+            }
+          ]
+        },
+        {
+          "begin": "\\{",
+          "end": "\\}",
+          "patterns": [
+            {
+              "comment": "record field name",
+              "match": "(?:(?<=\\{)|(?<=;)|(?<=\\bwith)|^)[[:space:]]*(?:(mutable)[[:space:]]+)?(?!_(?![[:word:]']))([[:lower:]_][[:word:]']*)(?=[[:space:]]*(?:[:;}]|=(?![=>~!?$&*+\\-/@^|%<:.])))",
+              "captures": {
+                "1": {
+                  "name": "keyword.other.ocaml"
+                },
+                "2": {
+                  "name": "variable.other.property.ocaml"
+                }
+              }
+            },
+            {
+              "comment": "semicolon separator",
+              "name": "keyword.other.ocaml punctuation.separator.terminator punctuation.separator.semicolon",
+              "match": ";"
+            },
+            {
+              "include": "#type-annotation"
+            },
+            {
+              "include": "#type-expression"
+            }
+          ]
+        },
+        {
+          "comment": "module path qualifier",
+          "match": "\\b([[:upper:]][[:word:]']*+)[[:space:]]*(\\.)",
+          "captures": {
+            "1": {
+              "name": "entity.name.namespace.ocaml"
+            },
+            "2": {
+              "name": "keyword.other.ocaml punctuation.other.period punctuation.separator.period"
+            }
+          }
+        },
+        {
+          "include": "#types"
+        },
+        {
+          "include": "#keywords"
+        },
+        {
+          "comment": "arrow or tuple",
+          "name": "keyword.operator.ocaml",
+          "match": "->|\\*"
+        },
+        {
+          "comment": "coercion",
+          "name": "keyword.other.ocaml punctuation.other.colon punctuation.colon",
+          "match": ":>"
+        },
+        {
+          "comment": "label colon",
+          "name": "keyword.other.ocaml punctuation.other.colon punctuation.colon",
+          "match": ":"
+        },
+        {
+          "comment": "polymorphic variant tag",
+          "name": "constant.language.polymorphic-variant.ocaml",
+          "match": "\\`[[:alpha:]][[:word:]']*\\b"
+        },
+        {
+          "comment": "wildcard",
+          "name": "constant.language.ocaml",
+          "match": "\\b_\\b"
+        },
+        {
+          "comment": "module type name",
+          "name": "entity.name.type.interface.ocaml",
+          "match": "\\b[[:upper:]][[:word:]']*+"
+        },
+        {
+          "comment": "type constructor",
+          "name": "entity.name.type.ocaml",
+          "match": "\\b[[:lower:]_][[:word:]']*"
+        }
+      ]
+    },
+    "type-annotation": {
+      "patterns": [
+        {
+          "comment": "type annotation or coercion",
+          "begin": "(?<=[[:space:]])(:>?)(?=[[:space:]]|$)",
+          "beginCaptures": {
+            "1": {
+              "name": "keyword.other.ocaml punctuation.other.colon punctuation.colon"
+            }
+          },
+          "end": "(?=[=)\\]};,|]|\\b(?:and|begin|class|constraint|do|done|downto|else|end|exception|external|for|fun|function|if|in|include|inherit|initializer|let|match|method|module|object|open|sig|struct|then|to|try|type(?!(?:[[:space:]]+[[:lower:]_][[:word:]']*)+[[:space:]]*\\.)|val|when|while|with)\\b(?!'))",
+          "patterns": [
+            {
+              "include": "#type-expression"
+            }
+          ]
+        },
+        {
+          "comment": "constructor arguments",
+          "begin": "(?<!\\btype[[:space:]])\\b(of)\\b(?!')",
+          "beginCaptures": {
+            "1": {
+              "name": "keyword.other.ocaml"
+            }
+          },
+          "end": "(?=[=)\\]};,|]|\\b(?:and|begin|class|constraint|do|done|downto|else|end|exception|external|for|fun|function|if|in|include|inherit|initializer|let|match|method|module|object|open|sig|struct|then|to|try|type(?!(?:[[:space:]]+[[:lower:]_][[:word:]']*)+[[:space:]]*\\.)|val|when|while|with)\\b(?!'))",
+          "patterns": [
+            {
+              "include": "#type-expression"
+            }
+          ]
+        }
+      ]
+    },
+    "type-definition": {
+      "patterns": [
+        {
+          "comment": "type definition",
+          "begin": "\\b(type)[[:space:]]+(nonrec[[:space:]]+)?(_[[:space:]]+|[+-]?'[[:alpha:]][[:word:]']*[[:space:]]+|\\([^()]*\\)[[:space:]]+)?([[:lower:]_][[:word:]']*)",
+          "beginCaptures": {
+            "1": {
+              "name": "keyword.ocaml"
+            },
+            "2": {
+              "name": "keyword.ocaml"
+            },
+            "3": {
+              "patterns": [
+                {
+                  "include": "#type-expression"
+                }
+              ]
+            },
+            "4": {
+              "name": "entity.name.type.ocaml"
+            }
+          },
+          "end": "(?=[)\\]}]|;;|\\[@@@|\\b(?:class|end|exception|external|in|include|inherit|initializer|let|method|module|object|open|sig|struct|type|val)\\b(?!'))",
+          "patterns": [
+            {
+              "comment": "type abbreviation",
+              "begin": "(?<!\\+)(:?=)[[:space:]]*(?=(?:private[[:space:]]+)?(?!private\\b)(?:[[:lower:]_][[:word:]']*|'|\\(|\\[|[[:upper:]][[:word:]']*+[[:space:]]*\\.))",
+              "beginCaptures": {
+                "1": {
+                  "name": "keyword.operator.ocaml"
+                }
+              },
+              "end": "(?=[=)\\]};,|]|\\b(?:and|begin|class|constraint|do|done|downto|else|end|exception|external|for|fun|function|if|in|include|inherit|initializer|let|match|method|module|object|open|sig|struct|then|to|try|type(?!(?:[[:space:]]+[[:lower:]_][[:word:]']*)+[[:space:]]*\\.)|val|when|while|with)\\b(?!'))",
+              "patterns": [
+                {
+                  "include": "#type-expression"
+                }
+              ]
+            },
+            {
+              "comment": "and type definition",
+              "match": "\\b(and)[[:space:]]+(nonrec[[:space:]]+)?(_[[:space:]]+|[+-]?'[[:alpha:]][[:word:]']*[[:space:]]+|\\([^()]*\\)[[:space:]]+)?([[:lower:]_][[:word:]']*)",
+              "captures": {
+                "1": {
+                  "name": "keyword.ocaml"
+                },
+                "2": {
+                  "name": "keyword.ocaml"
+                },
+                "3": {
+                  "patterns": [
+                    {
+                      "include": "#type-expression"
+                    }
+                  ]
+                },
+                "4": {
+                  "name": "entity.name.type.ocaml"
+                }
+              }
+            },
+            {
+              "begin": "\\{",
+              "end": "\\}",
+              "patterns": [
+                {
+                  "comment": "record field name",
+                  "match": "(?:(?<=\\{)|(?<=;)|(?<=\\bwith)|^)[[:space:]]*(?:(mutable)[[:space:]]+)?(?!_(?![[:word:]']))([[:lower:]_][[:word:]']*)(?=[[:space:]]*(?:[:;}]|=(?![=>~!?$&*+\\-/@^|%<:.])))",
+                  "captures": {
+                    "1": {
+                      "name": "keyword.other.ocaml"
+                    },
+                    "2": {
+                      "name": "variable.other.property.ocaml"
+                    }
+                  }
+                },
+                {
+                  "comment": "semicolon separator",
+                  "name": "keyword.other.ocaml punctuation.separator.terminator punctuation.separator.semicolon",
+                  "match": ";"
+                },
+                {
+                  "include": "#type-annotation"
+                },
+                {
+                  "include": "#type-expression"
+                }
+              ]
+            },
+            {
+              "include": "$base"
+            }
+          ]
         }
       ]
     }

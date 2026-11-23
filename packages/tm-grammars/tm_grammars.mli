@@ -158,6 +158,7 @@ val nushell : string
 val objective_c : string
 val objective_cpp : string
 val ocaml : string
+val ocaml_interface : string
 val ocamllex : string
 val odin : string
 val opam : string

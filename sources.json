@@ -1244,6 +1244,13 @@
     "license": "ISC",
     "licenseUrl": "https://raw.githubusercontent.com/ocamllabs/vscode-ocaml-platform/master/LICENSE"
   },
+  "ocaml-interface": {
+    "repo": "ocamllabs/vscode-ocaml-platform",
+    "path": "syntaxes/ocaml.interface.json",
+    "commit": "997c979f5e88bd47a07a9a81e8745a214226c8b1",
+    "license": "ISC",
+    "licenseUrl": "https://raw.githubusercontent.com/ocamllabs/vscode-ocaml-platform/master/LICENSE"
+  },
   "ocamllex": {
     "repo": "ocamllabs/vscode-ocaml-platform",
     "path": "syntaxes/ocamllex.json",

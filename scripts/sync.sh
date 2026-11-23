@@ -2,6 +2,9 @@
 set -euo pipefail
 
 source "$(dirname "${BASH_SOURCE[0]}")/kind.sh"
+kind="$1"
+shift
+patches_dir="$ROOT_DIR/scripts/patches"
 
 if ! command -v jq &> /dev/null; then
   echo "error: jq is required but not installed" >&2
@@ -9,9 +12,19 @@ if ! command -v jq &> /dev/null; then
 fi
 
 mkdir -p "$vendor_dir"
-rm -f "$vendor_dir"/*.json
 
-ids=$(jq -r 'keys[]' "$sources")
+if [ "$#" -gt 0 ]; then
+  for id in "$@"; do
+    if ! jq -e --arg k "$id" 'has($k)' "$sources" > /dev/null; then
+      echo "error: unknown $kind id: $id" >&2
+      exit 1
+    fi
+  done
+  ids=$(printf '%s\n' "$@")
+else
+  rm -f "$vendor_dir"/*.json
+  ids=$(jq -r 'keys[]' "$sources")
+fi
 total=$(echo "$ids" | wc -l | tr -d ' ')
 count=0
 
@@ -27,16 +40,11 @@ for id in $ids; do
   printf "[%d/%d] %s ... " "$count" "$total" "$id"
 
   if curl -sfL "$url" -o "$dest"; then
-    case "$package:$id" in
-      tm-grammars:dune)
-        jq '.fileTypes |= ((. + ["dune-project", "dune-workspace"]) | unique)' "$dest" > "$dest.tmp"
-        mv "$dest.tmp" "$dest"
-        ;;
-      tm-grammars:ocaml)
-        jq '.fileTypes |= ((. + ["mli", "eliomi"]) | unique)' "$dest" > "$dest.tmp"
-        mv "$dest.tmp" "$dest"
-        ;;
-    esac
+    patch="$patches_dir/${id}.jq"
+    if [ "$package" = "tm-grammars" ] && [ -f "$patch" ]; then
+      jq -f "$patch" "$dest" > "$dest.tmp"
+      mv "$dest.tmp" "$dest"
+    fi
 
     if jq empty "$dest" 2>/dev/null; then
       echo "ok"
@@ -52,4 +60,4 @@ for id in $ids; do
 done
 
 echo ""
-echo "Synced $total $1 to $(basename "$vendor_dir")/"
+echo "Synced $total $kind to $(basename "$vendor_dir")/"

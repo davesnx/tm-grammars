@@ -1,3 +1,5 @@
+(dirs :standard \ scopes)
+
 (test
  (name test_registry)
  (package tm-grammars)

@@ -39,6 +39,20 @@ let grammar_ocaml = Tm_grammar_ocaml.json
 let grammar_tsx = Tm_grammar_tsx.json
 ]}
 
+{2 Grammars that include other grammars}
+
+A grammar can include rules from another grammar by scope name. Load both grammars into the same registry. The `ocaml` grammar (`source.ocaml`) includes `ocaml-interface` (`source.ocaml.interface`) for labels, `type`, `and`, `external`, `val`, class and `sig ... end` rules:
+
+{@dune[
+(libraries tm-grammars.ocaml tm-grammars.ocaml-interface)
+]}
+
+{@ocaml[
+let grammars =
+  [ (Tm_grammar_ocaml.lang_id, Tm_grammar_ocaml.json);
+    (Tm_grammar_ocaml_interface.lang_id, Tm_grammar_ocaml_interface.json) ]
+]}
+
 {1 Supported language ids}
 
 @@SUPPORTED_LANGUAGE_IDS@@.
@@ -46,9 +60,13 @@ let grammar_tsx = Tm_grammar_tsx.json
 {2 How to add a new grammar}
 
 1. Add a new entry in [sources.json](sources.json) with the language id, upstream source (`repo`, `path`, `commit`), and license metadata (`license`, optional `licenseUrl`, optional `originalSource`).
-2. Run `make sync` to download the grammar into `vendor/<language-id>.json`.
+2. Run `make sync` to download the grammar into `vendor/<language-id>.json`. Use `make sync LANGS="<language-id> ..."` to download only some grammars.
 3. Run `make generate` to regenerate packages and metadata.
 4. Run `make build` (and optionally `make test`) to verify everything still builds.
+
+{2 How to change a grammar}
+
+`make sync` applies `scripts/patches/<language-id>.jq` (a jq program) to the downloaded grammar, so local changes stay after the next sync. Patches shared by several grammars live in `scripts/patches/lib/` as jq modules: `ocaml.jq` and `mlx.jq` both include `lib/ocaml-roles.jq`, because mlx carries its own copy of the OCaml rules. Edit the patch, then run `make sync LANGS="<language-id>"` and `make generate`. `make test-scopes` checks the token scopes of the patched OCaml grammars with vscode-textmate (needs Node.js 22.18 or later).
 
 {1 Themes}
 

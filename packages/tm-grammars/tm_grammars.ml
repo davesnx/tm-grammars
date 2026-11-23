@@ -158,6 +158,7 @@ let nushell = Tm_grammar_nushell.json
 let objective_c = Tm_grammar_objective_c.json
 let objective_cpp = Tm_grammar_objective_cpp.json
 let ocaml = Tm_grammar_ocaml.json
+let ocaml_interface = Tm_grammar_ocaml_interface.json
 let ocamllex = Tm_grammar_ocamllex.json
 let odin = Tm_grammar_odin.json
 let opam = Tm_grammar_opam.json
@@ -428,6 +429,7 @@ let all =
     (Tm_grammar_objective_c.lang_id, Tm_grammar_objective_c.json);
     (Tm_grammar_objective_cpp.lang_id, Tm_grammar_objective_cpp.json);
     (Tm_grammar_ocaml.lang_id, Tm_grammar_ocaml.json);
+    (Tm_grammar_ocaml_interface.lang_id, Tm_grammar_ocaml_interface.json);
     (Tm_grammar_ocamllex.lang_id, Tm_grammar_ocamllex.json);
     (Tm_grammar_odin.lang_id, Tm_grammar_odin.json);
     (Tm_grammar_opam.lang_id, Tm_grammar_opam.json);
