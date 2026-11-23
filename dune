@@ -4,7 +4,7 @@
   README.mld
   sources.json
   scripts/gen_readme_md.sh
-   (glob_files packages/*/dune))
+  (glob_files packages/*/dune))
  (target README.md)
  (mode promote)
  (action
