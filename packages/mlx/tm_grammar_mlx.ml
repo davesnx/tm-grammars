@@ -1186,6 +1186,39 @@ let json =
           }
         },
         {
+          "comment": "functor applied to a parenthesized argument",
+          "match": "\\b(?:(let)[[:space:]]+)?(module)[[:space:]]+(rec[[:space:]]+)?(?!type\\b)([[:upper:]][[:word:]']*+)[[:space:]]*(=)[[:space:]]*((?:[[:upper:]][[:word:]']*+[[:space:]]*\\.[[:space:]]*)*[[:upper:]][[:word:]']*+)(?=[[:space:]]*\\()",
+          "captures": {
+            "1": {
+              "name": "keyword.ocaml"
+            },
+            "2": {
+              "name": "keyword.ocaml"
+            },
+            "3": {
+              "name": "keyword.ocaml"
+            },
+            "4": {
+              "name": "entity.name.namespace.ocaml"
+            },
+            "5": {
+              "name": "keyword.operator.ocaml"
+            },
+            "6": {
+              "patterns": [
+                {
+                  "match": "\\b[[:upper:]][[:word:]']*+",
+                  "name": "entity.name.namespace.ocaml"
+                },
+                {
+                  "match": "\\.",
+                  "name": "keyword.other.ocaml punctuation.other.period punctuation.separator.period"
+                }
+              ]
+            }
+          }
+        },
+        {
           "comment": "module name after module",
           "match": "\\b(?:(let)[[:space:]]+)?(module)[[:space:]]+(rec[[:space:]]+)?(?!type\\b)([[:upper:]][[:word:]']*+)",
           "captures": {
@@ -1302,6 +1335,11 @@ let json =
                   "name": "variable.other.property.ocaml"
                 }
               }
+            },
+            {
+              "comment": "semicolon separator",
+              "name": "keyword.other.ocaml punctuation.separator.terminator punctuation.separator.semicolon",
+              "match": ";"
             },
             {
               "include": "#type-annotation"
@@ -1461,6 +1499,35 @@ let json =
                   "name": "entity.name.type.ocaml"
                 }
               }
+            },
+            {
+              "begin": "\\{",
+              "end": "\\}",
+              "patterns": [
+                {
+                  "comment": "record field name",
+                  "match": "(?:(?<=\\{)|(?<=;)|(?<=\\bwith)|^)[[:space:]]*(?:(mutable)[[:space:]]+)?(?!_(?![[:word:]']))([[:lower:]_][[:word:]']*)(?=[[:space:]]*(?:[:;}]|=(?![=>~!?$&*+\\-/@^|%<:.])))",
+                  "captures": {
+                    "1": {
+                      "name": "keyword.other.ocaml"
+                    },
+                    "2": {
+                      "name": "variable.other.property.ocaml"
+                    }
+                  }
+                },
+                {
+                  "comment": "semicolon separator",
+                  "name": "keyword.other.ocaml punctuation.separator.terminator punctuation.separator.semicolon",
+                  "match": ";"
+                },
+                {
+                  "include": "#type-annotation"
+                },
+                {
+                  "include": "#type-expression"
+                }
+              ]
             },
             {
               "include": "$base"

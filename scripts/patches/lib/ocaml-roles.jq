@@ -10,6 +10,9 @@ def record_field: {
   }
 };
 def module_path: ("(?:" + upper + "[[:space:]]*\\.[[:space:]]*)*" + upper);
+def module_path_patterns: [{"match": ("\\b" + upper), "name": "entity.name.namespace.ocaml"}, {"match": "\\.", "name": period}];
+def semicolon: {"comment": "semicolon separator", "name": "keyword.other.ocaml punctuation.separator.terminator punctuation.separator.semicolon", "match": ";"};
+def record_body: {"begin": "\\{", "end": "\\}", "patterns": [record_field, semicolon, {"include": "#type-annotation"}, {"include": "#type-expression"}]};
 def qualifier: {
   "comment": "module path qualifier",
   "match": ("\\b(" + upper + ")[[:space:]]*(\\.)"),
@@ -52,7 +55,19 @@ def ocaml_roles:
           "3": {"name": "keyword.ocaml"},
           "4": {"name": "entity.name.namespace.ocaml"},
           "5": {"name": "keyword.operator.ocaml"},
-          "6": {"patterns": [{"match": ("\\b" + upper), "name": "entity.name.namespace.ocaml"}, {"match": "\\.", "name": period}]}
+          "6": {"patterns": module_path_patterns}
+        }
+      },
+      {
+        "comment": "functor applied to a parenthesized argument",
+        "match": ("\\b(?:(let)[[:space:]]+)?(module)[[:space:]]+(rec[[:space:]]+)?(?!type\\b)(" + upper + ")[[:space:]]*(=)[[:space:]]*(" + module_path + ")(?=[[:space:]]*\\()"),
+        "captures": {
+          "1": {"name": "keyword.ocaml"},
+          "2": {"name": "keyword.ocaml"},
+          "3": {"name": "keyword.ocaml"},
+          "4": {"name": "entity.name.namespace.ocaml"},
+          "5": {"name": "keyword.operator.ocaml"},
+          "6": {"patterns": module_path_patterns}
         }
       },
       {
@@ -104,7 +119,7 @@ def ocaml_roles:
       },
       {"begin": "\\(", "end": "\\)", "patterns": [{"include": "#type-expression"}]},
       {"begin": "\\[", "end": "\\]", "patterns": [{"include": "#type-expression"}]},
-      {"begin": "\\{", "end": "\\}", "patterns": [record_field, {"include": "#type-annotation"}, {"include": "#type-expression"}]},
+      record_body,
       qualifier,
       {"include": "#types"},
       {"include": "#keywords"},
@@ -163,6 +178,7 @@ def ocaml_roles:
               "4": {"name": "entity.name.type.ocaml"}
             }
           },
+          record_body,
           {"include": "$base"}
         ]
       }
