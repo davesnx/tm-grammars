@@ -12,9 +12,9 @@ help: ## Print this help message
 	@echo "";
 
 .PHONY: sync
-sync: ## Download grammars and themes from upstream sources (LANGS="a b" for a grammar subset)
-	@bash scripts/sync.sh grammars $(LANGS)
-	$(if $(LANGS),,@bash scripts/sync.sh themes)
+sync: ## Download grammars and themes from upstream sources (LANGS="a b" or THEMES="a b" for a subset)
+	$(if $(LANGS)$(if $(THEMES),,all),@bash scripts/sync.sh grammars $(LANGS))
+	$(if $(THEMES)$(if $(LANGS),,all),@bash scripts/sync.sh themes $(THEMES))
 
 .PHONY: generate
 generate: ## Generate all derived files

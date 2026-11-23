@@ -26,6 +26,7 @@
  (synopsis "TextMate themes as OCaml strings")
  (description
   "OCaml package that exposes the Shiki TextMate themes as JSON strings.")
+ (license "MIT AND Apache-2.0 AND GPL-3.0-only")
  (authors "David Sancho <dsnxmoreno@gmail.com>")
  (maintainers "David Sancho <dsnxmoreno@gmail.com>")
  (depends

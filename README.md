@@ -98,8 +98,8 @@ let nord = Tm_theme_nord.json
 
 ### How to add a new theme
 
-Add an entry in [themes.json](themes.json), run `make sync` to download it into `vendor-themes/<theme-id>.json`, then run `make generate` and `make build`.
+Add an entry in [themes.json](themes.json), run `make sync` to download it into `vendor-themes/<theme-id>.json`, then run `make generate` and `make build`. Use `make sync THEMES="<theme-id> ..."` to download only some themes.
 
 ## License
 
-MIT. See `LICENSE`.
+The code is MIT (see `LICENSE`). Each grammar and theme keeps the license of its upstream source, listed in `sources.json`, `themes.json` and `THIRD-PARTY-LICENSES`.

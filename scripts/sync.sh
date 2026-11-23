@@ -16,7 +16,7 @@ mkdir -p "$vendor_dir"
 if [ "$#" -gt 0 ]; then
   for id in "$@"; do
     if ! jq -e --arg k "$id" 'has($k)' "$sources" > /dev/null; then
-      echo "error: unknown $kind id: $id" >&2
+      echo "error: unknown $label id: $id" >&2
       exit 1
     fi
   done

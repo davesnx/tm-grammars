@@ -8,6 +8,7 @@ case "${1:-}" in
     package="tm-grammars"
     module_prefix="tm_grammar_"
     id_value="lang_id"
+    label="grammar"
     ;;
   themes)
     sources="$ROOT_DIR/themes.json"
@@ -16,9 +17,10 @@ case "${1:-}" in
     package="tm-themes"
     module_prefix="tm_theme_"
     id_value="name"
+    label="theme"
     ;;
   *)
-    echo "usage: $0 <grammars|themes>" >&2
+    echo "usage: $0 <grammars|themes> [id...]" >&2
     exit 1
     ;;
 esac

@@ -6,7 +6,7 @@ description:
   "OCaml package that exposes the Shiki TextMate themes as JSON strings."
 maintainer: ["David Sancho <dsnxmoreno@gmail.com>"]
 authors: ["David Sancho <dsnxmoreno@gmail.com>"]
-license: "MIT"
+license: "MIT AND Apache-2.0 AND GPL-3.0-only"
 homepage: "https://github.com/davesnx/tm-grammars"
 bug-reports: "https://github.com/davesnx/tm-grammars/issues"
 depends: [
