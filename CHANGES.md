@@ -2,6 +2,7 @@
 
 - Added `ocaml-interface` syntax (`source.ocaml.interface`), which the `ocaml` grammar includes
 - `ocaml` grammar: scope module paths, `open`/`include`/`module` targets and module names as `entity.name.namespace.ocaml`, module type names as `entity.name.type.interface.ocaml`, constructors as `variable.other.enummember.ocaml`, field access and record fields as `variable.other.property.ocaml`, and locally abstract types as `entity.name.type.parameter.ocaml`
+- `ocaml` grammar: scope type constructor names in type expressions as `entity.name.type.ocaml`: after a `:` or `:>` annotation, after `of`, and on the right side of `type t =` and `and t =` when it is a type expression; in the same positions, scope argument labels (`x:t ->`, `?x:t ->`) as `variable.parameter.labeled.ocaml` and `variable.parameter.optional.ocaml`, and module type names (`module M : S`, `(module S)`) as `entity.name.type.interface.ocaml`; scope `and t` type names after `type` as `entity.name.type.ocaml`; scope the module path of a one-line `module X = Y` or `module X = F (Y)` as `entity.name.namespace.ocaml`
 - `ocaml-interface` grammar: scope type declaration names as `entity.name.type.ocaml`
 - `make sync` applies `scripts/patches/<language-id>.jq` to each downloaded grammar, and `make sync LANGS="..."` downloads only some grammars
 

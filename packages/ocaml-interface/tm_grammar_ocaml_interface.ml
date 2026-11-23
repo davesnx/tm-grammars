@@ -45,6 +45,12 @@ let json =
       "comment": "bindings that are shared between .ml and .mli syntaxes",
       "patterns": [
         {
+          "include": "source.ocaml#type-definition"
+        },
+        {
+          "include": "source.ocaml#type-annotation"
+        },
+        {
           "comment": "optional labeled argument",
           "name": "variable.parameter.optional.ocaml",
           "match": "\\?([[:lower:]_][[:word:]']*)?"
