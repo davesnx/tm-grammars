@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_everforest_dark)
+ (public_name tm-themes.everforest-dark))

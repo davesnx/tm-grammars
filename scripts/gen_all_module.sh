@@ -1,45 +1,34 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-if [ "$#" -ne 1 ]; then
-  echo "usage: $0 <sources.json>" >&2
-  exit 1
-fi
+source "$(dirname "${BASH_SOURCE[0]}")/kind.sh"
 
-sources_json="$1"
+ids=()
+while IFS= read -r id; do
+  ids+=("${id%$'\r'}")
+done < <(jq -r 'keys[]' "$sources")
 
-lang_ids=()
-while IFS= read -r lang_id; do
-  lang_id="${lang_id%$'\r'}"
-  lang_ids+=("$lang_id")
-done < <(jq -r 'keys[]' "$sources_json")
-
-ml_file="tm_grammars.ml"
-mli_file="tm_grammars.mli"
+ml_file="$packages_dir/$package/$index_module.ml"
+mli_file="$packages_dir/$package/$index_module.mli"
 
 {
-  for lang_id in "${lang_ids[@]}"; do
-    value_name="$(echo "$lang_id" | tr '-' '_')"
-    module_name="tm_grammar_$(echo "$lang_id" | tr '-' '_')"
-    capitalized="$(echo "${module_name:0:1}" | tr '[:lower:]' '[:upper:]')${module_name:1}"
-    printf 'let %s = %s.json\n' "$value_name" "$capitalized"
+  for id in "${ids[@]}"; do
+    printf 'let %s = %s.json\n' "$(echo "$id" | tr '-' '_')" "$(capitalize "$(module_name "$id")")"
   done
   printf '\n'
   printf '%s\n' "let all = ["
-  for lang_id in "${lang_ids[@]}"; do
-    module_name="tm_grammar_$(echo "$lang_id" | tr '-' '_')"
-    capitalized="$(echo "${module_name:0:1}" | tr '[:lower:]' '[:upper:]')${module_name:1}"
-    printf '  (%s.lang_id, %s.json);\n' "$capitalized" "$capitalized"
+  for id in "${ids[@]}"; do
+    module="$(capitalize "$(module_name "$id")")"
+    printf '  (%s.%s, %s.json);\n' "$module" "$id_value" "$module"
   done
   printf '%s\n\n' "]"
   printf '%s\n\n' "let available = List.map fst all"
-  printf '%s\n' "let find lang_id = List.assoc_opt lang_id all"
+  printf 'let find %s = List.assoc_opt %s all\n' "$id_value" "$id_value"
 } > "$ml_file"
 
 {
-  for lang_id in "${lang_ids[@]}"; do
-    value_name="$(echo "$lang_id" | tr '-' '_')"
-    printf 'val %s : string\n' "$value_name"
+  for id in "${ids[@]}"; do
+    printf 'val %s : string\n' "$(echo "$id" | tr '-' '_')"
   done
   printf '\n'
   printf '%s\n' 'val all : (string * string) list'
@@ -47,7 +36,4 @@ mli_file="tm_grammars.mli"
   printf '%s\n' 'val find : string -> string option'
 } > "$mli_file"
 
-if command -v ocamlformat >/dev/null 2>&1; then
-  ocamlformat --enable-outside-detected-project --name "$ml_file" --impl -i "$ml_file"
-  ocamlformat --enable-outside-detected-project --name "$mli_file" --intf -i "$mli_file"
-fi
+format_ocaml "$ml_file" "$mli_file"

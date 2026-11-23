@@ -1,48 +1,47 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
-SOURCES="$ROOT_DIR/sources.json"
-VENDOR_DIR="$ROOT_DIR/vendor"
-PATCHES_DIR="$SCRIPT_DIR/patches"
+source "$(dirname "${BASH_SOURCE[0]}")/kind.sh"
+kind="$1"
+shift
+patches_dir="$ROOT_DIR/scripts/patches"
 
 if ! command -v jq &> /dev/null; then
   echo "error: jq is required but not installed" >&2
   exit 1
 fi
 
-mkdir -p "$VENDOR_DIR"
+mkdir -p "$vendor_dir"
 
 if [ "$#" -gt 0 ]; then
-  for lang_id in "$@"; do
-    if ! jq -e --arg k "$lang_id" 'has($k)' "$SOURCES" > /dev/null; then
-      echo "error: unknown language id: $lang_id" >&2
+  for id in "$@"; do
+    if ! jq -e --arg k "$id" 'has($k)' "$sources" > /dev/null; then
+      echo "error: unknown $label id: $id" >&2
       exit 1
     fi
   done
-  lang_ids=$(printf '%s\n' "$@")
+  ids=$(printf '%s\n' "$@")
 else
-  rm -f "$VENDOR_DIR"/*.json
-  lang_ids=$(jq -r 'keys[]' "$SOURCES")
+  rm -f "$vendor_dir"/*.json
+  ids=$(jq -r 'keys[]' "$sources")
 fi
-total=$(echo "$lang_ids" | wc -l | tr -d ' ')
+total=$(echo "$ids" | wc -l | tr -d ' ')
 count=0
 
-for lang_id in $lang_ids; do
+for id in $ids; do
   count=$((count + 1))
-  repo=$(jq -r --arg k "$lang_id" '.[$k].repo' "$SOURCES")
-  path=$(jq -r --arg k "$lang_id" '.[$k].path' "$SOURCES")
-  commit=$(jq -r --arg k "$lang_id" '.[$k].commit' "$SOURCES")
+  repo=$(jq -r --arg k "$id" '.[$k].repo' "$sources")
+  path=$(jq -r --arg k "$id" '.[$k].path' "$sources")
+  commit=$(jq -r --arg k "$id" '.[$k].commit' "$sources")
 
   url="https://raw.githubusercontent.com/${repo}/${commit}/${path}"
-  dest="$VENDOR_DIR/${lang_id}.json"
+  dest="$vendor_dir/${id}.json"
 
-  printf "[%d/%d] %s ... " "$count" "$total" "$lang_id"
+  printf "[%d/%d] %s ... " "$count" "$total" "$id"
 
   if curl -sfL "$url" -o "$dest"; then
-    patch="$PATCHES_DIR/${lang_id}.jq"
-    if [ -f "$patch" ]; then
+    patch="$patches_dir/${id}.jq"
+    if [ "$package" = "tm-grammars" ] && [ -f "$patch" ]; then
       jq -f "$patch" "$dest" > "$dest.tmp"
       mv "$dest.tmp" "$dest"
     fi
@@ -61,4 +60,4 @@ for lang_id in $lang_ids; do
 done
 
 echo ""
-echo "Synced $total grammars to vendor/"
+echo "Synced $total $kind to $(basename "$vendor_dir")/"

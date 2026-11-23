@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_poimandres)
+ (public_name tm-themes.poimandres))

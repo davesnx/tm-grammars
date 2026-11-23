@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_tokyo_night)
+ (public_name tm-themes.tokyo-night))

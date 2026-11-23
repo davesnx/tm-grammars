@@ -6,6 +6,7 @@
 - `ocaml-interface` grammar: scope type declaration names as `entity.name.type.ocaml`
 - `mlx` grammar: apply the `ocaml` grammar scope changes to its OCaml rules; scope the module path of a JSX tag (`Foo` in `<Foo.Bar />` and `</Foo.Bar>`) as `entity.name.namespace.ocaml`, and field access in JSX children and prop values as `variable.other.property.ocaml`
 - `make sync` applies `scripts/patches/<language-id>.jq` to each downloaded grammar, and `make sync LANGS="..."` downloads only some grammars
+- Add the `tm-themes` package with every Shiki theme from shikijs/textmate-grammars-themes
 
 ## 2.0.0
 

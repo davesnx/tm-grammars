@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_synthwave_84)
+ (public_name tm-themes.synthwave-84))

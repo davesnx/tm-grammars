@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_vitesse_light)
+ (public_name tm-themes.vitesse-light))

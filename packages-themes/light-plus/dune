@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_light_plus)
+ (public_name tm-themes.light-plus))

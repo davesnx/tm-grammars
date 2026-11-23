@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_material_theme_ocean)
+ (public_name tm-themes.material-theme-ocean))

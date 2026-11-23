@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_ayu_light)
+ (public_name tm-themes.ayu-light))

@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_andromeeda)
+ (public_name tm-themes.andromeeda))

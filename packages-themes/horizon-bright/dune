@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_horizon_bright)
+ (public_name tm-themes.horizon-bright))

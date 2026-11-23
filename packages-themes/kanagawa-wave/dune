@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_kanagawa_wave)
+ (public_name tm-themes.kanagawa-wave))

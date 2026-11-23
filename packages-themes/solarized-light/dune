@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_solarized_light)
+ (public_name tm-themes.solarized-light))

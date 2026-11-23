@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_github_dark_default)
+ (public_name tm-themes.github-dark-default))

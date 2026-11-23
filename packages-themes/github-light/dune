@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_github_light)
+ (public_name tm-themes.github-light))

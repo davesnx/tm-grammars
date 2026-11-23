@@ -68,6 +68,38 @@ let grammars =
 
 `make sync` applies `scripts/patches/<language-id>.jq` (a jq program) to the downloaded grammar, so local changes stay after the next sync. Patches shared by several grammars live in `scripts/patches/lib/` as jq modules: `ocaml.jq` and `mlx.jq` both include `lib/ocaml-roles.jq`, because mlx carries its own copy of the OCaml rules. Edit the patch, then run `make sync LANGS="<language-id>"` and `make generate`. `make test-scopes` checks the token scopes of the patched OCaml grammars with vscode-textmate (needs Node.js 22.18 or later).
 
+## Themes
+
+The [tm-themes] package exposes the Shiki TextMate themes as JSON strings in the same way. Each theme is a library ([tm-themes.nord], [tm-themes.dark-plus], etc.).
+
+```dune
+(libraries tm-themes)
+```
+
+```ocaml
+let nord = Tm_themes.nord
+let dark_plus = Tm_themes.find "dark-plus"   (* string option *)
+let names = Tm_themes.available            (* string list *)
+```
+
+Depend on a sublibrary to pull in only one theme:
+
+```dune
+(libraries tm-themes.nord)
+```
+
+```ocaml
+let nord = Tm_theme_nord.json
+```
+
+### Supported theme ids
+
+`andromeeda`, `aurora-x`, `ayu-dark`, `ayu-light`, `ayu-mirage`, `catppuccin-frappe`, `catppuccin-latte`, `catppuccin-macchiato`, `catppuccin-mocha`, `dark-plus`, `dracula`, `dracula-soft`, `everforest-dark`, `everforest-light`, `github-dark`, `github-dark-default`, `github-dark-dimmed`, `github-dark-high-contrast`, `github-light`, `github-light-default`, `github-light-high-contrast`, `gruvbox-dark-hard`, `gruvbox-dark-medium`, `gruvbox-dark-soft`, `gruvbox-light-hard`, `gruvbox-light-medium`, `gruvbox-light-soft`, `horizon`, `horizon-bright`, `houston`, `kanagawa-dragon`, `kanagawa-lotus`, `kanagawa-wave`, `laserwave`, `light-plus`, `material-theme`, `material-theme-darker`, `material-theme-lighter`, `material-theme-ocean`, `material-theme-palenight`, `min-dark`, `min-light`, `monokai`, `night-owl`, `night-owl-light`, `nord`, `one-dark-pro`, `one-light`, `plastic`, `poimandres`, `red`, `rose-pine`, `rose-pine-dawn`, `rose-pine-moon`, `slack-dark`, `slack-ochin`, `snazzy-light`, `solarized-dark`, `solarized-light`, `synthwave-84`, `tokyo-night`, `vesper`, `vitesse-black`, `vitesse-dark`, `vitesse-light`.
+
+### How to add a new theme
+
+Add an entry in [themes.json](themes.json), run `make sync` to download it into `vendor-themes/<theme-id>.json`, then run `make generate` and `make build`. Use `make sync THEMES="<theme-id> ..."` to download only some themes.
+
 ## License
 
-MIT. See `LICENSE`.
+The code is MIT (see `LICENSE`). Each grammar and theme keeps the license of its upstream source, listed in `sources.json`, `themes.json` and `THIRD-PARTY-LICENSES`.

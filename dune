@@ -3,11 +3,13 @@
  (deps
   README.mld
   sources.json
+  themes.json
   scripts/gen_readme_md.sh
-  (glob_files packages/*/dune))
+  (glob_files packages/*/dune)
+  (glob_files packages-themes/*/dune))
  (target README.md)
  (mode promote)
  (action
   (with-stdout-to
    %{target}
-   (run bash scripts/gen_readme_md.sh README.mld sources.json))))
+   (run bash scripts/gen_readme_md.sh README.mld sources.json themes.json))))

@@ -1,0 +1,3 @@
+(library
+ (name tm_theme_material_theme_palenight)
+ (public_name tm-themes.material-theme-palenight))

@@ -1,0 +1,522 @@
+{
+  "andromeeda": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/andromeeda.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/EliverLara/Andromeda/master/LICENSE.md",
+    "originalSource": "EliverLara/Andromeda"
+  },
+  "aurora-x": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/aurora-x.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "GPL-3.0",
+    "licenseUrl": "https://raw.githubusercontent.com/marqu3ss/Aurora-X/master/LICENSE",
+    "originalSource": "marqu3ss/Aurora-X"
+  },
+  "ayu-dark": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/ayu-dark.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/ayu-theme/vscode-ayu/master/LICENSE",
+    "originalSource": "ayu-theme/vscode-ayu"
+  },
+  "ayu-light": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/ayu-light.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/ayu-theme/vscode-ayu/master/LICENSE",
+    "originalSource": "ayu-theme/vscode-ayu"
+  },
+  "ayu-mirage": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/ayu-mirage.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/ayu-theme/vscode-ayu/master/LICENSE",
+    "originalSource": "ayu-theme/vscode-ayu"
+  },
+  "catppuccin-frappe": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/catppuccin-frappe.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/catppuccin/vscode/main/LICENSE",
+    "originalSource": "catppuccin/vscode"
+  },
+  "catppuccin-latte": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/catppuccin-latte.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/catppuccin/vscode/main/LICENSE",
+    "originalSource": "catppuccin/vscode"
+  },
+  "catppuccin-macchiato": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/catppuccin-macchiato.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/catppuccin/vscode/main/LICENSE",
+    "originalSource": "catppuccin/vscode"
+  },
+  "catppuccin-mocha": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/catppuccin-mocha.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/catppuccin/vscode/main/LICENSE",
+    "originalSource": "catppuccin/vscode"
+  },
+  "dark-plus": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/dark-plus.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "dracula": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/dracula.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/dracula/visual-studio-code/main/LICENSE",
+    "originalSource": "dracula/visual-studio-code"
+  },
+  "dracula-soft": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/dracula-soft.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/dracula/visual-studio-code/main/LICENSE",
+    "originalSource": "dracula/visual-studio-code"
+  },
+  "everforest-dark": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/everforest-dark.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/sainnhe/everforest-vscode/master/LICENSE",
+    "originalSource": "sainnhe/everforest-vscode"
+  },
+  "everforest-light": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/everforest-light.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/sainnhe/everforest-vscode/master/LICENSE",
+    "originalSource": "sainnhe/everforest-vscode"
+  },
+  "github-dark": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/github-dark.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/primer/github-vscode-theme/main/LICENSE",
+    "originalSource": "primer/github-vscode-theme"
+  },
+  "github-dark-default": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/github-dark-default.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/primer/github-vscode-theme/main/LICENSE",
+    "originalSource": "primer/github-vscode-theme"
+  },
+  "github-dark-dimmed": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/github-dark-dimmed.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/primer/github-vscode-theme/main/LICENSE",
+    "originalSource": "primer/github-vscode-theme"
+  },
+  "github-dark-high-contrast": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/github-dark-high-contrast.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/primer/github-vscode-theme/main/LICENSE",
+    "originalSource": "primer/github-vscode-theme"
+  },
+  "github-light": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/github-light.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/primer/github-vscode-theme/main/LICENSE",
+    "originalSource": "primer/github-vscode-theme"
+  },
+  "github-light-default": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/github-light-default.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/primer/github-vscode-theme/main/LICENSE",
+    "originalSource": "primer/github-vscode-theme"
+  },
+  "github-light-high-contrast": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/github-light-high-contrast.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/primer/github-vscode-theme/main/LICENSE",
+    "originalSource": "primer/github-vscode-theme"
+  },
+  "gruvbox-dark-hard": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/gruvbox-dark-hard.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/jdinhify/vscode-theme-gruvbox/main/LICENSE",
+    "originalSource": "jdinhify/vscode-theme-gruvbox"
+  },
+  "gruvbox-dark-medium": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/gruvbox-dark-medium.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/jdinhify/vscode-theme-gruvbox/main/LICENSE",
+    "originalSource": "jdinhify/vscode-theme-gruvbox"
+  },
+  "gruvbox-dark-soft": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/gruvbox-dark-soft.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/jdinhify/vscode-theme-gruvbox/main/LICENSE",
+    "originalSource": "jdinhify/vscode-theme-gruvbox"
+  },
+  "gruvbox-light-hard": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/gruvbox-light-hard.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/jdinhify/vscode-theme-gruvbox/main/LICENSE",
+    "originalSource": "jdinhify/vscode-theme-gruvbox"
+  },
+  "gruvbox-light-medium": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/gruvbox-light-medium.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/jdinhify/vscode-theme-gruvbox/main/LICENSE",
+    "originalSource": "jdinhify/vscode-theme-gruvbox"
+  },
+  "gruvbox-light-soft": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/gruvbox-light-soft.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/jdinhify/vscode-theme-gruvbox/main/LICENSE",
+    "originalSource": "jdinhify/vscode-theme-gruvbox"
+  },
+  "horizon": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/horizon.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/alexandernanberg/horizon-theme-vscode/master/LICENSE",
+    "originalSource": "alexandernanberg/horizon-theme-vscode"
+  },
+  "horizon-bright": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/horizon-bright.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/alexandernanberg/horizon-theme-vscode/master/LICENSE",
+    "originalSource": "alexandernanberg/horizon-theme-vscode"
+  },
+  "houston": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/houston.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/withastro/houston-vscode/main/LICENSE",
+    "originalSource": "withastro/houston-vscode"
+  },
+  "kanagawa-dragon": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/kanagawa-dragon.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/metapho-re/kanagawa-vscode-theme/main/LICENSE",
+    "originalSource": "metapho-re/kanagawa-vscode-theme"
+  },
+  "kanagawa-lotus": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/kanagawa-lotus.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/metapho-re/kanagawa-vscode-theme/main/LICENSE",
+    "originalSource": "metapho-re/kanagawa-vscode-theme"
+  },
+  "kanagawa-wave": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/kanagawa-wave.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/metapho-re/kanagawa-vscode-theme/main/LICENSE",
+    "originalSource": "metapho-re/kanagawa-vscode-theme"
+  },
+  "laserwave": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/laserwave.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/Jaredk3nt/laserwave/master/LICENSE",
+    "originalSource": "Jaredk3nt/laserwave"
+  },
+  "light-plus": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/light-plus.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "material-theme": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/material-theme.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://raw.githubusercontent.com/antfu/vsc-material-theme/main/LICENSE",
+    "originalSource": "antfu/vsc-material-theme"
+  },
+  "material-theme-darker": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/material-theme-darker.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://raw.githubusercontent.com/antfu/vsc-material-theme/main/LICENSE",
+    "originalSource": "antfu/vsc-material-theme"
+  },
+  "material-theme-lighter": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/material-theme-lighter.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://raw.githubusercontent.com/antfu/vsc-material-theme/main/LICENSE",
+    "originalSource": "antfu/vsc-material-theme"
+  },
+  "material-theme-ocean": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/material-theme-ocean.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://raw.githubusercontent.com/antfu/vsc-material-theme/main/LICENSE",
+    "originalSource": "antfu/vsc-material-theme"
+  },
+  "material-theme-palenight": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/material-theme-palenight.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://raw.githubusercontent.com/antfu/vsc-material-theme/main/LICENSE",
+    "originalSource": "antfu/vsc-material-theme"
+  },
+  "min-dark": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/min-dark.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/miguelsolorio/min-theme/master/LICENSE",
+    "originalSource": "misolori/min-theme"
+  },
+  "min-light": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/min-light.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/miguelsolorio/min-theme/master/LICENSE",
+    "originalSource": "misolori/min-theme"
+  },
+  "monokai": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/monokai.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "night-owl": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/night-owl.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/sdras/night-owl-vscode-theme/main/LICENSE.md",
+    "originalSource": "sdras/night-owl-vscode-theme"
+  },
+  "night-owl-light": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/night-owl-light.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/sdras/night-owl-vscode-theme/main/LICENSE.md",
+    "originalSource": "sdras/night-owl-vscode-theme"
+  },
+  "nord": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/nord.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/nordtheme/visual-studio-code/develop/license",
+    "originalSource": "arcticicestudio/nord-visual-studio-code"
+  },
+  "one-dark-pro": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/one-dark-pro.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/Binaryify/OneDark-Pro/master/LICENSE.txt",
+    "originalSource": "Binaryify/OneDark-Pro"
+  },
+  "one-light": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/one-light.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/akamud/vscode-theme-onelight/master/LICENSE",
+    "originalSource": "akamud/vscode-theme-onelight"
+  },
+  "plastic": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/plastic.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/will-stone/plastic/main/LICENSE",
+    "originalSource": "will-stone/plastic"
+  },
+  "poimandres": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/poimandres.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/drcmda/poimandres-theme/main/LICENSE",
+    "originalSource": "drcmda/poimandres-theme"
+  },
+  "red": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/red.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "rose-pine": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/rose-pine.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/rose-pine/vscode/main/LICENSE",
+    "originalSource": "rose-pine/vscode"
+  },
+  "rose-pine-dawn": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/rose-pine-dawn.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/rose-pine/vscode/main/LICENSE",
+    "originalSource": "rose-pine/vscode"
+  },
+  "rose-pine-moon": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/rose-pine-moon.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/rose-pine/vscode/main/LICENSE",
+    "originalSource": "rose-pine/vscode"
+  },
+  "slack-dark": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/slack-dark.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/slack-theme/visual-studio-code/master/License",
+    "originalSource": "slack-theme/visual-studio-code"
+  },
+  "slack-ochin": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/slack-ochin.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/slack-theme/visual-studio-code/master/License",
+    "originalSource": "slack-theme/visual-studio-code"
+  },
+  "snazzy-light": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/snazzy-light.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/loilo/vscode-snazzy-light/master/LICENSE",
+    "originalSource": "loilo/vscode-snazzy-light"
+  },
+  "solarized-dark": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/solarized-dark.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "solarized-light": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/solarized-light.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/LICENSE.txt",
+    "originalSource": "microsoft/vscode"
+  },
+  "synthwave-84": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/synthwave-84.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/robb0wen/synthwave-vscode/master/LICENSE",
+    "originalSource": "robb0wen/synthwave-vscode"
+  },
+  "tokyo-night": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/tokyo-night.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/tokyo-night/tokyo-night-vscode-theme/master/LICENSE.txt",
+    "originalSource": "enkia/tokyo-night-vscode-theme"
+  },
+  "vesper": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/vesper.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/raunofreiberg/vesper/main/LICENSE.md",
+    "originalSource": "raunofreiberg/vesper"
+  },
+  "vitesse-black": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/vitesse-black.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/antfu/vscode-theme-vitesse/main/LICENSE.md",
+    "originalSource": "antfu/vscode-theme-vitesse"
+  },
+  "vitesse-dark": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/vitesse-dark.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/antfu/vscode-theme-vitesse/main/LICENSE.md",
+    "originalSource": "antfu/vscode-theme-vitesse"
+  },
+  "vitesse-light": {
+    "repo": "shikijs/textmate-grammars-themes",
+    "path": "packages/tm-themes/themes/vitesse-light.json",
+    "commit": "5bd656ce2db7d1c9de83d4fc81bc72a03d381949",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/antfu/vscode-theme-vitesse/main/LICENSE.md",
+    "originalSource": "antfu/vscode-theme-vitesse"
+  }
+}
