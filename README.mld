@@ -66,7 +66,7 @@ let grammars =
 
 {2 How to change a grammar}
 
-`make sync` applies `scripts/patches/<language-id>.jq` (a jq program) to the downloaded grammar, so local changes stay after the next sync. Edit the patch, then run `make sync LANGS="<language-id>"` and `make generate`. `make test-scopes` checks the token scopes of the patched OCaml grammars with vscode-textmate (needs Node.js 22.18 or later).
+`make sync` applies `scripts/patches/<language-id>.jq` (a jq program) to the downloaded grammar, so local changes stay after the next sync. Patches shared by several grammars live in `scripts/patches/lib/` as jq modules: `ocaml.jq` and `mlx.jq` both include `lib/ocaml-roles.jq`, because mlx carries its own copy of the OCaml rules. Edit the patch, then run `make sync LANGS="<language-id>"` and `make generate`. `make test-scopes` checks the token scopes of the patched OCaml grammars with vscode-textmate (needs Node.js 22.18 or later).
 
 {1 License}
 

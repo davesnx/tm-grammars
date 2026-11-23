@@ -3,10 +3,10 @@ import { fileURLToPath } from "node:url";
 import oniguruma from "vscode-oniguruma";
 import textmate, { type IGrammar } from "vscode-textmate";
 
-type Root = "source.ocaml" | "source.ocaml.interface";
+type Root = "source.ocaml" | "source.ocaml.interface" | "source.ocaml.mlx";
 type Case = { readonly code: string; readonly scope: string; readonly root?: Root };
 
-const cases: readonly Case[] = [
+const ocamlCases: readonly Case[] = [
   { code: "let n = «String».length s", scope: "entity.name.namespace.ocaml" },
   { code: "let x = Foo.«Bar».baz", scope: "entity.name.namespace.ocaml" },
   { code: "let n = String.«length» s", scope: "source.ocaml" },
@@ -84,6 +84,45 @@ const cases: readonly Case[] = [
   { code: "val f : t\nval «g» : u", scope: "entity.name.function.binding.ocaml", root: "source.ocaml.interface" },
 ];
 
+const mlx: Root = "source.ocaml.mlx";
+const mlxCases: readonly Case[] = [
+  { code: "let x = <«div» />", scope: "entity.name.tag.inline.any.html", root: mlx },
+  { code: "let x = <«Foo» />", scope: "entity.name.tag.inline.any.html", root: mlx },
+  { code: "let x = <«Foo».Bar />", scope: "entity.name.namespace.ocaml", root: mlx },
+  { code: "let x = <A.«B».c />", scope: "entity.name.namespace.ocaml", root: mlx },
+  { code: "let x = <Foo.«Bar» />", scope: "entity.name.tag.inline.any.html", root: mlx },
+  { code: "let x = <Ui.«button» />", scope: "entity.name.tag.inline.any.html", root: mlx },
+  { code: "let x = <Foo.Bar>a</«Foo».Bar>", scope: "entity.name.namespace.ocaml", root: mlx },
+  { code: "let x = <Foo.Bar>a</Foo.«Bar»>", scope: "entity.name.tag.inline.any.html", root: mlx },
+  { code: "let x = <«Foo»>a</Foo>", scope: "entity.name.tag.inline.any.html", root: mlx },
+  { code: "let x = <Foo>a</«Foo»>", scope: "entity.name.tag.inline.any.html", root: mlx },
+  { code: "let x = (<«div» />)", scope: "entity.name.tag.inline.any.html", root: mlx },
+  { code: "let l = [<«li»>\"a\"</li>]", scope: "entity.name.tag.inline.any.html", root: mlx },
+  { code: "let x = <div «className»=\"x\" />", scope: "entity.other.attribute-name.namespace.js", root: mlx },
+  { code: "let x = <input «value» ?placeholder />", scope: "entity.other.attribute-name.namespace.js", root: mlx },
+  { code: "let x = <div className=\"«x»\" />", scope: "string.quoted.double.ocaml", root: mlx },
+  { code: "let x = <div n=«1» />", scope: "constant.numeric.decimal.integer.ocaml", root: mlx },
+  { code: "let x = <div n=«M».x />", scope: "entity.name.namespace.ocaml", root: mlx },
+  { code: "let x = <div n=r.«f» />", scope: "variable.other.property.ocaml", root: mlx },
+  { code: "let x = <div f=(x : «t») />", scope: "entity.name.type.ocaml", root: mlx },
+  { code: "let x = <div f=(fun _ -> «go» ()) />", scope: "source.ocaml", root: mlx },
+  { code: "let x = <Foo p={«a» = 1} />", scope: "variable.other.property.ocaml", root: mlx },
+  { code: "let x = <p>«hi»</p>", scope: "source.ocaml", root: mlx },
+  { code: "let x = <p>\"«Total»\"</p>", scope: "string.quoted.double.ocaml", root: mlx },
+  { code: "let x = <p>(«String».length s)</p>", scope: "entity.name.namespace.ocaml", root: mlx },
+  { code: "let x = <p>(String.«length» s)</p>", scope: "source.ocaml", root: mlx },
+  { code: "let x = <p>(«Some» 1)</p>", scope: "variable.other.enummember.ocaml", root: mlx },
+  { code: "let x = <p>r.«f»</p>", scope: "variable.other.property.ocaml", root: mlx },
+  { code: "let x = <p>{«a» = 1}</p>", scope: "variable.other.property.ocaml", root: mlx },
+  { code: "let b = a «<» b", scope: "keyword.operator.ocaml", root: mlx },
+];
+
+const cases: readonly Case[] = [
+  ...ocamlCases,
+  ...ocamlCases.filter((c) => c.root === undefined).map((c) => ({ ...c, root: mlx })),
+  ...mlxCases,
+];
+
 const vendor = (file: string): string => fileURLToPath(new URL(`../../vendor/${file}`, import.meta.url));
 
 const grammarFiles = new Map<string, string>([
@@ -91,6 +130,7 @@ const grammarFiles = new Map<string, string>([
 ]);
 const interfaceGrammar = process.env["OCAML_INTERFACE_GRAMMAR"] ?? vendor("ocaml-interface.json");
 if (interfaceGrammar !== "") grammarFiles.set("source.ocaml.interface", interfaceGrammar);
+grammarFiles.set("source.ocaml.mlx", process.env["MLX_GRAMMAR"] ?? vendor("mlx.json"));
 
 const wasm = readFileSync(fileURLToPath(import.meta.resolve("vscode-oniguruma/release/onig.wasm")));
 await oniguruma.loadWASM(wasm);
