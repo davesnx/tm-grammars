@@ -12,8 +12,8 @@ help: ## Print this help message
 	@echo "";
 
 .PHONY: sync
-sync: ## Download grammars from upstream sources
-	@bash scripts/sync.sh
+sync: ## Download grammars from upstream sources (LANGS="a b" for a subset)
+	@bash scripts/sync.sh $(LANGS)
 
 .PHONY: generate
 generate: ## Generate all derived files
@@ -41,6 +41,10 @@ dev: ## Build in watch mode
 .PHONY: test
 test: ## Run tests
 	$(DUNE) build --root . @runtest
+
+.PHONY: test-scopes
+test-scopes: ## Check patched grammar scopes with vscode-textmate (needs Node.js 22.18+)
+	cd test/scopes && npm ci --no-audit --no-fund && npm run check && npm test
 
 .PHONY: docs
 docs: ## Build docs and refresh README.md

@@ -1,3 +1,10 @@
+## Unreleased
+
+- Added `ocaml-interface` syntax (`source.ocaml.interface`), which the `ocaml` grammar includes
+- `ocaml` grammar: scope module paths, `open`/`include`/`module` targets and module names as `entity.name.namespace.ocaml`, module type names as `entity.name.type.interface.ocaml`, constructors as `variable.other.enummember.ocaml`, field access and record fields as `variable.other.property.ocaml`, and locally abstract types as `entity.name.type.parameter.ocaml`
+- `ocaml-interface` grammar: scope type declaration names as `entity.name.type.ocaml`
+- `make sync` applies `scripts/patches/<language-id>.jq` to each downloaded grammar, and `make sync LANGS="..."` downloads only some grammars
+
 ## 2.0.0
 
 - Fix package generation

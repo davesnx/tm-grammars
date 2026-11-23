@@ -162,6 +162,7 @@
   tm-grammars.objective-c
   tm-grammars.objective-cpp
   tm-grammars.ocaml
+  tm-grammars.ocaml-interface
   tm-grammars.ocamllex
   tm-grammars.odin
   tm-grammars.opam-file
